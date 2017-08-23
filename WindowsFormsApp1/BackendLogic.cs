@@ -39,6 +39,7 @@ namespace NRSSSNamespace
         public static Image[] ImageArray = new Image[6];
 
         public static void ColourSelect()
+        {
 
             ImageArray[0] = Image.FromFile("Blue.jpg");
             ImageArray[1] = Image.FromFile("Yellow.jpg");
@@ -47,6 +48,11 @@ namespace NRSSSNamespace
             ImageArray[4] = Image.FromFile("Orange.jpg");
             ImageArray[5] = Image.FromFile("Pink.jpg");
             ImageArray[6] = Image.FromFile("Purple.jpg");
+
+
+        }
+
+            
         
 
 

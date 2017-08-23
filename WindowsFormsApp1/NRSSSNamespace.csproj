@@ -45,10 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\University\Fourth Year %282017%29\Semester 2, 2017\IFB399 - Capstone %28Phase 2%29\Assessment\Project\Program Code\NRSSS.cs">
+    <Compile Include="NRSSS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\University\Fourth Year %282017%29\Semester 2, 2017\IFB399 - Capstone %28Phase 2%29\Assessment\Project\Program Code\NRSSS.Designer.cs">
+    <Compile Include="NRSSS.Designer.cs">
       <DependentUpon>NRSSS.cs</DependentUpon>
     </Compile>
     <Compile Include="CategoryPage.cs">
@@ -73,7 +73,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="..\..\..\..\University\Fourth Year %282017%29\Semester 2, 2017\IFB399 - Capstone %28Phase 2%29\Assessment\Project\Program Code\NRSSS.resx">
+    <EmbeddedResource Include="NRSSS.resx">
       <DependentUpon>NRSSS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryPage.resx">

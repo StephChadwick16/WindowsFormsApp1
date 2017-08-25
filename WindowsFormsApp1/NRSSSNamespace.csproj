@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColourPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColourPage.Designer.cs">
+      <DependentUpon>ColourPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="NRSSS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ColourPage.resx">
+      <DependentUpon>ColourPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NRSSS.resx">
       <DependentUpon>NRSSS.cs</DependentUpon>
     </EmbeddedResource>

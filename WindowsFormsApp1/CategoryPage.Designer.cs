@@ -52,6 +52,7 @@
             this.OptionSelected.Size = new System.Drawing.Size(174, 25);
             this.OptionSelected.TabIndex = 0;
             this.OptionSelected.Text = "Option selected: ";
+            this.OptionSelected.Click += new System.EventHandler(this.OptionSelected_Click);
             // 
             // IntervalSelection
             // 

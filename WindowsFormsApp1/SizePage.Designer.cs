@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace NRSSSNamespace
 {
     partial class SizePage
     {
@@ -51,5 +51,6 @@
         private System.Windows.Forms.Label MediumLabel;
         private System.Windows.Forms.Label LargeLabel;
         private System.Windows.Forms.Button CloseBtn;
+        private System.Windows.Forms.Button NextBtn;
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace NRSSSNamespace
 {
     public partial class SizePage : Form
     {
@@ -27,6 +27,7 @@ namespace WindowsFormsApp1
             this.MediumLabel = new System.Windows.Forms.Label();
             this.LargeLabel = new System.Windows.Forms.Label();
             this.CloseBtn = new System.Windows.Forms.Button();
+            this.NextBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -102,17 +103,34 @@ namespace WindowsFormsApp1
             this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(80, 904);
+            this.CloseBtn.Location = new System.Drawing.Point(49, 880);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(206, 118);
             this.CloseBtn.TabIndex = 7;
             this.CloseBtn.Text = "Close";
             this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
+            // 
+            // NextBtn
+            // 
+            this.NextBtn.BackColor = System.Drawing.Color.Yellow;
+            this.NextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextBtn.ForeColor = System.Drawing.Color.Black;
+            this.NextBtn.Location = new System.Drawing.Point(1632, 870);
+            this.NextBtn.Name = "NextBtn";
+            this.NextBtn.Size = new System.Drawing.Size(220, 118);
+            this.NextBtn.TabIndex = 10;
+            this.NextBtn.Text = "Next";
+            this.NextBtn.UseVisualStyleBackColor = false;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // SizePage
             // 
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1923, 1068);
+            this.ClientSize = new System.Drawing.Size(1924, 1029);
+            this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.LargeLabel);
             this.Controls.Add(this.MediumLabel);
@@ -123,6 +141,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "SizePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.SizePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -134,12 +153,25 @@ namespace WindowsFormsApp1
 
         private void SizePage_Load(object sender, EventArgs e)
         {
-
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void NextBtn_Click(object sender, EventArgs e)
+        {
+            ColourPage newColourPage = new ColourPage();
+            newColourPage.Show();
+            Visible = false;
+        }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

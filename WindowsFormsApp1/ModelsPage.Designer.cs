@@ -81,6 +81,7 @@
             this.CloseBtn.TabIndex = 4;
             this.CloseBtn.Text = "Close";
             this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // ModelLabel1
             // 
@@ -153,6 +154,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1831, 1039);
             this.Controls.Add(this.NextBtn);
@@ -161,6 +164,7 @@
             this.Controls.Add(this.ModelsLabel);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "ModelsPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Models";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

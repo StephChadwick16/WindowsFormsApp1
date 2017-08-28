@@ -24,6 +24,13 @@ namespace NRSSSNamespace
 
         }
 
+        private void FinalPage_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        }
+
+
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
@@ -34,10 +41,7 @@ namespace NRSSSNamespace
 
         }
 
-        private void FinalPage_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 
 }

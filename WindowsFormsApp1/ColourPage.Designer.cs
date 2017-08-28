@@ -37,6 +37,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.CloseBtn = new System.Windows.Forms.Button();
+            this.NextBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -118,19 +119,36 @@
             this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(48, 1100);
+            this.CloseBtn.Location = new System.Drawing.Point(81, 1100);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(206, 118);
             this.CloseBtn.TabIndex = 8;
             this.CloseBtn.Text = "Close";
             this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
+            // 
+            // NextBtn
+            // 
+            this.NextBtn.BackColor = System.Drawing.Color.Yellow;
+            this.NextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextBtn.ForeColor = System.Drawing.Color.Black;
+            this.NextBtn.Location = new System.Drawing.Point(1837, 1100);
+            this.NextBtn.Name = "NextBtn";
+            this.NextBtn.Size = new System.Drawing.Size(220, 118);
+            this.NextBtn.TabIndex = 11;
+            this.NextBtn.Text = "Next";
+            this.NextBtn.UseVisualStyleBackColor = false;
+            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // ColourPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(2019, 1254);
+            this.ClientSize = new System.Drawing.Size(2142, 1256);
+            this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -142,6 +160,7 @@
             this.Controls.Add(this.SelectColourLabel);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "ColourPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select A Colour";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -166,5 +185,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button CloseBtn;
+        private System.Windows.Forms.Button NextBtn;
     }
 }

@@ -242,6 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1788, 1141);
@@ -265,6 +266,7 @@
             this.ForeColor = System.Drawing.Color.Yellow;
             this.HelpButton = true;
             this.Name = "StartPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = global::WindowsFormsApp1.Properties.Settings.Default.Title;
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -39,6 +39,7 @@
             this.Category1Label = new System.Windows.Forms.Label();
             this.Category2Label = new System.Windows.Forms.Label();
             this.Category3Label = new System.Windows.Forms.Label();
+            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -152,13 +153,28 @@
             this.Category3Label.TabIndex = 10;
             this.Category3Label.Text = "Category 3";
             // 
+            // NextButton
+            // 
+            this.NextButton.BackColor = System.Drawing.Color.Yellow;
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.ForeColor = System.Drawing.Color.Black;
+            this.NextButton.Location = new System.Drawing.Point(1577, 938);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(206, 118);
+            this.NextButton.TabIndex = 11;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
             // CategoryPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1840, 1092);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.Category3Label);
             this.Controls.Add(this.Category2Label);
             this.Controls.Add(this.Category1Label);
@@ -172,6 +188,7 @@
             this.Controls.Add(this.OptionSelected);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "CategoryPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CategoryPage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -194,5 +211,6 @@
         private System.Windows.Forms.Label Category1Label;
         private System.Windows.Forms.Label Category2Label;
         private System.Windows.Forms.Label Category3Label;
+        private System.Windows.Forms.Button NextButton;
     }
 }

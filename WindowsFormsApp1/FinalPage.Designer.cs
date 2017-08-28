@@ -34,10 +34,10 @@
             this.IntervalSelection = new System.Windows.Forms.Label();
             this.OptionSelected = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.StudentNameLabel = new System.Windows.Forms.Label();
-            this.TimeIntLabel = new System.Windows.Forms.Label();
             this.InputMethodLabel = new System.Windows.Forms.Label();
+            this.TimeIntLabel = new System.Windows.Forms.Label();
+            this.StudentNameLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,25 +100,15 @@
             this.panel1.Size = new System.Drawing.Size(581, 400);
             this.panel1.TabIndex = 6;
             // 
-            // label1
+            // InputMethodLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 46);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Settings Chosen:";
-            // 
-            // StudentNameLabel
-            // 
-            this.StudentNameLabel.AutoSize = true;
-            this.StudentNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentNameLabel.Location = new System.Drawing.Point(20, 132);
-            this.StudentNameLabel.Name = "StudentNameLabel";
-            this.StudentNameLabel.Size = new System.Drawing.Size(231, 37);
-            this.StudentNameLabel.TabIndex = 7;
-            this.StudentNameLabel.Text = "Student Name:";
+            this.InputMethodLabel.AutoSize = true;
+            this.InputMethodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputMethodLabel.Location = new System.Drawing.Point(27, 285);
+            this.InputMethodLabel.Name = "InputMethodLabel";
+            this.InputMethodLabel.Size = new System.Drawing.Size(212, 37);
+            this.InputMethodLabel.TabIndex = 9;
+            this.InputMethodLabel.Text = "Input Method:";
             // 
             // TimeIntLabel
             // 
@@ -130,26 +120,39 @@
             this.TimeIntLabel.TabIndex = 8;
             this.TimeIntLabel.Text = "Time Interval:";
             // 
-            // InputMethodLabel
+            // StudentNameLabel
             // 
-            this.InputMethodLabel.AutoSize = true;
-            this.InputMethodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputMethodLabel.Location = new System.Drawing.Point(27, 285);
-            this.InputMethodLabel.Name = "InputMethodLabel";
-            this.InputMethodLabel.Size = new System.Drawing.Size(212, 37);
-            this.InputMethodLabel.TabIndex = 9;
-            this.InputMethodLabel.Text = "Input Method:";
+            this.StudentNameLabel.AutoSize = true;
+            this.StudentNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentNameLabel.Location = new System.Drawing.Point(20, 132);
+            this.StudentNameLabel.Name = "StudentNameLabel";
+            this.StudentNameLabel.Size = new System.Drawing.Size(231, 37);
+            this.StudentNameLabel.TabIndex = 7;
+            this.StudentNameLabel.Text = "Student Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(119, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(340, 46);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Settings Chosen:";
             // 
             // FinalPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1818, 1113);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.OutputOptionsLabel);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "FinalPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Page";
             this.Load += new System.EventHandler(this.FinalPage_Load);
             this.panel1.ResumeLayout(false);

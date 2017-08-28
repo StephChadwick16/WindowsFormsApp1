@@ -17,6 +17,12 @@ namespace NRSSSNamespace
             InitializeComponent();
         }
 
+        private void ModelsPage_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -29,7 +35,14 @@ namespace NRSSSNamespace
 
         private void NextBtn_Click(object sender, EventArgs e)
         {
+            SizePage newSizePage = new SizePage();
+            newSizePage.Show();
+            Visible = false;
+        }
 
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

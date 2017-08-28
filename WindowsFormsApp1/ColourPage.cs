@@ -34,14 +34,35 @@ namespace NRSSSNamespace
             pictureBox6.Image = BackendLogic.ImageArray[5];
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox7.Image = BackendLogic.ImageArray[6];
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            //pictureBox7.Image = BackendLogic.ImageArray[6];
+            //pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
         }
 
+        private void ColourPage_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        }
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void NextBtn_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
 
         }
     }

@@ -27,12 +27,21 @@ namespace NRSSSNamespace
             StuffAndThingsEnablement(false);
         }
 
+        private void NRSSS_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             BackendLogic.studentName = ChildNameTextbox.Text;
 
             CategoryPage newCategoryPage = new CategoryPage();
             newCategoryPage.Show();
+            Visible = false;
+
 
         }
 

@@ -32,6 +32,12 @@ namespace NRSSSNamespace
 
         }
 
+        private void CategoryPage_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        }
+
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -39,6 +45,14 @@ namespace NRSSSNamespace
 
         private void OptionSelected_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            ModelsPage openForm = new ModelsPage();
+            openForm.Show();
+            Visible = false;
 
         }
     }

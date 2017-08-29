@@ -57,6 +57,12 @@
     <Compile Include="FinalPage.Designer.cs">
       <DependentUpon>FinalPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="SizingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SizingPage.Designer.cs">
+      <DependentUpon>SizingPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="NRSSS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,12 +77,6 @@
     </Compile>
     <Compile Include="BackendLogic.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="SizePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SizePage.Designer.cs">
-      <DependentUpon>SizePage.cs</DependentUpon>
-    </Compile>
     <Compile Include="ModelsPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,14 +91,14 @@
     <EmbeddedResource Include="FinalPage.resx">
       <DependentUpon>FinalPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SizingPage.resx">
+      <DependentUpon>SizingPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NRSSS.resx">
       <DependentUpon>NRSSS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryPage.resx">
       <DependentUpon>CategoryPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SizePage.resx">
-      <DependentUpon>SizePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModelsPage.resx">
       <DependentUpon>ModelsPage.cs</DependentUpon>

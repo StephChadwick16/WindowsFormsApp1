@@ -10,33 +10,23 @@ using System.Windows.Forms;
 
 namespace NRSSSNamespace
 {
-    public partial class ModelsPage : Form
+    public partial class SizingPage : Form
     {
-        public ModelsPage()
+        public SizingPage()
         {
             InitializeComponent();
         }
 
-        private void ModelsPage_Load(object sender, EventArgs e)
+        private void SizingPage_Load(object sender, EventArgs e)
         {
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void NextBtn_Click(object sender, EventArgs e)
         {
-            SizingPage newSizingPage = new SizingPage();
-            newSizingPage.Show();
+            ColourPage newColourPage = new ColourPage();
+            newColourPage.Show();
             Visible = false;
         }
 

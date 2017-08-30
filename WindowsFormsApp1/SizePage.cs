@@ -153,8 +153,8 @@ namespace NRSSSNamespace
 
         private void SizePage_Load(object sender, EventArgs e)
         {
-            this.AutoSize = true;
-            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            this.AutoSize = false;
+            //this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
         private void label2_Click(object sender, EventArgs e)

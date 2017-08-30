@@ -149,6 +149,7 @@
             this.Controls.Add(this.SizeSelectLabel);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Name = "SizingPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sizes";
             this.Load += new System.EventHandler(this.SizingPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

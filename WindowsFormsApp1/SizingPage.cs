@@ -15,6 +15,17 @@ namespace NRSSSNamespace
         public SizingPage()
         {
             InitializeComponent();
+
+            pictureBox1.Image = BackendLogic.arrayOfSizes[0];
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox2.Image = BackendLogic.arrayOfSizes[1];
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox3.Image = BackendLogic.arrayOfSizes[2];
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
         }
 
         private void SizingPage_Load(object sender, EventArgs e)
@@ -33,6 +44,19 @@ namespace NRSSSNamespace
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            StartPage openForm = new StartPage();
+            openForm.Show();
+            Visible = false;
+
         }
     }
 }

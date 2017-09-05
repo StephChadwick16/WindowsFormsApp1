@@ -38,6 +38,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.NextBtn = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -126,7 +127,7 @@
             this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(81, 1100);
+            this.CloseBtn.Location = new System.Drawing.Point(81, 1148);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(206, 118);
             this.CloseBtn.TabIndex = 8;
@@ -139,13 +140,26 @@
             this.NextBtn.BackColor = System.Drawing.Color.Yellow;
             this.NextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextBtn.ForeColor = System.Drawing.Color.Black;
-            this.NextBtn.Location = new System.Drawing.Point(1837, 1100);
+            this.NextBtn.Location = new System.Drawing.Point(1837, 1148);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.Size = new System.Drawing.Size(220, 118);
             this.NextBtn.TabIndex = 11;
             this.NextBtn.Text = "Next";
             this.NextBtn.UseVisualStyleBackColor = false;
             this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
+            this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.Black;
+            this.HomeBtn.Location = new System.Drawing.Point(957, 1148);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(206, 118);
+            this.HomeBtn.TabIndex = 12;
+            this.HomeBtn.Text = "Home";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // ColourPage
             // 
@@ -154,7 +168,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(2142, 1256);
+            this.ClientSize = new System.Drawing.Size(2142, 1299);
+            this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.pictureBox7);
@@ -193,5 +208,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button CloseBtn;
         private System.Windows.Forms.Button NextBtn;
+        private System.Windows.Forms.Button HomeBtn;
     }
 }

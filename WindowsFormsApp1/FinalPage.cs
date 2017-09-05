@@ -41,7 +41,19 @@ namespace NRSSSNamespace
 
         }
 
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            StartPage openForm = new StartPage();
+            openForm.Show();
+            Visible = false;
 
+        }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 
 }

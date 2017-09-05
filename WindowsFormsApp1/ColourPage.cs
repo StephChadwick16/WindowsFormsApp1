@@ -22,7 +22,6 @@ namespace NRSSSNamespace
             pictureBox2.Image = BackendLogic.arrayOfColours[1];
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
-
             pictureBox3.Image = BackendLogic.arrayOfColours[2];
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -62,6 +61,14 @@ namespace NRSSSNamespace
         private void NextBtn_Click(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+
+        }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            StartPage openForm = new StartPage();
             openForm.Show();
             Visible = false;
 

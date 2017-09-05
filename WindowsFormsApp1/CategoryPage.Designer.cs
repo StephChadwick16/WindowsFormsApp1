@@ -40,6 +40,7 @@
             this.Category2Label = new System.Windows.Forms.Label();
             this.Category3Label = new System.Windows.Forms.Label();
             this.NextButton = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -166,6 +167,19 @@
             this.NextButton.UseVisualStyleBackColor = false;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
+            this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.Black;
+            this.HomeBtn.Location = new System.Drawing.Point(819, 938);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(206, 118);
+            this.HomeBtn.TabIndex = 15;
+            this.HomeBtn.Text = "Home";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
+            // 
             // CategoryPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -174,6 +188,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1840, 1092);
+            this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.Category3Label);
             this.Controls.Add(this.Category2Label);
@@ -212,5 +227,6 @@
         private System.Windows.Forms.Label Category2Label;
         private System.Windows.Forms.Label Category3Label;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button HomeBtn;
     }
 }

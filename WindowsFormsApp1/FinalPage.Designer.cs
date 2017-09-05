@@ -38,6 +38,8 @@
             this.TimeIntLabel = new System.Windows.Forms.Label();
             this.StudentNameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +142,32 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Settings Chosen:";
             // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
+            this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.Black;
+            this.HomeBtn.Location = new System.Drawing.Point(68, 892);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(206, 118);
+            this.HomeBtn.TabIndex = 16;
+            this.HomeBtn.Text = "Home";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.Black;
+            this.CloseBtn.Location = new System.Drawing.Point(1535, 892);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(206, 118);
+            this.CloseBtn.TabIndex = 17;
+            this.CloseBtn.Text = "Close";
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
+            // 
             // FinalPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -148,6 +176,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1818, 1113);
+            this.Controls.Add(this.CloseBtn);
+            this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.OutputOptionsLabel);
             this.ForeColor = System.Drawing.Color.Yellow;
@@ -174,5 +204,7 @@
         private System.Windows.Forms.Label InputMethodLabel;
         private System.Windows.Forms.Label TimeIntLabel;
         private System.Windows.Forms.Label StudentNameLabel;
+        private System.Windows.Forms.Button HomeBtn;
+        private System.Windows.Forms.Button CloseBtn;
     }
 }

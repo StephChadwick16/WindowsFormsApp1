@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Threading;
 
+/*
 namespace TimerWorkInProgress
 {
 
     class Program
     {
-        static void Main(string[] args)
+        static void (string[] args)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -29,3 +30,4 @@ namespace TimerWorkInProgress
         }
     }
 }
+*/

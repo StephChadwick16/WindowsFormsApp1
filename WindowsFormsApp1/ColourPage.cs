@@ -16,26 +16,27 @@ namespace NRSSSNamespace
         {
             InitializeComponent();
 
-            pictureBox1.Image = BackendLogic.ImageArray[0];
+            pictureBox1.Image = BackendLogic.arrayOfColours[0];
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox2.Image = BackendLogic.ImageArray[1];
+            pictureBox2.Image = BackendLogic.arrayOfColours[1];
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox3.Image = BackendLogic.ImageArray[2];
+
+            pictureBox3.Image = BackendLogic.arrayOfColours[2];
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox4.Image = BackendLogic.ImageArray[3];
+            pictureBox4.Image = BackendLogic.arrayOfColours[3];
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox5.Image = BackendLogic.ImageArray[4];
+            pictureBox5.Image = BackendLogic.arrayOfColours[4];
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox6.Image = BackendLogic.ImageArray[5];
+            pictureBox6.Image = BackendLogic.arrayOfColours[5];
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            //pictureBox7.Image = BackendLogic.ImageArray[6];
-            //pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.Image = BackendLogic.arrayOfColours[6];
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
         }

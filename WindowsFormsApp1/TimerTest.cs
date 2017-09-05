@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using System.Diagnostics;
 
+/*
 namespace StopWatchSample
 {
     class OperationsTimer
@@ -216,3 +217,4 @@ namespace StopWatchSample
         }
     }
 }
+*/

@@ -17,8 +17,10 @@ namespace NRSSSNamespace
         public static int secondsTimer;
         public static int inputOption;
 
-        public static Image[] arrayOfImages = new Image[3]; 
+        public static Image[] arrayOfCategories = new Image[3];
+        public static Image[] arrayOfColours = new Image[7];
 
+        public static DirectoryInfo currentDir;
 
         public static void SetupApp()
         {
@@ -26,34 +28,62 @@ namespace NRSSSNamespace
             secondsTimer = 0;
             inputOption = -1;
 
-            arrayOfImages[0] = Image.FromFile("Instruments.jpg");
-            arrayOfImages[1] = Image.FromFile("Models.jpg");
-            arrayOfImages[2] = Image.FromFile("Vehicles.jpg");
+            currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             //Debug.WriteLine("____----____" + Directory.GetCurrentDirectory());
-
+            CategorySelect();
+            ColourSelect();
 
         }
 
-        
-        public static Image[] ImageArray = new Image[6];
+        public static void CategorySelect()
+        {
+            FileInfo myFile;
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Instruments.jpg");
+            arrayOfCategories[0] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Models.jpg");
+            arrayOfCategories[1] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Vehicles.jpg");
+            Debug.WriteLine(myFile.ToString());
+            arrayOfCategories[2] = Image.FromFile(myFile.ToString());
+
+        }
 
         public static void ColourSelect()
         {
+            FileInfo myFile;
 
-            ImageArray[0] = Image.FromFile("Blue.jpg");
-            ImageArray[1] = Image.FromFile("Yellow.jpg");
-            ImageArray[2] = Image.FromFile("Green.jpg");
-            ImageArray[3] = Image.FromFile("Red.jpg");
-            ImageArray[4] = Image.FromFile("Orange.jpg");
-            ImageArray[5] = Image.FromFile("Pink.jpg");
-            ImageArray[6] = Image.FromFile("Purple.jpg");
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Blue.jpg");
+            arrayOfColours[0] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Green.jpg");
+            arrayOfColours[1] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Orange.jpg");
+            arrayOfColours[2] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Pink.jpg");
+            arrayOfColours[3] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Purple.jpg");
+            arrayOfColours[4] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Red.jpg");
+            arrayOfColours[5] = Image.FromFile(myFile.ToString());
+
+            myFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Yellow.jpg");
+            Debug.WriteLine(myFile.ToString());
+            arrayOfColours[6] = Image.FromFile(myFile.ToString());
+
 
 
         }
 
-            
-        
+
+
 
 
 

@@ -17,7 +17,10 @@ namespace NRSSSNamespace
         public static int secondsTimer;
         public static int inputOption;
 
-        public static Image[] arrayOfCategoriesImages = new Image[3];
+        // Need to work out how to get images dynamically but still keep them in sets of three 
+        // public static Image[] arrayOfCategoriesImages = new Image[3];
+
+
         public static Image[] arrayOfColours = new Image[7];
         public static Image[] arrayOfSizes = new Image[3];
 
@@ -34,27 +37,57 @@ namespace NRSSSNamespace
 
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
-            CategorySelect();
+            CategorySelect();   
+            CountFilesCategoriesFolder();
             ColourSelect();
             SizeSelect();
-            CountFilesCategoriesFolder();
 
         }
 
+
+        // Need to work out how to pull images from files using code down below in CountFilesCategoriesFolder
+        
+        
         public static void CategorySelect()
         { 
-            FileInfo CategoryFile;
+            //FileInfo CategoryFile;
 
-            CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Instruments.jpg");
-            arrayOfCategoriesImages[0] = Image.FromFile(CategoryFile.ToString());
+            //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Instruments.jpg");
+            //arrayOfCategoriesImages[0] = Image.FromFile(CategoryFile.ToString());
 
-            CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Models.jpg");
-            arrayOfCategoriesImages[1] = Image.FromFile(CategoryFile.ToString());
+            //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Models.jpg");
+            //arrayOfCategoriesImages[1] = Image.FromFile(CategoryFile.ToString());
 
-            CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Vehicles.jpg");
-            arrayOfCategoriesImages[2] = Image.FromFile(CategoryFile.ToString());
+            //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Vehicles.jpg");
+            //arrayOfCategoriesImages[2] = Image.FromFile(CategoryFile.ToString());
 
         }
+
+
+        public static void CountFilesCategoriesFolder()
+        {
+            // Count Files in Folder//
+            string folder = "//Categories";
+            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
+            int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
+
+            arrayOfCategoriesName = new string[fileCount];
+
+            // Getting the names for the files//
+
+            for (int numFiles = 0; numFiles < fileCount; numFiles++)
+            {
+                string fileName = files[numFiles]; //This grabs path for file//
+                string lastWord = fileName.Trim().Split('\\').LastOrDefault();
+                string final = lastWord.Split('.').FirstOrDefault();
+
+                arrayOfCategoriesName[numFiles] = final;
+
+                Debug.WriteLine(final);
+
+            }
+        }
+
 
         public static void ColourSelect()
         {
@@ -99,35 +132,8 @@ namespace NRSSSNamespace
 
         }
 
-        public static void CountFilesCategoriesFolder()
-        {
-            // Count Files in Folder//
-            string folder = "//Categories";
-            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
-            int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
-
-            arrayOfCategoriesName = new string[fileCount];
-
-            // Getting the names for the files//
-
-            for (int numFiles = 0; numFiles < fileCount; numFiles++)
-            {
-                string fileName = files[numFiles]; //This grabs path for file//
-                string lastWord = fileName.Trim().Split('\\').LastOrDefault();
-                string final = lastWord.Split('.').FirstOrDefault();
-
-                arrayOfCategoriesName[numFiles] = final;
-
-                Debug.WriteLine(final);
-
-            }
-
-
-            
-        }
-
-
-
+       
+        
     }
 
 

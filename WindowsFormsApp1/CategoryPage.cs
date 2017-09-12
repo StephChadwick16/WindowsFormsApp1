@@ -21,14 +21,18 @@ namespace NRSSSNamespace
             IntervalSelection.Text = BackendLogic.secondsTimer.ToString();
             StudentOption.Text = BackendLogic.studentName;
 
-            pictureBox1.Image = BackendLogic.arrayOfCategories[0];
+            /*
+
+            pictureBox1.Image = BackendLogic.arrayOfCategoriesImages[0];
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox2.Image = BackendLogic.arrayOfCategories[1];
+            pictureBox2.Image = BackendLogic.arrayOfCategoriesImages[1];
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            pictureBox3.Image = BackendLogic.arrayOfCategories[2];
+            pictureBox3.Image = BackendLogic.arrayOfCategoriesImages[2];
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            */
 
         }
 

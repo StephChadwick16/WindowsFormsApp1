@@ -61,6 +61,8 @@ namespace NRSSSNamespace
             //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Vehicles.jpg");
             //arrayOfCategoriesImages[2] = Image.FromFile(CategoryFile.ToString());
 
+
+
         }
 
 

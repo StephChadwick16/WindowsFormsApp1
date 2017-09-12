@@ -17,40 +17,42 @@ namespace NRSSSNamespace
         public static int secondsTimer;
         public static int inputOption;
 
-        public static Image[] arrayOfCategories = new Image[3];
+        public static Image[] arrayOfCategoriesImages = new Image[3];
         public static Image[] arrayOfColours = new Image[7];
         public static Image[] arrayOfSizes = new Image[3];
+
+        public static string[] arrayOfCategoriesName; 
 
         public static DirectoryInfo currentDir;
 
         public static void SetupApp()
         {
+
             studentName = "error";
             secondsTimer = 0;
             inputOption = -1;
 
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
-            //Debug.WriteLine("____----____" + Directory.GetCurrentDirectory());
             CategorySelect();
             ColourSelect();
             SizeSelect();
+            CountFilesCategoriesFolder();
 
         }
 
         public static void CategorySelect()
-        {
+        { 
             FileInfo CategoryFile;
 
             CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Instruments.jpg");
-            arrayOfCategories[0] = Image.FromFile(CategoryFile.ToString());
+            arrayOfCategoriesImages[0] = Image.FromFile(CategoryFile.ToString());
 
             CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Models.jpg");
-            arrayOfCategories[1] = Image.FromFile(CategoryFile.ToString());
+            arrayOfCategoriesImages[1] = Image.FromFile(CategoryFile.ToString());
 
             CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Vehicles.jpg");
-            Debug.WriteLine(CategoryFile.ToString());
-            arrayOfCategories[2] = Image.FromFile(CategoryFile.ToString());
+            arrayOfCategoriesImages[2] = Image.FromFile(CategoryFile.ToString());
 
         }
 
@@ -77,9 +79,7 @@ namespace NRSSSNamespace
             arrayOfColours[5] = Image.FromFile(ColourFile.ToString());
 
             ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Yellow.jpg");
-            Debug.WriteLine(ColourFile.ToString());
             arrayOfColours[6] = Image.FromFile(ColourFile.ToString());
-
 
         }
 
@@ -99,7 +99,32 @@ namespace NRSSSNamespace
 
         }
 
+        public static void CountFilesCategoriesFolder()
+        {
+            // Count Files in Folder//
+            string folder = "//Categories";
+            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
+            int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
+            arrayOfCategoriesName = new string[fileCount];
+
+            // Getting the names for the files//
+
+            for (int numFiles = 0; numFiles < fileCount; numFiles++)
+            {
+                string fileName = files[numFiles]; //This grabs path for file//
+                string lastWord = fileName.Trim().Split('\\').LastOrDefault();
+                string final = lastWord.Split('.').FirstOrDefault();
+
+                arrayOfCategoriesName[numFiles] = final;
+
+                Debug.WriteLine(final);
+
+            }
+
+
+            
+        }
 
 
 

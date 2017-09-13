@@ -41,6 +41,7 @@
             this.Category3Label = new System.Windows.Forms.Label();
             this.NextButton = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
+            this.NextPageBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -180,6 +181,19 @@
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
+            // NextPageBtn
+            // 
+            this.NextPageBtn.BackColor = System.Drawing.Color.Yellow;
+            this.NextPageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextPageBtn.ForeColor = System.Drawing.Color.Black;
+            this.NextPageBtn.Location = new System.Drawing.Point(1318, 918);
+            this.NextPageBtn.Name = "NextPageBtn";
+            this.NextPageBtn.Size = new System.Drawing.Size(202, 138);
+            this.NextPageBtn.TabIndex = 16;
+            this.NextPageBtn.Text = "Next Page";
+            this.NextPageBtn.UseVisualStyleBackColor = false;
+            this.NextPageBtn.Click += new System.EventHandler(this.NextPageBtn_Click);
+            // 
             // CategoryPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -188,6 +202,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1840, 1092);
+            this.Controls.Add(this.NextPageBtn);
             this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.Category3Label);
@@ -228,5 +243,6 @@
         private System.Windows.Forms.Label Category3Label;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button HomeBtn;
+        private System.Windows.Forms.Button NextPageBtn;
     }
 }

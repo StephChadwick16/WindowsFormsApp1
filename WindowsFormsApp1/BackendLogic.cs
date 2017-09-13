@@ -18,7 +18,7 @@ namespace NRSSSNamespace
         public static int inputOption;
 
         // Need to work out how to get images dynamically but still keep them in sets of three 
-        // public static Image[] arrayOfCategoriesImages = new Image[3];
+        public static Image[] arrayOfCategoriesImages;
 
 
         public static Image[] arrayOfColours = new Image[7];
@@ -74,7 +74,8 @@ namespace NRSSSNamespace
             int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
             arrayOfCategoriesName = new string[fileCount];
-
+            arrayOfCategoriesImages = new Image[fileCount];
+            
             // Getting the names for the files//
 
             for (int numFiles = 0; numFiles < fileCount; numFiles++)
@@ -84,6 +85,8 @@ namespace NRSSSNamespace
                 string final = lastWord.Split('.').FirstOrDefault();
 
                 arrayOfCategoriesName[numFiles] = final;
+
+                arrayOfCategoriesImages[numFiles] = Image.FromFile(fileName);
 
                 Debug.WriteLine(final);
 

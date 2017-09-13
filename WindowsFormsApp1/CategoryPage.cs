@@ -12,6 +12,7 @@ namespace NRSSSNamespace
 {
     public partial class CategoryPage : Form
     {
+        private int start = 0;
 
         public CategoryPage()
         {
@@ -21,20 +22,68 @@ namespace NRSSSNamespace
             IntervalSelection.Text = BackendLogic.secondsTimer.ToString();
             StudentOption.Text = BackendLogic.studentName;
 
-            /*
 
-            pictureBox1.Image = BackendLogic.arrayOfCategoriesImages[0];
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            pictureBox2.Image = BackendLogic.arrayOfCategoriesImages[1];
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            pictureBox3.Image = BackendLogic.arrayOfCategoriesImages[2];
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            */
+            CategoryRefresh();
 
         }
+
+
+        public void CategoryRefresh()
+        {
+
+            pictureBox1.Image = null;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox2.Image = null;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox3.Image = null;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+
+           
+            for (int i = 0; i < 3; i++)
+            {
+
+                if (i + start >= BackendLogic.arrayOfCategoriesImages.Length)
+                {
+                    break;
+                }
+
+
+
+                string fileName = BackendLogic.arrayOfCategoriesName[i + start];
+                Image fileImage = BackendLogic.arrayOfCategoriesImages[i + start];
+
+                if (i == 0)
+                {
+                    pictureBox1.Image = fileImage;
+                    Category1Label.Text = fileName;
+                }
+
+
+                if (i == 1)
+                {
+                    pictureBox2.Image = fileImage;
+                    Category2Label.Text = fileName;
+                }
+
+
+                if (i == 2)
+                {
+                    pictureBox3.Image = fileImage;
+                    Category3Label.Text = fileName;
+                }
+
+            }
+
+            if (start + 3 >= BackendLogic.arrayOfCategoriesImages.Length)
+            {
+                NextPageBtn.Visible = false;
+            }
+
+
+        }
+
 
         private void CategoryPage_Load(object sender, EventArgs e)
         {
@@ -65,6 +114,15 @@ namespace NRSSSNamespace
             StartPage openForm = new StartPage();
             openForm.Show();
             Visible = false;
+
+        }
+
+        private void NextPageBtn_Click(object sender, EventArgs e)
+        {
+
+            start = (start + 3);
+
+            CategoryRefresh();
 
         }
     }

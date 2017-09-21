@@ -37,35 +37,15 @@ namespace NRSSSNamespace
 
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
-            CategorySelect();   
             CountFilesCategoriesFolder();
+            CountFilesModelsFolders();
             ColourSelect();
             SizeSelect();
 
         }
 
 
-        // Need to work out how to pull images from files using code down below in CountFilesCategoriesFolder
         
-        
-        public static void CategorySelect()
-        { 
-            //FileInfo CategoryFile;
-
-            //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Instruments.jpg");
-            //arrayOfCategoriesImages[0] = Image.FromFile(CategoryFile.ToString());
-
-            //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Models.jpg");
-            //arrayOfCategoriesImages[1] = Image.FromFile(CategoryFile.ToString());
-
-            //CategoryFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Categories\\Vehicles.jpg");
-            //arrayOfCategoriesImages[2] = Image.FromFile(CategoryFile.ToString());
-
-
-
-        }
-
-
         public static void CountFilesCategoriesFolder()
         {
             // Count Files in Folder//
@@ -93,8 +73,39 @@ namespace NRSSSNamespace
             }
         }
 
+        public static void CountFilesModelsFolders()
+        {
+            /*
+            
+            // Count Files in Folder//
+            string folder = "//Categories";
+            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
+            int fileModelsCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
-        public static void ColourSelect()
+            arrayOfModelsName = new string[fileModelsCount];
+            arrayOfModelsImages = new Image[fileModelsCount];
+
+            // Getting the names for the files//
+
+            for (int numFiles = 0; numFiles < fileModelsCount; numFiles++)
+            {
+                string fileName = files[numFiles]; //This grabs path for file//
+                string lastWord = fileName.Trim().Split('\\').LastOrDefault();
+                string final = lastWord.Split('.').FirstOrDefault();
+
+                arrayOfModelsName[numFiles] = final;
+
+                arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
+
+                Debug.WriteLine(final);
+
+
+            */
+
+
+            }
+
+            public static void ColourSelect()
         {
             FileInfo ColourFile;
 

@@ -41,24 +41,24 @@ namespace NRSSSNamespace
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             CountFilesCategoriesFolder();
-            CountFilesModelsFolders();
+            CountFilesModelsFolders("\\Categories\\Category Models");
             ColourSelect();
             SizeSelect();
 
         }
 
 
-        
+
         public static void CountFilesCategoriesFolder()
         {
             // Count Files in Folder//
-            string folder = "//Categories";
+            string folder = "\\Categories";
             string[] files = Directory.GetFiles(currentDir.ToString() + folder);
             int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
             arrayOfCategoriesName = new string[fileCount];
             arrayOfCategoriesImages = new Image[fileCount];
-            
+
             // Getting the names for the files//
 
             for (int numFiles = 0; numFiles < fileCount; numFiles++)
@@ -71,42 +71,66 @@ namespace NRSSSNamespace
 
                 arrayOfCategoriesImages[numFiles] = Image.FromFile(fileName);
 
-               
+
             }
         }
 
-        public static void CountFilesModelsFolders()
+        public static FolderStructure CountFilesModelsFolders(string folder)
         {
 
-            // Count Files in Folder//
-            string folder = "\\Categories\\Category Models";
-            string[] files = Directory.GetDirectories(currentDir.ToString() + folder);
-            int fileModelsCount = files.Length;
-            
+            FolderStructure OutputOfFolders = new FolderStructure();
 
-            arrayOfModelsName = new string[fileModelsCount];
-            arrayOfModelsImages = new Image[fileModelsCount];
+            string[] directories = Directory.GetDirectories(currentDir.ToString() + folder);
+            int fileDirectoriesCount = directories.Length;
+
+
+            string[] arrayOfDirectoriesName = new string[fileDirectoriesCount];
 
             // Getting the names for the files//
 
-            for (int numFiles = 0; numFiles < fileModelsCount; numFiles++)
+            for (int numFolders = 0; numFolders < fileDirectoriesCount; numFolders++)
+            {
+                string folderName = directories[numFolders]; //This grabs path for file//
+                string lastWord = folderName.Trim().Split('\\').LastOrDefault();
+               
+                //Debug.WriteLine(final);
+
+            }
+
+            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
+            int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
+
+            OutputOfFolders.arrayOfModelsName = new string[fileCount];
+            OutputOfFolders.arrayOfModelsImages = new Image[fileCount];
+
+            // Getting the names for the files//
+
+            for (int numFiles = 0; numFiles < fileCount; numFiles++)
             {
                 string fileName = files[numFiles]; //This grabs path for file//
                 string lastWord = fileName.Trim().Split('\\').LastOrDefault();
                 string final = lastWord.Split('.').FirstOrDefault();
 
-                arrayOfModelsName[numFiles] = final;
+                OutputOfFolders.arrayOfModelsName[numFiles] = final;
 
-               //arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
-
-                Debug.WriteLine(final);
-
+                OutputOfFolders.arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
 
 
             }
+
+            return OutputOfFolders;
+
         }
 
-            public static void ColourSelect()
+        public struct FolderStructure
+        {
+            public string[] arrayOfDirectoriesName, arrayOfModelsName;
+            public Image[] arrayOfModelsImages;
+
+        }
+
+
+        public static void ColourSelect()
         {
             FileInfo ColourFile;
 
@@ -149,8 +173,8 @@ namespace NRSSSNamespace
 
         }
 
-       
-        
+
+
     }
 
 

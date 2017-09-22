@@ -39,7 +39,6 @@
             this.Category1Label = new System.Windows.Forms.Label();
             this.Category2Label = new System.Windows.Forms.Label();
             this.Category3Label = new System.Windows.Forms.Label();
-            this.NextButton = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.NextPageBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,6 +105,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(496, 480);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -115,6 +115,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(496, 480);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -124,6 +125,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(496, 480);
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Category1Label
             // 
@@ -155,19 +157,6 @@
             this.Category3Label.TabIndex = 10;
             this.Category3Label.Text = "Category 3";
             // 
-            // NextButton
-            // 
-            this.NextButton.BackColor = System.Drawing.Color.Yellow;
-            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.ForeColor = System.Drawing.Color.Black;
-            this.NextButton.Location = new System.Drawing.Point(1577, 938);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(206, 118);
-            this.NextButton.TabIndex = 11;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = false;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
             // HomeBtn
             // 
             this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
@@ -186,9 +175,9 @@
             this.NextPageBtn.BackColor = System.Drawing.Color.Yellow;
             this.NextPageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextPageBtn.ForeColor = System.Drawing.Color.Black;
-            this.NextPageBtn.Location = new System.Drawing.Point(1318, 918);
+            this.NextPageBtn.Location = new System.Drawing.Point(1536, 938);
             this.NextPageBtn.Name = "NextPageBtn";
-            this.NextPageBtn.Size = new System.Drawing.Size(202, 138);
+            this.NextPageBtn.Size = new System.Drawing.Size(247, 118);
             this.NextPageBtn.TabIndex = 16;
             this.NextPageBtn.Text = "Next Page";
             this.NextPageBtn.UseVisualStyleBackColor = false;
@@ -204,7 +193,6 @@
             this.ClientSize = new System.Drawing.Size(1840, 1092);
             this.Controls.Add(this.NextPageBtn);
             this.Controls.Add(this.HomeBtn);
-            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.Category3Label);
             this.Controls.Add(this.Category2Label);
             this.Controls.Add(this.Category1Label);
@@ -241,7 +229,6 @@
         private System.Windows.Forms.Label Category1Label;
         private System.Windows.Forms.Label Category2Label;
         private System.Windows.Forms.Label Category3Label;
-        private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button NextPageBtn;
     }

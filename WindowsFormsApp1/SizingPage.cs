@@ -48,7 +48,9 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            ColourPage newColourPage = new ColourPage();
+            newColourPage.Show();
+            Visible = false;
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
@@ -57,6 +59,20 @@ namespace NRSSSNamespace
             openForm.Show();
             Visible = false;
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ColourPage newColourPage = new ColourPage();
+            newColourPage.Show();
+            Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ColourPage newColourPage = new ColourPage();
+            newColourPage.Show();
+            Visible = false;
         }
     }
 }

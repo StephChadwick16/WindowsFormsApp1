@@ -101,14 +101,7 @@ namespace NRSSSNamespace
 
         }
 
-        private void NextButton_Click(object sender, EventArgs e)
-        {
-            ModelsPage openForm = new ModelsPage();
-            openForm.Show();
-            Visible = false;
-
-        }
-
+        
         private void HomeBtn_Click(object sender, EventArgs e)
         {
             StartPage openForm = new StartPage();
@@ -123,6 +116,30 @@ namespace NRSSSNamespace
             start = (start + 3);
 
             CategoryRefresh();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ModelsPage openForm = new ModelsPage();
+            openForm.Show();
+            Visible = false;
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ModelsPage openForm = new ModelsPage();
+            openForm.Show();
+            Visible = false;
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ModelsPage openForm = new ModelsPage();
+            openForm.Show();
+            Visible = false;
 
         }
     }

@@ -19,14 +19,17 @@ namespace NRSSSNamespace
 
         // Need to work out how to get images dynamically but still keep them in sets of three 
         public static Image[] arrayOfCategoriesImages;
+        public static Image[] arrayOfModelsImages;
 
 
         public static Image[] arrayOfColours = new Image[7];
         public static Image[] arrayOfSizes = new Image[3];
 
-        public static string[] arrayOfCategoriesName; 
+        public static string[] arrayOfCategoriesName;
+        public static string[] arrayOfModelsName;
 
         public static DirectoryInfo currentDir;
+
 
         public static void SetupApp()
         {
@@ -68,17 +71,15 @@ namespace NRSSSNamespace
 
                 arrayOfCategoriesImages[numFiles] = Image.FromFile(fileName);
 
-                Debug.WriteLine(final);
-
+               
             }
         }
 
         public static void CountFilesModelsFolders()
         {
-            /*
-            
+
             // Count Files in Folder//
-            string folder = "//Categories";
+            string folder = "//Categories//Category Models";
             string[] files = Directory.GetFiles(currentDir.ToString() + folder);
             int fileModelsCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
@@ -100,10 +101,9 @@ namespace NRSSSNamespace
                 Debug.WriteLine(final);
 
 
-            */
-
 
             }
+        }
 
             public static void ColourSelect()
         {

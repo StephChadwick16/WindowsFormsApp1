@@ -49,7 +49,9 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)
@@ -72,6 +74,48 @@ namespace NRSSSNamespace
             openForm.Show();
             Visible = false;
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
         }
     }
 }

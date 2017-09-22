@@ -12,10 +12,74 @@ namespace NRSSSNamespace
 {
     public partial class ModelsPage : Form
     {
+
+        private int start = 0;
+
         public ModelsPage()
         {
             InitializeComponent();
+
+            ModelsRefresh();
+
+
         }
+
+
+        public void ModelsRefresh()
+        {
+            pictureBox1.Image = null;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox2.Image = null;
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            pictureBox3.Image = null;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
+            for (int i = 0; i < 3; i++)
+            {
+
+                if (i + start >= BackendLogic.arrayOfModelsImages.Length)
+                {
+                    break;
+                }
+
+
+
+                string fileName = BackendLogic.arrayOfModelsName[i + start];
+                Image fileImage = BackendLogic.arrayOfModelsImages[i + start];
+
+                if (i == 0)
+                {
+                    pictureBox1.Image = fileImage;
+                    ModelLabel1.Text = fileName;
+                }
+
+
+                if (i == 1)
+                {
+                    pictureBox2.Image = fileImage;
+                    ModelLabel2.Text = fileName;
+                }
+
+
+                if (i == 2)
+                {
+                    pictureBox3.Image = fileImage;
+                    ModelLabel3.Text = fileName;
+                }
+
+            }
+
+            if (start + 3 >= BackendLogic.arrayOfModelsImages.Length)
+            {
+                NextPageBtn.Visible = false;
+            }
+
+        }
+
+
 
         private void ModelsPage_Load(object sender, EventArgs e)
         {
@@ -23,11 +87,7 @@ namespace NRSSSNamespace
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -52,5 +112,41 @@ namespace NRSSSNamespace
             Visible = false;
 
         }
+
+        private void NextPageBtn_Click(object sender, EventArgs e)
+        {
+
+            start = (start + 3);
+
+            ModelsRefresh();
+
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
+            Visible = false;
+        }
+
+
+         private void pictureBox2_Click(object sender, EventArgs e)
+         {
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
+            Visible = false;
+
+         }
+
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
+            Visible = false;
+        }
+
+
     }
 }

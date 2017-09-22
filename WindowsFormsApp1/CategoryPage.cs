@@ -48,8 +48,7 @@ namespace NRSSSNamespace
                 {
                     break;
                 }
-
-
+                
 
                 string fileName = BackendLogic.arrayOfCategoriesName[i + start];
                 Image fileImage = BackendLogic.arrayOfCategoriesImages[i + start];

@@ -79,9 +79,10 @@ namespace NRSSSNamespace
         {
 
             // Count Files in Folder//
-            string folder = "//Categories//Category Models";
-            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
-            int fileModelsCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
+            string folder = "\\Categories\\Category Models";
+            string[] files = Directory.GetDirectories(currentDir.ToString() + folder);
+            int fileModelsCount = files.Length;
+            
 
             arrayOfModelsName = new string[fileModelsCount];
             arrayOfModelsImages = new Image[fileModelsCount];
@@ -96,7 +97,7 @@ namespace NRSSSNamespace
 
                 arrayOfModelsName[numFiles] = final;
 
-                arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
+               //arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
 
                 Debug.WriteLine(final);
 

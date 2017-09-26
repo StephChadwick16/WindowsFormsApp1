@@ -74,5 +74,10 @@ namespace NRSSSNamespace
             newColourPage.Show();
             Visible = false;
         }
+
+        private void SmallLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

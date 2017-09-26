@@ -32,6 +32,10 @@
             this.IntervalSelection = new System.Windows.Forms.Label();
             this.OptionSelected = new System.Windows.Forms.Label();
             this.SettingsAndTimesPanel = new System.Windows.Forms.Panel();
+            this.ShowsAverageTime = new System.Windows.Forms.Label();
+            this.ShowsProgramTime = new System.Windows.Forms.Label();
+            this.AveragePgTimeLabel = new System.Windows.Forms.Label();
+            this.TimeTakenLabel = new System.Windows.Forms.Label();
             this.InputMethodLabel = new System.Windows.Forms.Label();
             this.TimeIntLabel = new System.Windows.Forms.Label();
             this.SettingsAndTimesLabel = new System.Windows.Forms.Label();
@@ -42,32 +46,28 @@
             this.TeacherNotesPanel = new System.Windows.Forms.Panel();
             this.NotesObsLabel = new System.Windows.Forms.Label();
             this.OptionsSelectedPanel = new System.Windows.Forms.Panel();
-            this.TimeTakenLabel = new System.Windows.Forms.Label();
-            this.AveragePgTimeLabel = new System.Windows.Forms.Label();
-            this.ShowsProgramTime = new System.Windows.Forms.Label();
-            this.ShowsAverageTime = new System.Windows.Forms.Label();
-            this.OptionsSelectedLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.CategoryChosenLabel = new System.Windows.Forms.Label();
-            this.ModelChosenLabel = new System.Windows.Forms.Label();
-            this.SizeChosenLabel = new System.Windows.Forms.Label();
-            this.ColourChosenLabel = new System.Windows.Forms.Label();
-            this.ShowsModelChosen = new System.Windows.Forms.Label();
-            this.ShowsCategoryChosen = new System.Windows.Forms.Label();
-            this.ShowsSizeChosen = new System.Windows.Forms.Label();
             this.ShowsColourChosen = new System.Windows.Forms.Label();
+            this.ShowsSizeChosen = new System.Windows.Forms.Label();
+            this.ShowsCategoryChosen = new System.Windows.Forms.Label();
+            this.ShowsModelChosen = new System.Windows.Forms.Label();
+            this.ColourChosenLabel = new System.Windows.Forms.Label();
+            this.SizeChosenLabel = new System.Windows.Forms.Label();
+            this.ModelChosenLabel = new System.Windows.Forms.Label();
+            this.CategoryChosenLabel = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.OptionsSelectedLabel = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SettingsAndTimesPanel.SuspendLayout();
             this.TeacherNotesPanel.SuspendLayout();
             this.OptionsSelectedPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,6 +118,46 @@
             this.SettingsAndTimesPanel.Size = new System.Drawing.Size(1260, 586);
             this.SettingsAndTimesPanel.TabIndex = 6;
             this.SettingsAndTimesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SettingsAndTimesPanel_Paint);
+            // 
+            // ShowsAverageTime
+            // 
+            this.ShowsAverageTime.AutoSize = true;
+            this.ShowsAverageTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowsAverageTime.Location = new System.Drawing.Point(887, 480);
+            this.ShowsAverageTime.Name = "ShowsAverageTime";
+            this.ShowsAverageTime.Size = new System.Drawing.Size(300, 51);
+            this.ShowsAverageTime.TabIndex = 13;
+            this.ShowsAverageTime.Text = "AVG PG TIME";
+            // 
+            // ShowsProgramTime
+            // 
+            this.ShowsProgramTime.AutoSize = true;
+            this.ShowsProgramTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowsProgramTime.Location = new System.Drawing.Point(887, 377);
+            this.ShowsProgramTime.Name = "ShowsProgramTime";
+            this.ShowsProgramTime.Size = new System.Drawing.Size(262, 51);
+            this.ShowsProgramTime.TabIndex = 12;
+            this.ShowsProgramTime.Text = "PROG TIME";
+            // 
+            // AveragePgTimeLabel
+            // 
+            this.AveragePgTimeLabel.AutoSize = true;
+            this.AveragePgTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AveragePgTimeLabel.Location = new System.Drawing.Point(50, 480);
+            this.AveragePgTimeLabel.Name = "AveragePgTimeLabel";
+            this.AveragePgTimeLabel.Size = new System.Drawing.Size(716, 51);
+            this.AveragePgTimeLabel.TabIndex = 11;
+            this.AveragePgTimeLabel.Text = "Average Time Taken for Each Page:";
+            // 
+            // TimeTakenLabel
+            // 
+            this.TimeTakenLabel.AutoSize = true;
+            this.TimeTakenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeTakenLabel.Location = new System.Drawing.Point(50, 377);
+            this.TimeTakenLabel.Name = "TimeTakenLabel";
+            this.TimeTakenLabel.Size = new System.Drawing.Size(680, 51);
+            this.TimeTakenLabel.TabIndex = 10;
+            this.TimeTakenLabel.Text = "Time Taken to Complete Program:";
             // 
             // InputMethodLabel
             // 
@@ -234,147 +274,15 @@
             this.OptionsSelectedPanel.Size = new System.Drawing.Size(1336, 1305);
             this.OptionsSelectedPanel.TabIndex = 20;
             // 
-            // TimeTakenLabel
+            // ShowsColourChosen
             // 
-            this.TimeTakenLabel.AutoSize = true;
-            this.TimeTakenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeTakenLabel.Location = new System.Drawing.Point(50, 377);
-            this.TimeTakenLabel.Name = "TimeTakenLabel";
-            this.TimeTakenLabel.Size = new System.Drawing.Size(680, 51);
-            this.TimeTakenLabel.TabIndex = 10;
-            this.TimeTakenLabel.Text = "Time Taken to Complete Program:";
-            // 
-            // AveragePgTimeLabel
-            // 
-            this.AveragePgTimeLabel.AutoSize = true;
-            this.AveragePgTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AveragePgTimeLabel.Location = new System.Drawing.Point(59, 480);
-            this.AveragePgTimeLabel.Name = "AveragePgTimeLabel";
-            this.AveragePgTimeLabel.Size = new System.Drawing.Size(716, 51);
-            this.AveragePgTimeLabel.TabIndex = 11;
-            this.AveragePgTimeLabel.Text = "Average Time Taken for Each Page:";
-            // 
-            // ShowsProgramTime
-            // 
-            this.ShowsProgramTime.AutoSize = true;
-            this.ShowsProgramTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsProgramTime.Location = new System.Drawing.Point(887, 377);
-            this.ShowsProgramTime.Name = "ShowsProgramTime";
-            this.ShowsProgramTime.Size = new System.Drawing.Size(262, 51);
-            this.ShowsProgramTime.TabIndex = 12;
-            this.ShowsProgramTime.Text = "PROG TIME";
-            // 
-            // ShowsAverageTime
-            // 
-            this.ShowsAverageTime.AutoSize = true;
-            this.ShowsAverageTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsAverageTime.Location = new System.Drawing.Point(896, 480);
-            this.ShowsAverageTime.Name = "ShowsAverageTime";
-            this.ShowsAverageTime.Size = new System.Drawing.Size(300, 51);
-            this.ShowsAverageTime.TabIndex = 13;
-            this.ShowsAverageTime.Text = "AVG PG TIME";
-            // 
-            // OptionsSelectedLabel
-            // 
-            this.OptionsSelectedLabel.AutoSize = true;
-            this.OptionsSelectedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptionsSelectedLabel.Location = new System.Drawing.Point(67, 27);
-            this.OptionsSelectedLabel.Name = "OptionsSelectedLabel";
-            this.OptionsSelectedLabel.Size = new System.Drawing.Size(1231, 63);
-            this.OptionsSelectedLabel.TabIndex = 0;
-            this.OptionsSelectedLabel.Text = "OPTIONS SELECTED FOR MODEL CREATION";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(88, 224);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 450);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(766, 224);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 450);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(88, 831);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(500, 450);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(766, 831);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(500, 450);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // CategoryChosenLabel
-            // 
-            this.CategoryChosenLabel.AutoSize = true;
-            this.CategoryChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoryChosenLabel.Location = new System.Drawing.Point(78, 145);
-            this.CategoryChosenLabel.Name = "CategoryChosenLabel";
-            this.CategoryChosenLabel.Size = new System.Drawing.Size(233, 55);
-            this.CategoryChosenLabel.TabIndex = 5;
-            this.CategoryChosenLabel.Text = "Category:";
-            // 
-            // ModelChosenLabel
-            // 
-            this.ModelChosenLabel.AutoSize = true;
-            this.ModelChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelChosenLabel.Location = new System.Drawing.Point(757, 145);
-            this.ModelChosenLabel.Name = "ModelChosenLabel";
-            this.ModelChosenLabel.Size = new System.Drawing.Size(152, 51);
-            this.ModelChosenLabel.TabIndex = 6;
-            this.ModelChosenLabel.Text = "Model:";
-            // 
-            // SizeChosenLabel
-            // 
-            this.SizeChosenLabel.AutoSize = true;
-            this.SizeChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeChosenLabel.Location = new System.Drawing.Point(80, 756);
-            this.SizeChosenLabel.Name = "SizeChosenLabel";
-            this.SizeChosenLabel.Size = new System.Drawing.Size(119, 51);
-            this.SizeChosenLabel.TabIndex = 7;
-            this.SizeChosenLabel.Text = "Size:";
-            // 
-            // ColourChosenLabel
-            // 
-            this.ColourChosenLabel.AutoSize = true;
-            this.ColourChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColourChosenLabel.Location = new System.Drawing.Point(757, 756);
-            this.ColourChosenLabel.Name = "ColourChosenLabel";
-            this.ColourChosenLabel.Size = new System.Drawing.Size(161, 51);
-            this.ColourChosenLabel.TabIndex = 8;
-            this.ColourChosenLabel.Text = "Colour:";
-            // 
-            // ShowsModelChosen
-            // 
-            this.ShowsModelChosen.AutoSize = true;
-            this.ShowsModelChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsModelChosen.Location = new System.Drawing.Point(928, 145);
-            this.ShowsModelChosen.Name = "ShowsModelChosen";
-            this.ShowsModelChosen.Size = new System.Drawing.Size(317, 51);
-            this.ShowsModelChosen.TabIndex = 9;
-            this.ShowsModelChosen.Text = "MOD CHOSEN";
-            // 
-            // ShowsCategoryChosen
-            // 
-            this.ShowsCategoryChosen.AutoSize = true;
-            this.ShowsCategoryChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsCategoryChosen.Location = new System.Drawing.Point(317, 145);
-            this.ShowsCategoryChosen.Name = "ShowsCategoryChosen";
-            this.ShowsCategoryChosen.Size = new System.Drawing.Size(315, 51);
-            this.ShowsCategoryChosen.TabIndex = 10;
-            this.ShowsCategoryChosen.Text = "CAT. CHOSEN";
+            this.ShowsColourChosen.AutoSize = true;
+            this.ShowsColourChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowsColourChosen.Location = new System.Drawing.Point(928, 756);
+            this.ShowsColourChosen.Name = "ShowsColourChosen";
+            this.ShowsColourChosen.Size = new System.Drawing.Size(305, 51);
+            this.ShowsColourChosen.TabIndex = 12;
+            this.ShowsColourChosen.Text = "COL CHOSEN";
             // 
             // ShowsSizeChosen
             // 
@@ -386,15 +294,107 @@
             this.ShowsSizeChosen.TabIndex = 11;
             this.ShowsSizeChosen.Text = "SIZE CHOSEN";
             // 
-            // ShowsColourChosen
+            // ShowsCategoryChosen
             // 
-            this.ShowsColourChosen.AutoSize = true;
-            this.ShowsColourChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsColourChosen.Location = new System.Drawing.Point(928, 756);
-            this.ShowsColourChosen.Name = "ShowsColourChosen";
-            this.ShowsColourChosen.Size = new System.Drawing.Size(305, 51);
-            this.ShowsColourChosen.TabIndex = 12;
-            this.ShowsColourChosen.Text = "COL CHOSEN";
+            this.ShowsCategoryChosen.AutoSize = true;
+            this.ShowsCategoryChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowsCategoryChosen.Location = new System.Drawing.Point(317, 145);
+            this.ShowsCategoryChosen.Name = "ShowsCategoryChosen";
+            this.ShowsCategoryChosen.Size = new System.Drawing.Size(315, 51);
+            this.ShowsCategoryChosen.TabIndex = 10;
+            this.ShowsCategoryChosen.Text = "CAT. CHOSEN";
+            // 
+            // ShowsModelChosen
+            // 
+            this.ShowsModelChosen.AutoSize = true;
+            this.ShowsModelChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowsModelChosen.Location = new System.Drawing.Point(928, 145);
+            this.ShowsModelChosen.Name = "ShowsModelChosen";
+            this.ShowsModelChosen.Size = new System.Drawing.Size(317, 51);
+            this.ShowsModelChosen.TabIndex = 9;
+            this.ShowsModelChosen.Text = "MOD CHOSEN";
+            // 
+            // ColourChosenLabel
+            // 
+            this.ColourChosenLabel.AutoSize = true;
+            this.ColourChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColourChosenLabel.Location = new System.Drawing.Point(757, 756);
+            this.ColourChosenLabel.Name = "ColourChosenLabel";
+            this.ColourChosenLabel.Size = new System.Drawing.Size(161, 51);
+            this.ColourChosenLabel.TabIndex = 8;
+            this.ColourChosenLabel.Text = "Colour:";
+            // 
+            // SizeChosenLabel
+            // 
+            this.SizeChosenLabel.AutoSize = true;
+            this.SizeChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SizeChosenLabel.Location = new System.Drawing.Point(80, 756);
+            this.SizeChosenLabel.Name = "SizeChosenLabel";
+            this.SizeChosenLabel.Size = new System.Drawing.Size(119, 51);
+            this.SizeChosenLabel.TabIndex = 7;
+            this.SizeChosenLabel.Text = "Size:";
+            // 
+            // ModelChosenLabel
+            // 
+            this.ModelChosenLabel.AutoSize = true;
+            this.ModelChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModelChosenLabel.Location = new System.Drawing.Point(757, 145);
+            this.ModelChosenLabel.Name = "ModelChosenLabel";
+            this.ModelChosenLabel.Size = new System.Drawing.Size(152, 51);
+            this.ModelChosenLabel.TabIndex = 6;
+            this.ModelChosenLabel.Text = "Model:";
+            // 
+            // CategoryChosenLabel
+            // 
+            this.CategoryChosenLabel.AutoSize = true;
+            this.CategoryChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryChosenLabel.Location = new System.Drawing.Point(78, 145);
+            this.CategoryChosenLabel.Name = "CategoryChosenLabel";
+            this.CategoryChosenLabel.Size = new System.Drawing.Size(233, 55);
+            this.CategoryChosenLabel.TabIndex = 5;
+            this.CategoryChosenLabel.Text = "Category:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(766, 831);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(500, 450);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(88, 831);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(500, 450);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(766, 224);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(500, 450);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(88, 224);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(500, 450);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // OptionsSelectedLabel
+            // 
+            this.OptionsSelectedLabel.AutoSize = true;
+            this.OptionsSelectedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionsSelectedLabel.Location = new System.Drawing.Point(67, 27);
+            this.OptionsSelectedLabel.Name = "OptionsSelectedLabel";
+            this.OptionsSelectedLabel.Size = new System.Drawing.Size(1231, 63);
+            this.OptionsSelectedLabel.TabIndex = 0;
+            this.OptionsSelectedLabel.Text = "OPTIONS SELECTED FOR MODEL CREATION";
             // 
             // SaveBtn
             // 
@@ -446,10 +446,10 @@
             this.TeacherNotesPanel.PerformLayout();
             this.OptionsSelectedPanel.ResumeLayout(false);
             this.OptionsSelectedPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -37,6 +37,9 @@ namespace NRSSSNamespace
             pictureBox7.Image = BackendLogic.arrayOfColours[6];
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
 
+            pictureBox8.Image = BackendLogic.arrayOfColours[7];
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+
 
         }
 
@@ -112,6 +115,13 @@ namespace NRSSSNamespace
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();

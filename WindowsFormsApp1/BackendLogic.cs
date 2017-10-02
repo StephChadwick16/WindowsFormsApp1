@@ -22,7 +22,7 @@ namespace NRSSSNamespace
         public static Image[] arrayOfModelsImages;
 
 
-        public static Image[] arrayOfColours = new Image[7];
+        public static Image[] arrayOfColours = new Image[8];
         public static Image[] arrayOfSizes = new Image[3];
 
         public static string[] arrayOfCategoriesName;
@@ -134,26 +134,29 @@ namespace NRSSSNamespace
         {
             FileInfo ColourFile;
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Blue.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Black.jpg");
             arrayOfColours[0] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Green.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Blue.jpg");
             arrayOfColours[1] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Orange.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Green.jpg");
             arrayOfColours[2] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Pink.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Orange.jpg");
             arrayOfColours[3] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Purple.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Pink.jpg");
             arrayOfColours[4] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Red.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Purple.jpg");
             arrayOfColours[5] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Yellow.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Red.jpg");
             arrayOfColours[6] = Image.FromFile(ColourFile.ToString());
+
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Yellow.jpg");
+            arrayOfColours[7] = Image.FromFile(ColourFile.ToString());
 
         }
 

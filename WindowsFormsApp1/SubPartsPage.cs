@@ -43,7 +43,7 @@ namespace NRSSSNamespace
 
         }
 
-        private void ColourPage_Load(object sender, EventArgs e)
+        private void SubPartsPage_Load(object sender, EventArgs e)
         {
             this.AutoSize = true;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;

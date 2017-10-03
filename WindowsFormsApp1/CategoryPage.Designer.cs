@@ -42,6 +42,7 @@
             this.HomeBtn = new System.Windows.Forms.Button();
             this.NextPageBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PreviousPgBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -188,6 +189,7 @@
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel1.Controls.Add(this.PreviousPgBtn);
             this.panel1.Controls.Add(this.CategoriesLabel);
             this.panel1.Controls.Add(this.StudentOption);
             this.panel1.Controls.Add(this.NextPageBtn);
@@ -205,6 +207,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2635, 1629);
             this.panel1.TabIndex = 17;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // PreviousPgBtn
+            // 
+            this.PreviousPgBtn.BackColor = System.Drawing.Color.Yellow;
+            this.PreviousPgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PreviousPgBtn.ForeColor = System.Drawing.Color.Black;
+            this.PreviousPgBtn.Location = new System.Drawing.Point(1943, 1384);
+            this.PreviousPgBtn.Name = "PreviousPgBtn";
+            this.PreviousPgBtn.Size = new System.Drawing.Size(322, 230);
+            this.PreviousPgBtn.TabIndex = 17;
+            this.PreviousPgBtn.Text = "Previous Page";
+            this.PreviousPgBtn.UseVisualStyleBackColor = false;
+            this.PreviousPgBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // CategoryPage
             // 
@@ -245,5 +261,6 @@
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button NextPageBtn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button PreviousPgBtn;
     }
 }

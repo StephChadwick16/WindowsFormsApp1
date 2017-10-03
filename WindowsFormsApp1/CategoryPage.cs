@@ -12,9 +12,7 @@ namespace NRSSSNamespace
 {
     public partial class CategoryPage : Form
     {
-        private int start = 0;
-
-        private string SelectedCategory = "error";
+        private int start = 0, iteration = -3;
 
         public CategoryPage()
         {
@@ -32,6 +30,8 @@ namespace NRSSSNamespace
 
         public void CategoryRefresh()
         {
+
+            iteration += 3;
 
             pictureBox1.Image = null;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -59,7 +59,6 @@ namespace NRSSSNamespace
                 {
                     pictureBox1.Image = fileImage;
                     Category1Label.Text = fileName;
-                    SelectedCategory = fileName;
                 }
 
 
@@ -67,7 +66,6 @@ namespace NRSSSNamespace
                 {
                     pictureBox2.Image = fileImage;
                     Category2Label.Text = fileName;
-                    SelectedCategory = fileName;
                 }
 
 
@@ -75,7 +73,6 @@ namespace NRSSSNamespace
                 {
                     pictureBox3.Image = fileImage;
                     Category3Label.Text = fileName;
-                    SelectedCategory = fileName;
                 }
 
             }
@@ -84,7 +81,6 @@ namespace NRSSSNamespace
             {
                 NextPageBtn.Visible = false;
             }
-
 
         }
 
@@ -126,6 +122,8 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[0 + iteration];
+            BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[0 + iteration];
             ModelsPage openForm = new ModelsPage();
             openForm.Show();
             Visible = false;
@@ -134,17 +132,31 @@ namespace NRSSSNamespace
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[1 + iteration];
+            BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[1 + iteration];
+            ModelsPage openForm = new ModelsPage();
+            openForm.Show();
+            Visible = false;
+
+        }
+    
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[2 + iteration];
+            BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[2 + iteration];
             ModelsPage openForm = new ModelsPage();
             openForm.Show();
             Visible = false;
 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            ModelsPage openForm = new ModelsPage();
-            openForm.Show();
-            Visible = false;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

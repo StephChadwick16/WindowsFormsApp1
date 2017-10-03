@@ -22,7 +22,18 @@ namespace NRSSSNamespace
             IntervalSelection.Text = BackendLogic.secondsTimer.ToString();
             StudentOption.Text = BackendLogic.studentName;
 
-           
+            ShowsCategoryChosen.Text = BackendLogic.arrayOfOutputInfo[0];
+            pictureBox1.Image = BackendLogic.arrayOfOutputImage[0];
+
+            //ShowsModelChosen.Text = BackendLogic.arrayOfOutputInfo[1];
+
+            //ShowsSizeChosen.Text = BackendLogic.arrayOfOutputInfo[2];
+
+            //ShowsColourChosen.Text = BackendLogic.arrayOfOutputInfo[3];
+
+
+
+
         }
 
         private void FinalPage_Load(object sender, EventArgs e)

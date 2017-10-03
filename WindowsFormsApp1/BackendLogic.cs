@@ -28,10 +28,12 @@ namespace NRSSSNamespace
         public static string[] arrayOfCategoriesName;
         public static string[] arrayOfModelsName;
 
+        public static string[] arrayOfOutputInfo;
+        public static Image[] arrayOfOutputImage;
+
         public static DirectoryInfo currentDir;
 
-        public static DirectoryInfo ModelsDir;
-
+        public static int numOfFiles = 0;
 
         public static void SetupApp()
         {
@@ -39,11 +41,13 @@ namespace NRSSSNamespace
             studentName = "error";
             secondsTimer = 0;
             inputOption = -1;
+            arrayOfOutputInfo = new string[4];
+            arrayOfOutputImage = new Image[4];
 
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             CountFilesCategoriesFolder();
-            CountFilesModelsFolders("\\Categories\\Category Models");
+
             ColourSelect();
             SizeSelect();
 
@@ -77,6 +81,7 @@ namespace NRSSSNamespace
             }
         }
 
+        
         public static FolderStructure CountFilesModelsFolders(string folder)
         {
 
@@ -84,7 +89,7 @@ namespace NRSSSNamespace
 
             string[] directories = Directory.GetDirectories(currentDir.ToString() + folder);
             int fileDirectoriesCount = directories.Length;
-
+            numOfFiles = 0;
 
             string[] arrayOfDirectoriesName = new string[fileDirectoriesCount];
 
@@ -95,7 +100,9 @@ namespace NRSSSNamespace
                 string folderName = directories[numFolders]; //This grabs path for file//
                 string lastWord = folderName.Trim().Split('\\').LastOrDefault();
                 string final = lastWord.Split('.').LastOrDefault();
-               
+
+                numOfFiles++;
+
                 //Debug.WriteLine(final);
 
             }

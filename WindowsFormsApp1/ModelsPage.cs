@@ -15,17 +15,16 @@ namespace NRSSSNamespace
 
         private int start = 0;
 
-        private string SelectedModel = "error";
-
+        BackendLogic.FolderStructure currentFolderStructure = new BackendLogic.FolderStructure();
 
         public ModelsPage()
         {
             InitializeComponent();
 
+            string path = "\\Categories\\Category Models\\" + BackendLogic.arrayOfOutputInfo[0];
+            currentFolderStructure = BackendLogic.CountFilesModelsFolders(path);
 
             ModelsRefresh();
-
-
         }
 
         public void ModelsRefresh()
@@ -44,20 +43,19 @@ namespace NRSSSNamespace
             for (int i = 0; i < 3; i++)
             {
 
-                if (i + start >= BackendLogic.arrayOfCategoriesImages.Length)
+                if (i + start >= currentFolderStructure.arrayOfModelsImages.Length)
                 {
                     break;
                 }
 
 
-                string fileName = BackendLogic.arrayOfCategoriesName[i + start];
-                Image fileImage = BackendLogic.arrayOfCategoriesImages[i + start];
+                string fileName = currentFolderStructure.arrayOfModelsName[i + start];
+                Image fileImage = currentFolderStructure.arrayOfModelsImages[i + start];
 
                 if (i == 0)
                 {
                     pictureBox1.Image = fileImage;
                     ModelLabel1.Text = fileName;
-                    SelectedModel = fileName;
                 }
 
 
@@ -65,7 +63,6 @@ namespace NRSSSNamespace
                 {
                     pictureBox2.Image = fileImage;
                     ModelLabel2.Text = fileName;
-                    SelectedModel = fileName;
                 }
 
 
@@ -73,12 +70,11 @@ namespace NRSSSNamespace
                 {
                     pictureBox3.Image = fileImage;
                     ModelLabel3.Text = fileName;
-                    SelectedModel = fileName;
                 }
 
             }
 
-            if (start + 3 >= BackendLogic.arrayOfCategoriesImages.Length)
+            if (start + 3 >= currentFolderStructure.arrayOfModelsImages.Length)
             {
                 NextPageBtn.Visible = false;
             }
@@ -131,7 +127,7 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            SizingPage newSizingPage = new SizingPage();
+            ColourPage newSizingPage = new ColourPage();
             newSizingPage.Show();
             Visible = false;
         }
@@ -139,7 +135,7 @@ namespace NRSSSNamespace
 
          private void pictureBox2_Click(object sender, EventArgs e)
          {
-            SizingPage newSizingPage = new SizingPage();
+            ColourPage newSizingPage = new ColourPage();
             newSizingPage.Show();
             Visible = false;
 
@@ -148,14 +144,10 @@ namespace NRSSSNamespace
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            SizingPage newSizingPage = new SizingPage();
+            ColourPage newSizingPage = new ColourPage();
             newSizingPage.Show();
             Visible = false;
         }
 
-        public void label1_Click(object sender, EventArgs e)
-        {
-            //label1.Text = BackendLogic.ModelsDir(ToString);
-        }
     }
 }

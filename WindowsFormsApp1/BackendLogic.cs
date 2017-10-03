@@ -20,10 +20,13 @@ namespace NRSSSNamespace
         // Need to work out how to get images dynamically but still keep them in sets of three 
         public static Image[] arrayOfCategoriesImages;
         public static Image[] arrayOfModelsImages;
-
+        
 
         public static Image[] arrayOfColours = new Image[8];
         public static Image[] arrayOfSizes = new Image[3];
+
+        public static string[] arrayOfSizesName;
+        public static string[] arrayOfColoursName;
 
         public static string[] arrayOfCategoriesName;
         public static string[] arrayOfModelsName;

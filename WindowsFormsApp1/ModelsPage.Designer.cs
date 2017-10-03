@@ -39,8 +39,8 @@
             this.ModelLabel3 = new System.Windows.Forms.Label();
             this.ModelLabel1 = new System.Windows.Forms.Label();
             this.ModelPanel = new System.Windows.Forms.Panel();
-            this.NextPageBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.NextPageBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -59,10 +59,10 @@
             // 
             // CloseBtn
             // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
+            this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(24, 1450);
+            this.CloseBtn.Location = new System.Drawing.Point(40, 1435);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(300, 180);
             this.CloseBtn.TabIndex = 4;
@@ -75,7 +75,7 @@
             this.NextBtn.BackColor = System.Drawing.Color.Yellow;
             this.NextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextBtn.ForeColor = System.Drawing.Color.Black;
-            this.NextBtn.Location = new System.Drawing.Point(1972, 1450);
+            this.NextBtn.Location = new System.Drawing.Point(1811, 1450);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.Size = new System.Drawing.Size(300, 180);
             this.NextBtn.TabIndex = 9;
@@ -85,10 +85,10 @@
             // 
             // HomeBtn
             // 
-            this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(1164, 1450);
+            this.HomeBtn.Location = new System.Drawing.Point(401, 1435);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(300, 180);
             this.HomeBtn.TabIndex = 14;
@@ -176,6 +176,15 @@
             this.ModelPanel.TabIndex = 8;
             this.ModelPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(354, 109);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "label1";
+            // 
             // NextPageBtn
             // 
             this.NextPageBtn.BackColor = System.Drawing.Color.Yellow;
@@ -188,15 +197,6 @@
             this.NextPageBtn.Text = "Next Page";
             this.NextPageBtn.UseVisualStyleBackColor = false;
             this.NextPageBtn.Click += new System.EventHandler(this.NextPageBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(354, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "label1";
             // 
             // ModelsPage
             // 

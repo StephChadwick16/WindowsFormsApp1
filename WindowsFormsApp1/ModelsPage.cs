@@ -13,7 +13,7 @@ namespace NRSSSNamespace
     public partial class ModelsPage : Form
     {
 
-        private int start = 0;
+        private int start = 0, iteration = -3;
 
         BackendLogic.FolderStructure currentFolderStructure = new BackendLogic.FolderStructure();
 
@@ -127,6 +127,9 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[0 + iteration];
+            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[0 + iteration];
+
             ColourPage newSizingPage = new ColourPage();
             newSizingPage.Show();
             Visible = false;
@@ -135,6 +138,9 @@ namespace NRSSSNamespace
 
          private void pictureBox2_Click(object sender, EventArgs e)
          {
+            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[1 + iteration];
+            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[1 + iteration];
+
             ColourPage newSizingPage = new ColourPage();
             newSizingPage.Show();
             Visible = false;
@@ -144,6 +150,9 @@ namespace NRSSSNamespace
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[2 + iteration];
+            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[2 + iteration];
+
             ColourPage newSizingPage = new ColourPage();
             newSizingPage.Show();
             Visible = false;

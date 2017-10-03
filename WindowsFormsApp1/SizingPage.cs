@@ -46,14 +46,8 @@ namespace NRSSSNamespace
             this.Close();
             Application.Exit();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            FinalPage newColourPage = new FinalPage();
-            newColourPage.Show();
-            Visible = false;
-        }
-
+        
+        
         private void HomeBtn_Click(object sender, EventArgs e)
         {
             StartPage openForm = new StartPage();
@@ -62,8 +56,22 @@ namespace NRSSSNamespace
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            BackendLogic.arrayOfOutputInfo[2] = SmallLabel.Text;
+            BackendLogic.arrayOfOutputImage[2] = pictureBox1.Image;
+
+            FinalPage newColourPage = new FinalPage();
+            newColourPage.Show();
+            Visible = false;
+        }
+
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputInfo[2] = MedLabel.Text;
+            BackendLogic.arrayOfOutputImage[2] = pictureBox2.Image;
+
             FinalPage newColourPage = new FinalPage();
             newColourPage.Show();
             Visible = false;
@@ -71,6 +79,9 @@ namespace NRSSSNamespace
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputInfo[2] = BigLabel.Text;
+            BackendLogic.arrayOfOutputImage[2] = pictureBox3.Image;
+
             FinalPage newColourPage = new FinalPage();
             newColourPage.Show();
             Visible = false;

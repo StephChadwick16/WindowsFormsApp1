@@ -130,7 +130,7 @@
             // 
             // CloseBtn
             // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
+            this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
             this.CloseBtn.Location = new System.Drawing.Point(37, 1410);
@@ -143,10 +143,10 @@
             // 
             // HomeBtn
             // 
-            this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(1177, 1410);
+            this.HomeBtn.Location = new System.Drawing.Point(404, 1410);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(300, 180);
             this.HomeBtn.TabIndex = 13;

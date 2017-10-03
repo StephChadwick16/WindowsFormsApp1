@@ -79,10 +79,10 @@
             // 
             // CloseBtn
             // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Yellow;
+            this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(30, 1418);
+            this.CloseBtn.Location = new System.Drawing.Point(30, 1409);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(300, 180);
             this.CloseBtn.TabIndex = 3;
@@ -162,10 +162,10 @@
             // 
             // HomeBtn
             // 
-            this.HomeBtn.BackColor = System.Drawing.Color.Yellow;
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(1151, 1418);
+            this.HomeBtn.Location = new System.Drawing.Point(386, 1409);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(300, 180);
             this.HomeBtn.TabIndex = 15;
@@ -214,13 +214,13 @@
             this.PreviousPgBtn.BackColor = System.Drawing.Color.Yellow;
             this.PreviousPgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviousPgBtn.ForeColor = System.Drawing.Color.Black;
-            this.PreviousPgBtn.Location = new System.Drawing.Point(1943, 1384);
+            this.PreviousPgBtn.Location = new System.Drawing.Point(1912, 1384);
             this.PreviousPgBtn.Name = "PreviousPgBtn";
             this.PreviousPgBtn.Size = new System.Drawing.Size(322, 230);
             this.PreviousPgBtn.TabIndex = 17;
             this.PreviousPgBtn.Text = "Previous Page";
             this.PreviousPgBtn.UseVisualStyleBackColor = false;
-            this.PreviousPgBtn.Click += new System.EventHandler(this.button1_Click);
+            this.PreviousPgBtn.Click += new System.EventHandler(this.PreviousPgBtn_Click);
             // 
             // CategoryPage
             // 

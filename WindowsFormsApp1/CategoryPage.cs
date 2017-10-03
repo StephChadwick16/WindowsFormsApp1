@@ -82,6 +82,14 @@ namespace NRSSSNamespace
                 NextPageBtn.Visible = false;
             }
 
+            /*
+            if (start - 3 >= BackendLogic.arrayOfCategoriesImages.Length)
+            {
+                PreviousPgBtn.Visible = false;
+            }
+
+            */
+
         }
 
 
@@ -120,6 +128,16 @@ namespace NRSSSNamespace
 
         }
 
+        private void PreviousPgBtn_Click(object sender, EventArgs e)
+        {
+
+            start = (start - 3);
+
+            CategoryRefresh();
+
+        }
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[0 + iteration];
@@ -147,11 +165,6 @@ namespace NRSSSNamespace
             ModelsPage openForm = new ModelsPage();
             openForm.Show();
             Visible = false;
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
 

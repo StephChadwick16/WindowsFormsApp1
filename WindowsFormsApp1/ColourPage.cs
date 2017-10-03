@@ -49,14 +49,7 @@ namespace NRSSSNamespace
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            FinalPage openForm = new FinalPage();
-            openForm.Show();
-            Visible = false;
-        }
-
+        
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -80,8 +73,21 @@ namespace NRSSSNamespace
 
         }
 
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox1.Image;
+
+            SizingPage openForm = new SizingPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox2.Image;
+
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
@@ -89,6 +95,8 @@ namespace NRSSSNamespace
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox3.Image;
+
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
@@ -96,6 +104,8 @@ namespace NRSSSNamespace
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox4.Image;
+            
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
@@ -103,6 +113,8 @@ namespace NRSSSNamespace
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox5.Image;
+
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
@@ -110,6 +122,8 @@ namespace NRSSSNamespace
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox6.Image;
+
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
@@ -117,6 +131,8 @@ namespace NRSSSNamespace
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox7.Image;
+
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
@@ -124,6 +140,8 @@ namespace NRSSSNamespace
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
+            BackendLogic.arrayOfOutputImage[3] = pictureBox8.Image;
+
             SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;

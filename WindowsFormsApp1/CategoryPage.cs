@@ -14,6 +14,8 @@ namespace NRSSSNamespace
     {
         private int start = 0;
 
+        private string SelectedCategory = "error";
+
         public CategoryPage()
         {
             InitializeComponent();
@@ -57,6 +59,7 @@ namespace NRSSSNamespace
                 {
                     pictureBox1.Image = fileImage;
                     Category1Label.Text = fileName;
+                    SelectedCategory = fileName;
                 }
 
 
@@ -64,6 +67,7 @@ namespace NRSSSNamespace
                 {
                     pictureBox2.Image = fileImage;
                     Category2Label.Text = fileName;
+                    SelectedCategory = fileName;
                 }
 
 
@@ -71,6 +75,7 @@ namespace NRSSSNamespace
                 {
                     pictureBox3.Image = fileImage;
                     Category3Label.Text = fileName;
+                    SelectedCategory = fileName;
                 }
 
             }

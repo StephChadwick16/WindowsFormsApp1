@@ -36,7 +36,7 @@ namespace NRSSSNamespace
 
         private void NextBtn_Click(object sender, EventArgs e)
         {
-            ColourPage newColourPage = new ColourPage();
+            SubPartsPage newColourPage = new SubPartsPage();
             newColourPage.Show();
             Visible = false;
         }
@@ -49,7 +49,7 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            ColourPage newColourPage = new ColourPage();
+            SubPartsPage newColourPage = new SubPartsPage();
             newColourPage.Show();
             Visible = false;
         }
@@ -64,14 +64,14 @@ namespace NRSSSNamespace
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            ColourPage newColourPage = new ColourPage();
+            SubPartsPage newColourPage = new SubPartsPage();
             newColourPage.Show();
             Visible = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            ColourPage newColourPage = new ColourPage();
+            SubPartsPage newColourPage = new SubPartsPage();
             newColourPage.Show();
             Visible = false;
         }

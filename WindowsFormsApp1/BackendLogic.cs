@@ -30,6 +30,8 @@ namespace NRSSSNamespace
 
         public static DirectoryInfo currentDir;
 
+        public static DirectoryInfo ModelsDir;
+
 
         public static void SetupApp()
         {
@@ -92,6 +94,7 @@ namespace NRSSSNamespace
             {
                 string folderName = directories[numFolders]; //This grabs path for file//
                 string lastWord = folderName.Trim().Split('\\').LastOrDefault();
+                string final = lastWord.Split('.').LastOrDefault();
                
                 //Debug.WriteLine(final);
 
@@ -115,6 +118,7 @@ namespace NRSSSNamespace
 
                 OutputOfFolders.arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
 
+                Debug.WriteLine(final);
 
             }
 

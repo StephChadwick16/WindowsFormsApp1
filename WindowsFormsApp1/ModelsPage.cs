@@ -127,12 +127,14 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[0 + iteration];
-            BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[0 + iteration];
+            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[0 + iteration];
+            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[0 + iteration];
 
             ColourPage newColourPage = new ColourPage();
             newColourPage.Show();
             Visible = false;
+            
+            
         }
 
 
@@ -158,5 +160,7 @@ namespace NRSSSNamespace
             Visible = false;
         }
 
+        
+        
     }
 }

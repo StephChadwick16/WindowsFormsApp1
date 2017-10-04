@@ -17,7 +17,7 @@ namespace NRSSSNamespace
         public static int secondsTimer;
         public static int inputOption;
 
-        // Need to work out how to get images dynamically but still keep them in sets of three 
+
         public static Image[] arrayOfCategoriesImages;
         public static Image[] arrayOfModelsImages;
         
@@ -128,8 +128,7 @@ namespace NRSSSNamespace
 
                 OutputOfFolders.arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
 
-                Debug.WriteLine(final);
-
+                Debug.WriteLine(arrayOfOutputInfo[1]);
             }
 
             return OutputOfFolders;

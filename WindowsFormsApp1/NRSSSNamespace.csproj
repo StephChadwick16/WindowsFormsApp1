@@ -7,7 +7,7 @@
     <ProjectGuid>{CAB5D56D-930E-4647-AB83-A6EFB15976CD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <AssemblyName>NRSSS-3DPrintingProject</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SubPartsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubPartsPage.Designer.cs">
+      <DependentUpon>SubPartsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimerWorkInProgress.cs" />
     <Compile Include="ColourPage.cs">
       <SubType>Form</SubType>
@@ -87,6 +93,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimerTest.cs" />
+    <EmbeddedResource Include="SubPartsPage.resx">
+      <DependentUpon>SubPartsPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ColourPage.resx">
       <DependentUpon>ColourPage.cs</DependentUpon>
     </EmbeddedResource>

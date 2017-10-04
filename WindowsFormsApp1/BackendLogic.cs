@@ -17,16 +17,26 @@ namespace NRSSSNamespace
         public static int secondsTimer;
         public static int inputOption;
 
-        // Need to work out how to get images dynamically but still keep them in sets of three 
+
         public static Image[] arrayOfCategoriesImages;
+        public static Image[] arrayOfModelsImages;
+        
 
-
-        public static Image[] arrayOfColours = new Image[7];
+        public static Image[] arrayOfColours = new Image[8];
         public static Image[] arrayOfSizes = new Image[3];
 
-        public static string[] arrayOfCategoriesName; 
+        public static string[] arrayOfSizesName;
+        public static string[] arrayOfColoursName;
+
+        public static string[] arrayOfCategoriesName;
+        public static string[] arrayOfModelsName;
+
+        public static string[] arrayOfOutputInfo;
+        public static Image[] arrayOfOutputImage;
 
         public static DirectoryInfo currentDir;
+
+        public static int numOfFiles = 0;
 
         public static void SetupApp()
         {
@@ -34,28 +44,30 @@ namespace NRSSSNamespace
             studentName = "error";
             secondsTimer = 0;
             inputOption = -1;
+            arrayOfOutputInfo = new string[4];
+            arrayOfOutputImage = new Image[4];
 
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             CountFilesCategoriesFolder();
-            CountFilesModelsFolders();
+            CountFilesModelsFolders("\\Categories\\Category Models");
             ColourSelect();
             SizeSelect();
 
         }
 
 
-        
+
         public static void CountFilesCategoriesFolder()
         {
             // Count Files in Folder//
-            string folder = "//Categories";
+            string folder = "\\Categories";
             string[] files = Directory.GetFiles(currentDir.ToString() + folder);
             int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
             arrayOfCategoriesName = new string[fileCount];
             arrayOfCategoriesImages = new Image[fileCount];
-            
+
             // Getting the names for the files//
 
             for (int numFiles = 0; numFiles < fileCount; numFiles++)
@@ -68,67 +80,96 @@ namespace NRSSSNamespace
 
                 arrayOfCategoriesImages[numFiles] = Image.FromFile(fileName);
 
-                Debug.WriteLine(final);
 
             }
         }
 
-        public static void CountFilesModelsFolders()
+        
+        public static FolderStructure CountFilesModelsFolders(string folder)
         {
-            /*
-            
-            // Count Files in Folder//
-            string folder = "//Categories";
-            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
-            int fileModelsCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 
-            arrayOfModelsName = new string[fileModelsCount];
-            arrayOfModelsImages = new Image[fileModelsCount];
+            FolderStructure OutputOfFolders = new FolderStructure();
+
+            string[] directories = Directory.GetDirectories(currentDir.ToString() + folder);
+            int fileDirectoriesCount = directories.Length;
+            numOfFiles = 0;
+
+            string[] arrayOfDirectoriesName = new string[fileDirectoriesCount];
 
             // Getting the names for the files//
 
-            for (int numFiles = 0; numFiles < fileModelsCount; numFiles++)
+            for (int numFolders = 0; numFolders < fileDirectoriesCount; numFolders++)
+            {
+                string folderName = directories[numFolders]; //This grabs path for file//
+                string lastWord = folderName.Trim().Split('\\').LastOrDefault();
+                string final = lastWord.Split('.').LastOrDefault();
+
+                numOfFiles++;
+
+                //Debug.WriteLine(final);
+
+            }
+
+            string[] files = Directory.GetFiles(currentDir.ToString() + folder);
+            int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
+
+            OutputOfFolders.arrayOfModelsName = new string[fileCount];
+            OutputOfFolders.arrayOfModelsImages = new Image[fileCount];
+
+            // Getting the names for the files//
+
+            for (int numFiles = 0; numFiles < fileCount; numFiles++)
             {
                 string fileName = files[numFiles]; //This grabs path for file//
                 string lastWord = fileName.Trim().Split('\\').LastOrDefault();
                 string final = lastWord.Split('.').FirstOrDefault();
 
-                arrayOfModelsName[numFiles] = final;
+                OutputOfFolders.arrayOfModelsName[numFiles] = final;
 
-                arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
+                OutputOfFolders.arrayOfModelsImages[numFiles] = Image.FromFile(fileName);
 
-                Debug.WriteLine(final);
-
-
-            */
-
-
+                Debug.WriteLine(arrayOfOutputInfo[1]);
             }
 
-            public static void ColourSelect()
+            return OutputOfFolders;
+
+        }
+
+        public struct FolderStructure
+        {
+            public string[] arrayOfDirectoriesName, arrayOfModelsName;
+            public Image[] arrayOfModelsImages;
+
+        }
+
+
+        public static void ColourSelect()
         {
             FileInfo ColourFile;
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Blue.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Black.jpg");
             arrayOfColours[0] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Green.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Blue.jpg");
             arrayOfColours[1] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Orange.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Green.jpg");
             arrayOfColours[2] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Pink.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Orange.jpg");
             arrayOfColours[3] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Purple.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Pink.jpg");
             arrayOfColours[4] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Red.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Purple.jpg");
             arrayOfColours[5] = Image.FromFile(ColourFile.ToString());
 
-            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Yellow.jpg");
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Red.jpg");
             arrayOfColours[6] = Image.FromFile(ColourFile.ToString());
+
+            ColourFile = new FileInfo(currentDir.Parent.Parent.FullName + "\\bin\\Debug\\Colours\\Yellow.jpg");
+            arrayOfColours[7] = Image.FromFile(ColourFile.ToString());
 
         }
 
@@ -148,8 +189,9 @@ namespace NRSSSNamespace
 
         }
 
+
        
-        
+
     }
 
 

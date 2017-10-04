@@ -44,18 +44,51 @@ namespace NRSSSNamespace
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
+        
         private void HomeBtn_Click(object sender, EventArgs e)
         {
             StartPage openForm = new StartPage();
             openForm.Show();
             Visible = false;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            BackendLogic.arrayOfOutputInfo[2] = SmallLabel.Text;
+            BackendLogic.arrayOfOutputImage[2] = pictureBox1.Image;
+
+            FinalPage newFinalPage = new FinalPage();
+            newFinalPage.Show();
+            Visible = false;
+        }
+
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            BackendLogic.arrayOfOutputInfo[2] = MedLabel.Text;
+            BackendLogic.arrayOfOutputImage[2] = pictureBox2.Image;
+
+            FinalPage newFinalPage = new FinalPage();
+            newFinalPage.Show();
+            Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            BackendLogic.arrayOfOutputInfo[2] = BigLabel.Text;
+            BackendLogic.arrayOfOutputImage[2] = pictureBox3.Image;
+
+            FinalPage newFinalPage = new FinalPage();
+            newFinalPage.Show();
+            Visible = false;
+        }
+
+        private void SmallLabel_Click(object sender, EventArgs e)
+        {
 
         }
     }

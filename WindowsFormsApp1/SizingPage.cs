@@ -61,8 +61,8 @@ namespace NRSSSNamespace
             BackendLogic.arrayOfOutputInfo[2] = SmallLabel.Text;
             BackendLogic.arrayOfOutputImage[2] = pictureBox1.Image;
 
-            FinalPage newColourPage = new FinalPage();
-            newColourPage.Show();
+            FinalPage newFinalPage = new FinalPage();
+            newFinalPage.Show();
             Visible = false;
         }
 
@@ -72,8 +72,8 @@ namespace NRSSSNamespace
             BackendLogic.arrayOfOutputInfo[2] = MedLabel.Text;
             BackendLogic.arrayOfOutputImage[2] = pictureBox2.Image;
 
-            FinalPage newColourPage = new FinalPage();
-            newColourPage.Show();
+            FinalPage newFinalPage = new FinalPage();
+            newFinalPage.Show();
             Visible = false;
         }
 
@@ -82,8 +82,8 @@ namespace NRSSSNamespace
             BackendLogic.arrayOfOutputInfo[2] = BigLabel.Text;
             BackendLogic.arrayOfOutputImage[2] = pictureBox3.Image;
 
-            FinalPage newColourPage = new FinalPage();
-            newColourPage.Show();
+            FinalPage newFinalPage = new FinalPage();
+            newFinalPage.Show();
             Visible = false;
         }
 

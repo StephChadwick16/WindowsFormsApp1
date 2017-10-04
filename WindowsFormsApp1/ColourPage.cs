@@ -78,8 +78,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox1.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -88,8 +88,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox2.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -97,8 +97,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox3.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -106,8 +106,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox4.Image;
             
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -115,8 +115,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox5.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -124,8 +124,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox6.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -133,8 +133,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox7.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
 
@@ -142,8 +142,8 @@ namespace NRSSSNamespace
         {
             BackendLogic.arrayOfOutputImage[3] = pictureBox8.Image;
 
-            SizingPage openForm = new SizingPage();
-            openForm.Show();
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
             Visible = false;
         }
     }

@@ -16,6 +16,15 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                //if (e.KeyChar == (char)Keys.Enter)
+                //{
+                   // MessageBox.Show("Enter key pressed");
+                //}
+                //if (e.KeyChar == 13)
+                //{
+                   // MessageBox.Show("Enter key pressed");
+                //}
+
             }
             base.Dispose(disposing);
         }

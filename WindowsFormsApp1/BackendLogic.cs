@@ -50,7 +50,7 @@ namespace NRSSSNamespace
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             CountFilesCategoriesFolder();
-
+            CountFilesModelsFolders("\\Categories\\Category Models");
             ColourSelect();
             SizeSelect();
 

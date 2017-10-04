@@ -9,9 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NRSSSNamespace
+
 {
     public partial class ModelsPage : Form
     {
+
+        public static Image[] modelsImageArray;
+        public static string[] modelsArray;
+
 
         private int start = 0, iteration = -3;
 
@@ -127,9 +132,17 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[0 + iteration];
-            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[0 + iteration];
+            BackendLogic.FolderStructure StoreTempModel = BackendLogic.CountFilesModelsFolders("\\Categories\\Category Models");
+            //Take the values out of the struct and put them in the global variables
+            //global_variable = struct.member
 
+            modelsImageArray = BackendLogic.arrayOfModelsImages;
+            //BackendLogic.arrayOfOutputImage[1] = modelsImageArray[0 + iteration];
+
+            //modelsArray = BackendLogic.arrayOfModelsName;
+            //BackendLogic.arrayOfOutputInfo[1] = modelsArray[0 + iteration];
+
+            
             ColourPage newColourPage = new ColourPage();
             newColourPage.Show();
             Visible = false;

@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrthaPart.cs" />
     <Compile Include="SubPartsPage.cs">
       <SubType>Form</SubType>
     </Compile>

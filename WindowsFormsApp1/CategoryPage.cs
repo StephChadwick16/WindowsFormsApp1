@@ -140,6 +140,7 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            int x = iteration;
             BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[0 + iteration];
             BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[0 + iteration];
             ModelsPage openForm = new ModelsPage();

@@ -50,7 +50,7 @@ namespace NRSSSNamespace
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             CountFilesCategoriesFolder();
-            CountFilesModelsFolders("\\Categories\\Category Models");
+            FolderStructure x = CountFilesModelsFolders("\\Categories\\Category Models");
             ColourSelect();
             SizeSelect();
 
@@ -100,16 +100,19 @@ namespace NRSSSNamespace
 
             for (int numFolders = 0; numFolders < fileDirectoriesCount; numFolders++)
             {
-                string folderName = directories[numFolders]; //This grabs path for file//
+                /*string folderName = directories[numFolders]; //This grabs path for file//
                 string lastWord = folderName.Trim().Split('\\').LastOrDefault();
-                string final = lastWord.Split('.').LastOrDefault();
-
+                string final = lastWord.Split('.').LastOrDefault();*/
+                //All the above in one line ;P
+                arrayOfDirectoriesName[numFolders] = directories[numFolders].Trim().Split('\\').LastOrDefault().Split('.').LastOrDefault();
                 numOfFiles++;
 
                 //Debug.WriteLine(final);
 
             }
 
+
+            OutputOfFolders.arrayOfDirectoriesName = arrayOfDirectoriesName;
             string[] files = Directory.GetFiles(currentDir.ToString() + folder);
             int fileCount = Directory.GetFiles(currentDir.ToString() + folder).Length;
 

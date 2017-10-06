@@ -19,6 +19,7 @@ namespace NRSSSNamespace
 
 
         private int start = 0, iteration = -3;
+        string path;
 
         BackendLogic.FolderStructure currentFolderStructure = new BackendLogic.FolderStructure();
 
@@ -26,7 +27,8 @@ namespace NRSSSNamespace
         {
             InitializeComponent();
 
-            string path = "\\Categories\\Category Models\\" + BackendLogic.arrayOfOutputInfo[0];
+            
+            path = "\\Categories\\Category Models\\" + BackendLogic.arrayOfOutputInfo[0];
             currentFolderStructure = BackendLogic.CountFilesModelsFolders(path);
 
             ModelsRefresh();
@@ -34,6 +36,8 @@ namespace NRSSSNamespace
 
         public void ModelsRefresh()
         {
+
+            iteration += 3;
 
             pictureBox1.Image = null;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -132,15 +136,13 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            BackendLogic.FolderStructure StoreTempModel = BackendLogic.CountFilesModelsFolders("\\Categories\\Category Models");
-            //Take the values out of the struct and put them in the global variables
-            //global_variable = struct.member
-
-            modelsImageArray = BackendLogic.arrayOfModelsImages;
-            //BackendLogic.arrayOfOutputImage[1] = modelsImageArray[0 + iteration];
-
-            //modelsArray = BackendLogic.arrayOfModelsName;
-            //BackendLogic.arrayOfOutputInfo[1] = modelsArray[0 + iteration];
+            BackendLogic.FolderStructure StoreTempModel = BackendLogic.CountFilesModelsFolders(path);
+            
+            int x = iteration;
+            Image[] z = BackendLogic.arrayOfOutputImage;
+            BackendLogic.arrayOfOutputImage[1] = StoreTempModel.arrayOfModelsImages[int.Parse(((PictureBox)sender).Tag.ToString()) + iteration];
+            
+            BackendLogic.arrayOfOutputInfo[1] = StoreTempModel.arrayOfModelsName[int.Parse(((PictureBox)sender).Tag.ToString()) + iteration];
 
             
             ColourPage newColourPage = new ColourPage();

@@ -39,7 +39,6 @@
             this.ModelLabel3 = new System.Windows.Forms.Label();
             this.ModelLabel1 = new System.Windows.Forms.Label();
             this.ModelPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.NextPageBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -103,6 +102,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(770, 860);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "0";
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
@@ -112,7 +112,8 @@
             this.pictureBox2.Size = new System.Drawing.Size(770, 860);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.Tag = "1";
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ModelLabel2
             // 
@@ -131,6 +132,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(770, 860);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "2";
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // ModelLabel3
@@ -158,7 +160,6 @@
             // 
             this.ModelPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ModelPanel.BackColor = System.Drawing.Color.Transparent;
-            this.ModelPanel.Controls.Add(this.label1);
             this.ModelPanel.Controls.Add(this.NextBtn);
             this.ModelPanel.Controls.Add(this.NextPageBtn);
             this.ModelPanel.Controls.Add(this.ModelLabel1);
@@ -175,15 +176,6 @@
             this.ModelPanel.Size = new System.Drawing.Size(2616, 1654);
             this.ModelPanel.TabIndex = 8;
             this.ModelPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(354, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "label1";
             // 
             // NextPageBtn
             // 
@@ -235,6 +227,5 @@
         private System.Windows.Forms.Label ModelLabel1;
         private System.Windows.Forms.Panel ModelPanel;
         private System.Windows.Forms.Button NextPageBtn;
-        private System.Windows.Forms.Label label1;
     }
 }

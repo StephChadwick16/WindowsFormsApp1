@@ -30,7 +30,6 @@
         {
             this.ModelsLabel = new System.Windows.Forms.Label();
             this.CloseBtn = new System.Windows.Forms.Button();
-            this.NextBtn = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -68,19 +67,6 @@
             this.CloseBtn.Text = "Close";
             this.CloseBtn.UseVisualStyleBackColor = false;
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
-            // 
-            // NextBtn
-            // 
-            this.NextBtn.BackColor = System.Drawing.Color.Yellow;
-            this.NextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextBtn.ForeColor = System.Drawing.Color.Black;
-            this.NextBtn.Location = new System.Drawing.Point(1811, 1450);
-            this.NextBtn.Name = "NextBtn";
-            this.NextBtn.Size = new System.Drawing.Size(300, 180);
-            this.NextBtn.TabIndex = 9;
-            this.NextBtn.Text = "Next";
-            this.NextBtn.UseVisualStyleBackColor = false;
-            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // HomeBtn
             // 
@@ -133,7 +119,7 @@
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "2";
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ModelLabel3
             // 
@@ -160,7 +146,6 @@
             // 
             this.ModelPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ModelPanel.BackColor = System.Drawing.Color.Transparent;
-            this.ModelPanel.Controls.Add(this.NextBtn);
             this.ModelPanel.Controls.Add(this.NextPageBtn);
             this.ModelPanel.Controls.Add(this.ModelLabel1);
             this.ModelPanel.Controls.Add(this.HomeBtn);
@@ -217,7 +202,6 @@
 
         private System.Windows.Forms.Label ModelsLabel;
         private System.Windows.Forms.Button CloseBtn;
-        private System.Windows.Forms.Button NextBtn;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

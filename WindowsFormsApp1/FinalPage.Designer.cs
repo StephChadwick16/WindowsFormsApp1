@@ -48,8 +48,11 @@
             this.OptionsSelectedPanel = new System.Windows.Forms.Panel();
             this.SubPartsPanel = new System.Windows.Forms.Panel();
             this.SubPartsLabel = new System.Windows.Forms.Label();
+            this.Colour3Label = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.Colour2Label = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Colour1Label = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.SubPart3Label = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -71,9 +74,7 @@
             this.OptionsSelectedLabel = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Colour3Label = new System.Windows.Forms.Label();
-            this.Colour2Label = new System.Windows.Forms.Label();
-            this.Colour1Label = new System.Windows.Forms.Label();
+            this.ColourPanel = new System.Windows.Forms.Panel();
             this.SettingsAndTimesPanel.SuspendLayout();
             this.TeacherNotesPanel.SuspendLayout();
             this.OptionsSelectedPanel.SuspendLayout();
@@ -89,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.ColourPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // OutputOptionsLabel
@@ -276,15 +278,14 @@
             // 
             // OptionsSelectedPanel
             // 
+            this.OptionsSelectedPanel.Controls.Add(this.ColourPanel);
             this.OptionsSelectedPanel.Controls.Add(this.SubPartsPanel);
             this.OptionsSelectedPanel.Controls.Add(this.ShowsSizeChosen);
             this.OptionsSelectedPanel.Controls.Add(this.ShowsCategoryChosen);
             this.OptionsSelectedPanel.Controls.Add(this.ShowsModelChosen);
-            this.OptionsSelectedPanel.Controls.Add(this.ColourChosenLabel);
             this.OptionsSelectedPanel.Controls.Add(this.SizeChosenLabel);
             this.OptionsSelectedPanel.Controls.Add(this.ModelChosenLabel);
             this.OptionsSelectedPanel.Controls.Add(this.CategoryChosenLabel);
-            this.OptionsSelectedPanel.Controls.Add(this.pictureBox4);
             this.OptionsSelectedPanel.Controls.Add(this.pictureBox3);
             this.OptionsSelectedPanel.Controls.Add(this.pictureBox2);
             this.OptionsSelectedPanel.Controls.Add(this.pictureBox1);
@@ -324,6 +325,16 @@
             this.SubPartsLabel.TabIndex = 13;
             this.SubPartsLabel.Text = "Model Sub-Parts:";
             // 
+            // Colour3Label
+            // 
+            this.Colour3Label.AutoSize = true;
+            this.Colour3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Colour3Label.Location = new System.Drawing.Point(379, 1324);
+            this.Colour3Label.Name = "Colour3Label";
+            this.Colour3Label.Size = new System.Drawing.Size(139, 37);
+            this.Colour3Label.TabIndex = 25;
+            this.Colour3Label.Text = "Colour 3";
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Location = new System.Drawing.Point(38, 118);
@@ -332,6 +343,16 @@
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
             // 
+            // Colour2Label
+            // 
+            this.Colour2Label.AutoSize = true;
+            this.Colour2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Colour2Label.Location = new System.Drawing.Point(379, 890);
+            this.Colour2Label.Name = "Colour2Label";
+            this.Colour2Label.Size = new System.Drawing.Size(139, 37);
+            this.Colour2Label.TabIndex = 24;
+            this.Colour2Label.Text = "Colour 2";
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Location = new System.Drawing.Point(320, 118);
@@ -339,6 +360,16 @@
             this.pictureBox6.Size = new System.Drawing.Size(257, 291);
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
+            // 
+            // Colour1Label
+            // 
+            this.Colour1Label.AutoSize = true;
+            this.Colour1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Colour1Label.Location = new System.Drawing.Point(379, 439);
+            this.Colour1Label.Name = "Colour1Label";
+            this.Colour1Label.Size = new System.Drawing.Size(137, 37);
+            this.Colour1Label.TabIndex = 23;
+            this.Colour1Label.Text = "Colour 1";
             // 
             // pictureBox8
             // 
@@ -436,7 +467,7 @@
             // 
             this.ColourChosenLabel.AutoSize = true;
             this.ColourChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColourChosenLabel.Location = new System.Drawing.Point(101, 1316);
+            this.ColourChosenLabel.Location = new System.Drawing.Point(20, 137);
             this.ColourChosenLabel.Name = "ColourChosenLabel";
             this.ColourChosenLabel.Size = new System.Drawing.Size(168, 51);
             this.ColourChosenLabel.TabIndex = 8;
@@ -474,7 +505,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(379, 1196);
+            this.pictureBox4.Location = new System.Drawing.Point(298, 17);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(350, 300);
             this.pictureBox4.TabIndex = 4;
@@ -543,35 +574,14 @@
             this.panel1.Size = new System.Drawing.Size(2829, 1682);
             this.panel1.TabIndex = 13;
             // 
-            // Colour3Label
+            // ColourPanel
             // 
-            this.Colour3Label.AutoSize = true;
-            this.Colour3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Colour3Label.Location = new System.Drawing.Point(379, 1324);
-            this.Colour3Label.Name = "Colour3Label";
-            this.Colour3Label.Size = new System.Drawing.Size(139, 37);
-            this.Colour3Label.TabIndex = 25;
-            this.Colour3Label.Text = "Colour 3";
-            // 
-            // Colour2Label
-            // 
-            this.Colour2Label.AutoSize = true;
-            this.Colour2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Colour2Label.Location = new System.Drawing.Point(379, 890);
-            this.Colour2Label.Name = "Colour2Label";
-            this.Colour2Label.Size = new System.Drawing.Size(139, 37);
-            this.Colour2Label.TabIndex = 24;
-            this.Colour2Label.Text = "Colour 2";
-            // 
-            // Colour1Label
-            // 
-            this.Colour1Label.AutoSize = true;
-            this.Colour1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Colour1Label.Location = new System.Drawing.Point(379, 439);
-            this.Colour1Label.Name = "Colour1Label";
-            this.Colour1Label.Size = new System.Drawing.Size(137, 37);
-            this.Colour1Label.TabIndex = 23;
-            this.Colour1Label.Text = "Colour 1";
+            this.ColourPanel.Controls.Add(this.ColourChosenLabel);
+            this.ColourPanel.Controls.Add(this.pictureBox4);
+            this.ColourPanel.Location = new System.Drawing.Point(81, 1183);
+            this.ColourPanel.Name = "ColourPanel";
+            this.ColourPanel.Size = new System.Drawing.Size(692, 343);
+            this.ColourPanel.TabIndex = 27;
             // 
             // FinalPage
             // 
@@ -608,6 +618,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.ColourPanel.ResumeLayout(false);
+            this.ColourPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -659,5 +671,6 @@
         private System.Windows.Forms.Label Colour3Label;
         private System.Windows.Forms.Label Colour2Label;
         private System.Windows.Forms.Label Colour1Label;
+        private System.Windows.Forms.Panel ColourPanel;
     }
 }

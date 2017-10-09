@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.OptionSelected = new System.Windows.Forms.Label();
-            this.IntervalSelection = new System.Windows.Forms.Label();
-            this.StudentOption = new System.Windows.Forms.Label();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.CategoriesLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,34 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // OptionSelected
-            // 
-            this.OptionSelected.AutoSize = true;
-            this.OptionSelected.Location = new System.Drawing.Point(3, 0);
-            this.OptionSelected.Name = "OptionSelected";
-            this.OptionSelected.Size = new System.Drawing.Size(174, 25);
-            this.OptionSelected.TabIndex = 0;
-            this.OptionSelected.Text = "Option selected: ";
-            this.OptionSelected.Click += new System.EventHandler(this.OptionSelected_Click);
-            // 
-            // IntervalSelection
-            // 
-            this.IntervalSelection.AutoSize = true;
-            this.IntervalSelection.Location = new System.Drawing.Point(3, 29);
-            this.IntervalSelection.Name = "IntervalSelection";
-            this.IntervalSelection.Size = new System.Drawing.Size(189, 25);
-            this.IntervalSelection.TabIndex = 1;
-            this.IntervalSelection.Text = "Interval Selection: ";
-            // 
-            // StudentOption
-            // 
-            this.StudentOption.AutoSize = true;
-            this.StudentOption.Location = new System.Drawing.Point(3, 58);
-            this.StudentOption.Name = "StudentOption";
-            this.StudentOption.Size = new System.Drawing.Size(160, 25);
-            this.StudentOption.TabIndex = 2;
-            this.StudentOption.Text = "Student Name: ";
             // 
             // CloseBtn
             // 
@@ -191,11 +160,8 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.Controls.Add(this.PreviousPgBtn);
             this.panel1.Controls.Add(this.CategoriesLabel);
-            this.panel1.Controls.Add(this.StudentOption);
             this.panel1.Controls.Add(this.NextPageBtn);
-            this.panel1.Controls.Add(this.IntervalSelection);
             this.panel1.Controls.Add(this.CloseBtn);
-            this.panel1.Controls.Add(this.OptionSelected);
             this.panel1.Controls.Add(this.HomeBtn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Category3Label);
@@ -246,10 +212,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label OptionSelected;
-        private System.Windows.Forms.Label IntervalSelection;
-        private System.Windows.Forms.Label StudentOption;
         private System.Windows.Forms.Button CloseBtn;
         private System.Windows.Forms.Label CategoriesLabel;
         private System.Windows.Forms.PictureBox pictureBox1;

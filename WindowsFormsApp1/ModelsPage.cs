@@ -103,13 +103,7 @@ namespace NRSSSNamespace
 
         }
 
-        private void NextBtn_Click(object sender, EventArgs e)
-        {
-            SizingPage newSizingPage = new SizingPage();
-            newSizingPage.Show();
-            Visible = false;
-        }
-
+       
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -155,8 +149,8 @@ namespace NRSSSNamespace
 
          private void pictureBox2_Click(object sender, EventArgs e)
          {
-            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[1 + iteration];
-            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[1 + iteration];
+            
+            // Set so that if this picture box is clicked, it will perform the same action as picture box one (done through events handler in Properties)
 
             ColourPage newColourPage = new ColourPage();
             newColourPage.Show();
@@ -167,8 +161,8 @@ namespace NRSSSNamespace
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            //BackendLogic.arrayOfOutputInfo[1] = BackendLogic.arrayOfModelsName[2 + iteration];
-            //BackendLogic.arrayOfOutputImage[1] = BackendLogic.arrayOfModelsImages[2 + iteration];
+            
+            // Set so that if this picture box is clicked, it will perform the same action as picture box one (done through events handler in Properties)
 
             ColourPage newColourPage = new ColourPage();
             newColourPage.Show();

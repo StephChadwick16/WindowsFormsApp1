@@ -18,11 +18,7 @@ namespace NRSSSNamespace
         {
             InitializeComponent();
 
-            OptionSelected.Text = BackendLogic.inputOption.ToString();
-            IntervalSelection.Text = BackendLogic.secondsTimer.ToString();
-            StudentOption.Text = BackendLogic.studentName;
-
-
+           
             CategoryRefresh();
 
         }

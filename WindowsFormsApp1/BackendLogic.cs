@@ -36,6 +36,7 @@ namespace NRSSSNamespace
 
         public static string[] arrayOfSPInfo;
         public static Image[] arrayOfSPImage;
+        public static Image[] arrayOfSPColour;
 
         public static DirectoryInfo currentDir;
 
@@ -50,13 +51,18 @@ namespace NRSSSNamespace
             arrayOfOutputInfo = new string[4];
             arrayOfOutputImage = new Image[4];
 
+            arrayOfSPInfo = new string[3];
+            arrayOfSPImage = new Image[3];
+            arrayOfSPColour = new Image[3];
+
+
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
             CountFilesCategoriesFolder();
             FolderStructure x = CountFilesModelsFolders("\\Categories\\Category Models");
             ColourSelect();
             SizeSelect();
-
+            
         }
 
 

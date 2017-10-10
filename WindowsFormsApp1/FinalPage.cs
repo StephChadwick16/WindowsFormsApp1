@@ -26,12 +26,16 @@ namespace NRSSSNamespace
             IntervalSelection.Text = BackendLogic.secondsTimer.ToString();
             StudentOption.Text = BackendLogic.studentName;
 
+
+            // Showing category chosen
             ShowsCategoryChosen.Text = BackendLogic.arrayOfOutputInfo[0];
             pictureBox1.Image = BackendLogic.arrayOfOutputImage[0];
 
+            // Showing model chosen
             ShowsModelChosen.Text = BackendLogic.arrayOfOutputInfo[1];
             pictureBox2.Image = BackendLogic.arrayOfOutputImage[1];
 
+            // Showing size chosen
             ShowsSizeChosen.Text = BackendLogic.arrayOfOutputInfo[2];
             pictureBox3.Image = BackendLogic.arrayOfOutputImage[2];
 
@@ -39,12 +43,27 @@ namespace NRSSSNamespace
             pictureBox4.Image = BackendLogic.arrayOfOutputImage[3];
 
 
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            // Sub parts shown on final page
+
+            SP1PicBox.Image = BackendLogic.arrayOfSPImage[0];
+            SubPart1Label.Text = BackendLogic.arrayOfSPInfo[0];
+            Colour1PicBox.Image = BackendLogic.arrayOfSPColour[0];
+
+            SP2PicBox.Image = BackendLogic.arrayOfSPImage[1];
+            SubPart2Label.Text = BackendLogic.arrayOfSPInfo[1];
+            Colour2PicBox.Image = BackendLogic.arrayOfSPColour[1];
+
+            SP3PicBox.Image = BackendLogic.arrayOfSPImage[2];
+            SubPart3Label.Text = BackendLogic.arrayOfSPInfo[2];
+            Colour3PicBox.Image = BackendLogic.arrayOfSPColour[2];
+
+
+            SP1PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            Colour1PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            SP2PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            Colour2PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            SP3PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            Colour3PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
 

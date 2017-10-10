@@ -12,9 +12,18 @@ namespace NRSSSNamespace
 {
     public partial class SubPartsPage : Form
     {
+
+        private int start = 0, iteration = -3;
+        string path;
+
+
         public SubPartsPage()
         {
             InitializeComponent();
+
+            path = "\\Categories\\Category Models\\" + BackendLogic.arrayOfOutputInfo[0] + BackendLogic.arrayOfOutputInfo[1];
+            //currentFolderStructure = BackendLogic.CountFilesModelsFolders(path);
+
 
             pictureBox1.Image = BackendLogic.arrayOfColours[0];
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -41,7 +50,22 @@ namespace NRSSSNamespace
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
+            SubPartsRefresh();
+
         }
+
+        public void SubPartsRefresh()
+        {
+
+            iteration += 3;
+
+            SubPartPicBox.Image = null;
+            SubPartPicBox.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
+
+        }
+
 
         private void SubPartsPage_Load(object sender, EventArgs e)
         {
@@ -50,83 +74,75 @@ namespace NRSSSNamespace
         }
 
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            FinalPage openForm = new FinalPage();
-            openForm.Show();
-            Visible = false;
-        }
-
-        private void CloseBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
-
-        }
-
-        private void NextBtn_Click(object sender, EventArgs e)
-        {
-            FinalPage openForm = new FinalPage();
-            openForm.Show();
-            Visible = false;
-
-        }
-
-        private void HomeBtn_Click(object sender, EventArgs e)
+        private void HomeBtn_Click_1(object sender, EventArgs e)
         {
             StartPage openForm = new StartPage();
             openForm.Show();
             Visible = false;
-
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void CloseBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox3_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void pictureBox4_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void pictureBox5_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+        private void pictureBox6_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void pictureBox7_Click_1(object sender, EventArgs e)
         {
             FinalPage openForm = new FinalPage();
             openForm.Show();
             Visible = false;
         }
+
+        private void pictureBox8_Click_1(object sender, EventArgs e)
+        {
+            FinalPage openForm = new FinalPage();
+            openForm.Show();
+            Visible = false;
+        }
+
+       
     }
 }

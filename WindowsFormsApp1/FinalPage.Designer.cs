@@ -46,51 +46,51 @@
             this.TeacherNotesPanel = new System.Windows.Forms.Panel();
             this.NotesObsLabel = new System.Windows.Forms.Label();
             this.OptionsSelectedPanel = new System.Windows.Forms.Panel();
+            this.ColourPanel = new System.Windows.Forms.Panel();
+            this.ColourChosenLabel = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.SubPartsPanel = new System.Windows.Forms.Panel();
             this.SubPartsLabel = new System.Windows.Forms.Label();
             this.Colour3Label = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.SP1PicBox = new System.Windows.Forms.PictureBox();
             this.Colour2Label = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Colour1PicBox = new System.Windows.Forms.PictureBox();
             this.Colour1Label = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.Colour2PicBox = new System.Windows.Forms.PictureBox();
             this.SubPart3Label = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.SP2PicBox = new System.Windows.Forms.PictureBox();
             this.SubPart2Label = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.Colour3PicBox = new System.Windows.Forms.PictureBox();
             this.SubPart1Label = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.SP3PicBox = new System.Windows.Forms.PictureBox();
             this.ShowsSizeChosen = new System.Windows.Forms.Label();
             this.ShowsCategoryChosen = new System.Windows.Forms.Label();
             this.ShowsModelChosen = new System.Windows.Forms.Label();
-            this.ColourChosenLabel = new System.Windows.Forms.Label();
             this.SizeChosenLabel = new System.Windows.Forms.Label();
             this.ModelChosenLabel = new System.Windows.Forms.Label();
             this.CategoryChosenLabel = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.OptionsSelectedLabel = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ColourPanel = new System.Windows.Forms.Panel();
             this.SettingsAndTimesPanel.SuspendLayout();
             this.TeacherNotesPanel.SuspendLayout();
             this.OptionsSelectedPanel.SuspendLayout();
-            this.SubPartsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.ColourPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.SubPartsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SP1PicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Colour1PicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Colour2PicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SP2PicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Colour3PicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SP3PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.ColourPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // OutputOptionsLabel
@@ -295,21 +295,48 @@
             this.OptionsSelectedPanel.Size = new System.Drawing.Size(1488, 1549);
             this.OptionsSelectedPanel.TabIndex = 20;
             // 
+            // ColourPanel
+            // 
+            this.ColourPanel.Controls.Add(this.ColourChosenLabel);
+            this.ColourPanel.Controls.Add(this.pictureBox4);
+            this.ColourPanel.Location = new System.Drawing.Point(81, 1183);
+            this.ColourPanel.Name = "ColourPanel";
+            this.ColourPanel.Size = new System.Drawing.Size(692, 343);
+            this.ColourPanel.TabIndex = 27;
+            // 
+            // ColourChosenLabel
+            // 
+            this.ColourChosenLabel.AutoSize = true;
+            this.ColourChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColourChosenLabel.Location = new System.Drawing.Point(20, 137);
+            this.ColourChosenLabel.Name = "ColourChosenLabel";
+            this.ColourChosenLabel.Size = new System.Drawing.Size(168, 51);
+            this.ColourChosenLabel.TabIndex = 8;
+            this.ColourChosenLabel.Text = "Colour:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(298, 17);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(350, 300);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
             // SubPartsPanel
             // 
             this.SubPartsPanel.Controls.Add(this.SubPartsLabel);
             this.SubPartsPanel.Controls.Add(this.Colour3Label);
-            this.SubPartsPanel.Controls.Add(this.pictureBox5);
+            this.SubPartsPanel.Controls.Add(this.SP1PicBox);
             this.SubPartsPanel.Controls.Add(this.Colour2Label);
-            this.SubPartsPanel.Controls.Add(this.pictureBox6);
+            this.SubPartsPanel.Controls.Add(this.Colour1PicBox);
             this.SubPartsPanel.Controls.Add(this.Colour1Label);
-            this.SubPartsPanel.Controls.Add(this.pictureBox8);
+            this.SubPartsPanel.Controls.Add(this.Colour2PicBox);
             this.SubPartsPanel.Controls.Add(this.SubPart3Label);
-            this.SubPartsPanel.Controls.Add(this.pictureBox7);
+            this.SubPartsPanel.Controls.Add(this.SP2PicBox);
             this.SubPartsPanel.Controls.Add(this.SubPart2Label);
-            this.SubPartsPanel.Controls.Add(this.pictureBox10);
+            this.SubPartsPanel.Controls.Add(this.Colour3PicBox);
             this.SubPartsPanel.Controls.Add(this.SubPart1Label);
-            this.SubPartsPanel.Controls.Add(this.pictureBox9);
+            this.SubPartsPanel.Controls.Add(this.SP3PicBox);
             this.SubPartsPanel.Location = new System.Drawing.Point(841, 120);
             this.SubPartsPanel.Name = "SubPartsPanel";
             this.SubPartsPanel.Size = new System.Drawing.Size(634, 1386);
@@ -335,13 +362,13 @@
             this.Colour3Label.TabIndex = 25;
             this.Colour3Label.Text = "Colour 3";
             // 
-            // pictureBox5
+            // SP1PicBox
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(38, 118);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(257, 291);
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
+            this.SP1PicBox.Location = new System.Drawing.Point(38, 118);
+            this.SP1PicBox.Name = "SP1PicBox";
+            this.SP1PicBox.Size = new System.Drawing.Size(257, 291);
+            this.SP1PicBox.TabIndex = 14;
+            this.SP1PicBox.TabStop = false;
             // 
             // Colour2Label
             // 
@@ -353,13 +380,13 @@
             this.Colour2Label.TabIndex = 24;
             this.Colour2Label.Text = "Colour 2";
             // 
-            // pictureBox6
+            // Colour1PicBox
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(320, 118);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(257, 291);
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
+            this.Colour1PicBox.Location = new System.Drawing.Point(320, 118);
+            this.Colour1PicBox.Name = "Colour1PicBox";
+            this.Colour1PicBox.Size = new System.Drawing.Size(257, 291);
+            this.Colour1PicBox.TabIndex = 15;
+            this.Colour1PicBox.TabStop = false;
             // 
             // Colour1Label
             // 
@@ -371,13 +398,13 @@
             this.Colour1Label.TabIndex = 23;
             this.Colour1Label.Text = "Colour 1";
             // 
-            // pictureBox8
+            // Colour2PicBox
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(320, 568);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(257, 291);
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
+            this.Colour2PicBox.Location = new System.Drawing.Point(320, 568);
+            this.Colour2PicBox.Name = "Colour2PicBox";
+            this.Colour2PicBox.Size = new System.Drawing.Size(257, 291);
+            this.Colour2PicBox.TabIndex = 16;
+            this.Colour2PicBox.TabStop = false;
             // 
             // SubPart3Label
             // 
@@ -389,13 +416,13 @@
             this.SubPart3Label.TabIndex = 22;
             this.SubPart3Label.Text = "Sub-Part 3";
             // 
-            // pictureBox7
+            // SP2PicBox
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(38, 568);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(257, 291);
-            this.pictureBox7.TabIndex = 17;
-            this.pictureBox7.TabStop = false;
+            this.SP2PicBox.Location = new System.Drawing.Point(38, 568);
+            this.SP2PicBox.Name = "SP2PicBox";
+            this.SP2PicBox.Size = new System.Drawing.Size(257, 291);
+            this.SP2PicBox.TabIndex = 17;
+            this.SP2PicBox.TabStop = false;
             // 
             // SubPart2Label
             // 
@@ -407,13 +434,13 @@
             this.SubPart2Label.TabIndex = 21;
             this.SubPart2Label.Text = "Sub-Part 2";
             // 
-            // pictureBox10
+            // Colour3PicBox
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(320, 1006);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(257, 291);
-            this.pictureBox10.TabIndex = 18;
-            this.pictureBox10.TabStop = false;
+            this.Colour3PicBox.Location = new System.Drawing.Point(320, 1006);
+            this.Colour3PicBox.Name = "Colour3PicBox";
+            this.Colour3PicBox.Size = new System.Drawing.Size(257, 291);
+            this.Colour3PicBox.TabIndex = 18;
+            this.Colour3PicBox.TabStop = false;
             // 
             // SubPart1Label
             // 
@@ -425,13 +452,13 @@
             this.SubPart1Label.TabIndex = 20;
             this.SubPart1Label.Text = "Sub-Part 1";
             // 
-            // pictureBox9
+            // SP3PicBox
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(38, 1006);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(257, 291);
-            this.pictureBox9.TabIndex = 19;
-            this.pictureBox9.TabStop = false;
+            this.SP3PicBox.Location = new System.Drawing.Point(38, 1006);
+            this.SP3PicBox.Name = "SP3PicBox";
+            this.SP3PicBox.Size = new System.Drawing.Size(257, 291);
+            this.SP3PicBox.TabIndex = 19;
+            this.SP3PicBox.TabStop = false;
             // 
             // ShowsSizeChosen
             // 
@@ -463,16 +490,6 @@
             this.ShowsModelChosen.TabIndex = 9;
             this.ShowsModelChosen.Text = "MOD CHOSEN";
             // 
-            // ColourChosenLabel
-            // 
-            this.ColourChosenLabel.AutoSize = true;
-            this.ColourChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColourChosenLabel.Location = new System.Drawing.Point(20, 137);
-            this.ColourChosenLabel.Name = "ColourChosenLabel";
-            this.ColourChosenLabel.Size = new System.Drawing.Size(168, 51);
-            this.ColourChosenLabel.TabIndex = 8;
-            this.ColourChosenLabel.Text = "Colour:";
-            // 
             // SizeChosenLabel
             // 
             this.SizeChosenLabel.AutoSize = true;
@@ -502,14 +519,6 @@
             this.CategoryChosenLabel.Size = new System.Drawing.Size(218, 51);
             this.CategoryChosenLabel.TabIndex = 5;
             this.CategoryChosenLabel.Text = "Category:";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(298, 17);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(350, 300);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -574,15 +583,6 @@
             this.panel1.Size = new System.Drawing.Size(2829, 1682);
             this.panel1.TabIndex = 13;
             // 
-            // ColourPanel
-            // 
-            this.ColourPanel.Controls.Add(this.ColourChosenLabel);
-            this.ColourPanel.Controls.Add(this.pictureBox4);
-            this.ColourPanel.Location = new System.Drawing.Point(81, 1183);
-            this.ColourPanel.Name = "ColourPanel";
-            this.ColourPanel.Size = new System.Drawing.Size(692, 343);
-            this.ColourPanel.TabIndex = 27;
-            // 
             // FinalPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -604,22 +604,22 @@
             this.TeacherNotesPanel.PerformLayout();
             this.OptionsSelectedPanel.ResumeLayout(false);
             this.OptionsSelectedPanel.PerformLayout();
+            this.ColourPanel.ResumeLayout(false);
+            this.ColourPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.SubPartsPanel.ResumeLayout(false);
             this.SubPartsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SP1PicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Colour1PicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Colour2PicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SP2PicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Colour3PicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SP3PicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.ColourPanel.ResumeLayout(false);
-            this.ColourPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -660,12 +660,12 @@
         private System.Windows.Forms.Label SubPart3Label;
         private System.Windows.Forms.Label SubPart2Label;
         private System.Windows.Forms.Label SubPart1Label;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox SP3PicBox;
+        private System.Windows.Forms.PictureBox Colour3PicBox;
+        private System.Windows.Forms.PictureBox SP2PicBox;
+        private System.Windows.Forms.PictureBox Colour2PicBox;
+        private System.Windows.Forms.PictureBox Colour1PicBox;
+        private System.Windows.Forms.PictureBox SP1PicBox;
         private System.Windows.Forms.Label SubPartsLabel;
         private System.Windows.Forms.Panel SubPartsPanel;
         private System.Windows.Forms.Label Colour3Label;

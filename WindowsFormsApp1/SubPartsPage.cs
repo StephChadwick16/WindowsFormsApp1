@@ -89,56 +89,56 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox5_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox6_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox7_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }
 
         private void pictureBox8_Click_1(object sender, EventArgs e)
         {
-            FinalPage openForm = new FinalPage();
+            SizingPage openForm = new SizingPage();
             openForm.Show();
             Visible = false;
         }

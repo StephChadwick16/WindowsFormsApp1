@@ -34,6 +34,9 @@ namespace NRSSSNamespace
         public static string[] arrayOfOutputInfo;
         public static Image[] arrayOfOutputImage;
 
+        public static string[] arrayOfSPInfo;
+        public static Image[] arrayOfSPImage;
+
         public static DirectoryInfo currentDir;
 
         public static int numOfFiles = 0;
@@ -82,6 +85,8 @@ namespace NRSSSNamespace
 
 
             }
+
+            
         }
 
         

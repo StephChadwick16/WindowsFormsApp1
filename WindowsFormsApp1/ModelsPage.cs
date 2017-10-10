@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,6 +64,7 @@ namespace NRSSSNamespace
 
                 if (i == 0)
                 {
+                    pictureBox1.Tag = "0,."+path+"\\"+fileName;
                     pictureBox1.Image = fileImage;
                     ModelLabel1.Text = fileName;
                 }
@@ -70,6 +72,7 @@ namespace NRSSSNamespace
 
                 if (i == 1)
                 {
+                    pictureBox2.Tag = "1,." + path + "\\" + fileName;
                     pictureBox2.Image = fileImage;
                     ModelLabel2.Text = fileName;
                 }
@@ -77,6 +80,7 @@ namespace NRSSSNamespace
 
                 if (i == 2)
                 {
+                    pictureBox3.Tag = "2,." + path + "\\" + fileName;
                     pictureBox3.Image = fileImage;
                     ModelLabel3.Text = fileName;
                 }
@@ -130,18 +134,29 @@ namespace NRSSSNamespace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            PictureBox me = sender as PictureBox;
             BackendLogic.FolderStructure StoreTempModel = BackendLogic.CountFilesModelsFolders(path);
             
             int x = iteration;
             Image[] z = BackendLogic.arrayOfOutputImage;
-            BackendLogic.arrayOfOutputImage[1] = StoreTempModel.arrayOfModelsImages[int.Parse(((PictureBox)sender).Tag.ToString()) + iteration];
+            BackendLogic.arrayOfOutputImage[1] = StoreTempModel.arrayOfModelsImages[int.Parse(me.Tag.ToString().Split(',')[0]) + iteration];
             
-            BackendLogic.arrayOfOutputInfo[1] = StoreTempModel.arrayOfModelsName[int.Parse(((PictureBox)sender).Tag.ToString()) + iteration];
+            BackendLogic.arrayOfOutputInfo[1] = StoreTempModel.arrayOfModelsName[int.Parse(me.Tag.ToString().Split(',')[0]) + iteration];
 
+            if (Directory.Exists(me.Tag.ToString().Split(',')[1]))
+            {
+                SubPartsPage newSubpartsPage = new SubPartsPage();
+                newSubpartsPage.Show();
+                Visible = false;
+            }
+
+            else
+            {
+                ColourPage newColourPage = new ColourPage();
+                newColourPage.Show();
+                Visible = false;
+            }
             
-            ColourPage newColourPage = new ColourPage();
-            newColourPage.Show();
-            Visible = false;
             
             
         }

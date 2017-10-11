@@ -39,6 +39,7 @@
             this.ModelLabel1 = new System.Windows.Forms.Label();
             this.ModelPanel = new System.Windows.Forms.Panel();
             this.NextPageBtn = new System.Windows.Forms.Button();
+            this.PreviousPgBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -146,6 +147,7 @@
             // 
             this.ModelPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ModelPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ModelPanel.Controls.Add(this.PreviousPgBtn);
             this.ModelPanel.Controls.Add(this.NextPageBtn);
             this.ModelPanel.Controls.Add(this.ModelLabel1);
             this.ModelPanel.Controls.Add(this.HomeBtn);
@@ -174,6 +176,19 @@
             this.NextPageBtn.Text = "Next Page";
             this.NextPageBtn.UseVisualStyleBackColor = false;
             this.NextPageBtn.Click += new System.EventHandler(this.NextPageBtn_Click);
+            // 
+            // PreviousPgBtn
+            // 
+            this.PreviousPgBtn.BackColor = System.Drawing.Color.Yellow;
+            this.PreviousPgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PreviousPgBtn.ForeColor = System.Drawing.Color.Black;
+            this.PreviousPgBtn.Location = new System.Drawing.Point(1916, 1400);
+            this.PreviousPgBtn.Name = "PreviousPgBtn";
+            this.PreviousPgBtn.Size = new System.Drawing.Size(322, 230);
+            this.PreviousPgBtn.TabIndex = 18;
+            this.PreviousPgBtn.Text = "Previous Page";
+            this.PreviousPgBtn.UseVisualStyleBackColor = false;
+            this.PreviousPgBtn.Click += new System.EventHandler(this.PreviousPgBtn_Click);
             // 
             // ModelsPage
             // 
@@ -211,5 +226,6 @@
         private System.Windows.Forms.Label ModelLabel1;
         private System.Windows.Forms.Panel ModelPanel;
         private System.Windows.Forms.Button NextPageBtn;
+        private System.Windows.Forms.Button PreviousPgBtn;
     }
 }

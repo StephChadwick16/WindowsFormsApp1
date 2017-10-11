@@ -34,9 +34,9 @@ namespace NRSSSNamespace
         public static string[] arrayOfOutputInfo;
         public static Image[] arrayOfOutputImage;
 
-        public static string[] arrayOfSPInfo;
-        public static Image[] arrayOfSPImage;
-        public static Image[] arrayOfSPColour;
+        public static List<string> arrayOfSPInfo = new List<string>();
+        public static List<Image> arrayOfSPImage = new List<Image>();
+        public static List<Image> arrayOfSPColour = new List<Image>();
 
         public static DirectoryInfo currentDir;
 
@@ -51,10 +51,6 @@ namespace NRSSSNamespace
             arrayOfOutputInfo = new string[4];
             arrayOfOutputImage = new Image[4];
 
-            arrayOfSPInfo = new string[3];
-            arrayOfSPImage = new Image[3];
-            arrayOfSPColour = new Image[3];
-
 
             currentDir = new DirectoryInfo(Directory.GetCurrentDirectory());
 
@@ -62,7 +58,11 @@ namespace NRSSSNamespace
             FolderStructure x = CountFilesModelsFolders("\\Categories\\Category Models");
             ColourSelect();
             SizeSelect();
-            
+
+            arrayOfSPImage.Clear();
+            arrayOfSPColour.Clear();
+            arrayOfSPInfo.Clear();
+
         }
 
 

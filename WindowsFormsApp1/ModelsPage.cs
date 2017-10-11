@@ -19,7 +19,7 @@ namespace NRSSSNamespace
         public static string[] modelsArray;
 
 
-        private int start = 0, iteration = -3;
+        private int start = 0, iteration = 0;
         string path;
 
         BackendLogic.FolderStructure currentFolderStructure = new BackendLogic.FolderStructure();
@@ -38,15 +38,21 @@ namespace NRSSSNamespace
         public void ModelsRefresh()
         {
 
-            iteration += 3;
+            //iteration += 3;
 
             pictureBox1.Image = null;
+            ModelLabel1.Text = "";
+            pictureBox1.Enabled = false;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             pictureBox2.Image = null;
+            ModelLabel2.Text = "";
+            pictureBox2.Enabled = false;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
             pictureBox3.Image = null;
+            ModelLabel3.Text = "";
+            pictureBox3.Enabled = false;
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -67,6 +73,7 @@ namespace NRSSSNamespace
                     pictureBox1.Tag = "0,."+path+"\\"+fileName;
                     pictureBox1.Image = fileImage;
                     ModelLabel1.Text = fileName;
+                    pictureBox1.Enabled = true;
                 }
 
 
@@ -75,6 +82,7 @@ namespace NRSSSNamespace
                     pictureBox2.Tag = "1,." + path + "\\" + fileName;
                     pictureBox2.Image = fileImage;
                     ModelLabel2.Text = fileName;
+                    pictureBox2.Enabled = true;
                 }
 
 
@@ -83,6 +91,7 @@ namespace NRSSSNamespace
                     pictureBox3.Tag = "2,." + path + "\\" + fileName;
                     pictureBox3.Image = fileImage;
                     ModelLabel3.Text = fileName;
+                    pictureBox3.Enabled = true;
                 }
 
             }
@@ -126,7 +135,9 @@ namespace NRSSSNamespace
         {
 
             start = (start + 3);
-
+            PreviousPgBtn.Visible = true;
+            iteration += 3;
+            
             ModelsRefresh();
             
         }
@@ -173,6 +184,22 @@ namespace NRSSSNamespace
 
          }
 
+        private void PreviousPgBtn_Click(object sender, EventArgs e)
+        {
+            start = (start - 3);
+            int x = iteration;
+            iteration -= 3;
+            if (iteration == 0)
+            {
+                ((Button)sender).Visible = false;
+            }
+            if (iteration <= ((BackendLogic.arrayOfCategoriesImages.Length) / 3) + 1)
+            {
+                NextPageBtn.Visible = true;
+            }
+
+            ModelsRefresh();
+        }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {

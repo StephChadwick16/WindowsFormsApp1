@@ -96,10 +96,12 @@
             // OutputOptionsLabel
             // 
             this.OutputOptionsLabel.AutoSize = true;
-            this.OutputOptionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutputOptionsLabel.BackColor = System.Drawing.Color.Black;
+            this.OutputOptionsLabel.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutputOptionsLabel.ForeColor = System.Drawing.Color.Lime;
             this.OutputOptionsLabel.Location = new System.Drawing.Point(30, 3);
             this.OutputOptionsLabel.Name = "OutputOptionsLabel";
-            this.OutputOptionsLabel.Size = new System.Drawing.Size(2070, 91);
+            this.OutputOptionsLabel.Size = new System.Drawing.Size(2177, 93);
             this.OutputOptionsLabel.TabIndex = 0;
             this.OutputOptionsLabel.Text = "These are the options selected for the model created by:";
             this.OutputOptionsLabel.Click += new System.EventHandler(this.label1_Click);
@@ -240,11 +242,11 @@
             // StudentOption
             // 
             this.StudentOption.AutoSize = true;
-            this.StudentOption.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentOption.ForeColor = System.Drawing.Color.Lime;
-            this.StudentOption.Location = new System.Drawing.Point(2276, 3);
+            this.StudentOption.Font = new System.Drawing.Font("Arial", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentOption.ForeColor = System.Drawing.Color.Cyan;
+            this.StudentOption.Location = new System.Drawing.Point(2274, 18);
             this.StudentOption.Name = "StudentOption";
-            this.StudentOption.Size = new System.Drawing.Size(508, 76);
+            this.StudentOption.Size = new System.Drawing.Size(502, 78);
             this.StudentOption.TabIndex = 10;
             this.StudentOption.Text = "SHOWS NAME";
             // 
@@ -299,7 +301,7 @@
             // 
             this.ColourPanel.Controls.Add(this.ColourChosenLabel);
             this.ColourPanel.Controls.Add(this.pictureBox4);
-            this.ColourPanel.Location = new System.Drawing.Point(81, 1183);
+            this.ColourPanel.Location = new System.Drawing.Point(114, 1182);
             this.ColourPanel.Name = "ColourPanel";
             this.ColourPanel.Size = new System.Drawing.Size(692, 343);
             this.ColourPanel.TabIndex = 27;
@@ -337,16 +339,16 @@
             this.SubPartsPanel.Controls.Add(this.Colour3PicBox);
             this.SubPartsPanel.Controls.Add(this.SubPart1Label);
             this.SubPartsPanel.Controls.Add(this.SP3PicBox);
-            this.SubPartsPanel.Location = new System.Drawing.Point(841, 120);
+            this.SubPartsPanel.Location = new System.Drawing.Point(838, 120);
             this.SubPartsPanel.Name = "SubPartsPanel";
-            this.SubPartsPanel.Size = new System.Drawing.Size(634, 1386);
+            this.SubPartsPanel.Size = new System.Drawing.Size(637, 1386);
             this.SubPartsPanel.TabIndex = 26;
             // 
             // SubPartsLabel
             // 
             this.SubPartsLabel.AutoSize = true;
             this.SubPartsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubPartsLabel.Location = new System.Drawing.Point(134, 25);
+            this.SubPartsLabel.Location = new System.Drawing.Point(162, 24);
             this.SubPartsLabel.Name = "SubPartsLabel";
             this.SubPartsLabel.Size = new System.Drawing.Size(371, 51);
             this.SubPartsLabel.TabIndex = 13;
@@ -356,7 +358,7 @@
             // 
             this.Colour3Label.AutoSize = true;
             this.Colour3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Colour3Label.Location = new System.Drawing.Point(379, 1324);
+            this.Colour3Label.Location = new System.Drawing.Point(407, 1323);
             this.Colour3Label.Name = "Colour3Label";
             this.Colour3Label.Size = new System.Drawing.Size(139, 37);
             this.Colour3Label.TabIndex = 25;
@@ -364,7 +366,7 @@
             // 
             // SP1PicBox
             // 
-            this.SP1PicBox.Location = new System.Drawing.Point(38, 118);
+            this.SP1PicBox.Location = new System.Drawing.Point(66, 117);
             this.SP1PicBox.Name = "SP1PicBox";
             this.SP1PicBox.Size = new System.Drawing.Size(257, 291);
             this.SP1PicBox.TabIndex = 14;
@@ -374,7 +376,7 @@
             // 
             this.Colour2Label.AutoSize = true;
             this.Colour2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Colour2Label.Location = new System.Drawing.Point(379, 890);
+            this.Colour2Label.Location = new System.Drawing.Point(407, 889);
             this.Colour2Label.Name = "Colour2Label";
             this.Colour2Label.Size = new System.Drawing.Size(139, 37);
             this.Colour2Label.TabIndex = 24;
@@ -382,7 +384,7 @@
             // 
             // Colour1PicBox
             // 
-            this.Colour1PicBox.Location = new System.Drawing.Point(320, 118);
+            this.Colour1PicBox.Location = new System.Drawing.Point(348, 117);
             this.Colour1PicBox.Name = "Colour1PicBox";
             this.Colour1PicBox.Size = new System.Drawing.Size(257, 291);
             this.Colour1PicBox.TabIndex = 15;
@@ -392,7 +394,7 @@
             // 
             this.Colour1Label.AutoSize = true;
             this.Colour1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Colour1Label.Location = new System.Drawing.Point(379, 439);
+            this.Colour1Label.Location = new System.Drawing.Point(407, 438);
             this.Colour1Label.Name = "Colour1Label";
             this.Colour1Label.Size = new System.Drawing.Size(137, 37);
             this.Colour1Label.TabIndex = 23;
@@ -400,7 +402,7 @@
             // 
             // Colour2PicBox
             // 
-            this.Colour2PicBox.Location = new System.Drawing.Point(320, 568);
+            this.Colour2PicBox.Location = new System.Drawing.Point(348, 567);
             this.Colour2PicBox.Name = "Colour2PicBox";
             this.Colour2PicBox.Size = new System.Drawing.Size(257, 291);
             this.Colour2PicBox.TabIndex = 16;
@@ -410,7 +412,7 @@
             // 
             this.SubPart3Label.AutoSize = true;
             this.SubPart3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubPart3Label.Location = new System.Drawing.Point(76, 1324);
+            this.SubPart3Label.Location = new System.Drawing.Point(104, 1323);
             this.SubPart3Label.Name = "SubPart3Label";
             this.SubPart3Label.Size = new System.Drawing.Size(170, 37);
             this.SubPart3Label.TabIndex = 22;
@@ -418,7 +420,7 @@
             // 
             // SP2PicBox
             // 
-            this.SP2PicBox.Location = new System.Drawing.Point(38, 568);
+            this.SP2PicBox.Location = new System.Drawing.Point(66, 567);
             this.SP2PicBox.Name = "SP2PicBox";
             this.SP2PicBox.Size = new System.Drawing.Size(257, 291);
             this.SP2PicBox.TabIndex = 17;
@@ -428,7 +430,7 @@
             // 
             this.SubPart2Label.AutoSize = true;
             this.SubPart2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubPart2Label.Location = new System.Drawing.Point(78, 890);
+            this.SubPart2Label.Location = new System.Drawing.Point(106, 889);
             this.SubPart2Label.Name = "SubPart2Label";
             this.SubPart2Label.Size = new System.Drawing.Size(170, 37);
             this.SubPart2Label.TabIndex = 21;
@@ -436,7 +438,7 @@
             // 
             // Colour3PicBox
             // 
-            this.Colour3PicBox.Location = new System.Drawing.Point(320, 1006);
+            this.Colour3PicBox.Location = new System.Drawing.Point(348, 1005);
             this.Colour3PicBox.Name = "Colour3PicBox";
             this.Colour3PicBox.Size = new System.Drawing.Size(257, 291);
             this.Colour3PicBox.TabIndex = 18;
@@ -446,7 +448,7 @@
             // 
             this.SubPart1Label.AutoSize = true;
             this.SubPart1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubPart1Label.Location = new System.Drawing.Point(80, 439);
+            this.SubPart1Label.Location = new System.Drawing.Point(108, 438);
             this.SubPart1Label.Name = "SubPart1Label";
             this.SubPart1Label.Size = new System.Drawing.Size(168, 37);
             this.SubPart1Label.TabIndex = 20;
@@ -454,7 +456,7 @@
             // 
             // SP3PicBox
             // 
-            this.SP3PicBox.Location = new System.Drawing.Point(38, 1006);
+            this.SP3PicBox.Location = new System.Drawing.Point(66, 1005);
             this.SP3PicBox.Name = "SP3PicBox";
             this.SP3PicBox.Size = new System.Drawing.Size(257, 291);
             this.SP3PicBox.TabIndex = 19;
@@ -464,7 +466,7 @@
             // 
             this.ShowsSizeChosen.AutoSize = true;
             this.ShowsSizeChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsSizeChosen.Location = new System.Drawing.Point(101, 1019);
+            this.ShowsSizeChosen.Location = new System.Drawing.Point(134, 1018);
             this.ShowsSizeChosen.Name = "ShowsSizeChosen";
             this.ShowsSizeChosen.Size = new System.Drawing.Size(313, 51);
             this.ShowsSizeChosen.TabIndex = 11;
@@ -474,7 +476,7 @@
             // 
             this.ShowsCategoryChosen.AutoSize = true;
             this.ShowsCategoryChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsCategoryChosen.Location = new System.Drawing.Point(90, 270);
+            this.ShowsCategoryChosen.Location = new System.Drawing.Point(123, 269);
             this.ShowsCategoryChosen.Name = "ShowsCategoryChosen";
             this.ShowsCategoryChosen.Size = new System.Drawing.Size(315, 51);
             this.ShowsCategoryChosen.TabIndex = 10;
@@ -484,7 +486,7 @@
             // 
             this.ShowsModelChosen.AutoSize = true;
             this.ShowsModelChosen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsModelChosen.Location = new System.Drawing.Point(101, 663);
+            this.ShowsModelChosen.Location = new System.Drawing.Point(134, 662);
             this.ShowsModelChosen.Name = "ShowsModelChosen";
             this.ShowsModelChosen.Size = new System.Drawing.Size(317, 51);
             this.ShowsModelChosen.TabIndex = 9;
@@ -494,7 +496,7 @@
             // 
             this.SizeChosenLabel.AutoSize = true;
             this.SizeChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeChosenLabel.Location = new System.Drawing.Point(101, 928);
+            this.SizeChosenLabel.Location = new System.Drawing.Point(134, 927);
             this.SizeChosenLabel.Name = "SizeChosenLabel";
             this.SizeChosenLabel.Size = new System.Drawing.Size(124, 51);
             this.SizeChosenLabel.TabIndex = 7;
@@ -504,7 +506,7 @@
             // 
             this.ModelChosenLabel.AutoSize = true;
             this.ModelChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelChosenLabel.Location = new System.Drawing.Point(101, 559);
+            this.ModelChosenLabel.Location = new System.Drawing.Point(134, 558);
             this.ModelChosenLabel.Name = "ModelChosenLabel";
             this.ModelChosenLabel.Size = new System.Drawing.Size(158, 51);
             this.ModelChosenLabel.TabIndex = 6;
@@ -514,7 +516,7 @@
             // 
             this.CategoryChosenLabel.AutoSize = true;
             this.CategoryChosenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoryChosenLabel.Location = new System.Drawing.Point(90, 197);
+            this.CategoryChosenLabel.Location = new System.Drawing.Point(123, 196);
             this.CategoryChosenLabel.Name = "CategoryChosenLabel";
             this.CategoryChosenLabel.Size = new System.Drawing.Size(218, 51);
             this.CategoryChosenLabel.TabIndex = 5;
@@ -522,7 +524,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(379, 845);
+            this.pictureBox3.Location = new System.Drawing.Point(412, 844);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(350, 300);
             this.pictureBox3.TabIndex = 3;
@@ -530,7 +532,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(379, 480);
+            this.pictureBox2.Location = new System.Drawing.Point(412, 479);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(350, 300);
             this.pictureBox2.TabIndex = 2;
@@ -538,7 +540,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(379, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(412, 127);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(350, 300);
             this.pictureBox1.TabIndex = 1;

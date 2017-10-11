@@ -44,19 +44,44 @@ namespace NRSSSNamespace
 
 
             // Sub parts shown on final page
+            int numSubParts = BackendLogic.arrayOfSPImage.Count;
 
-            SP1PicBox.Image = BackendLogic.arrayOfSPImage[0];
-            SubPart1Label.Text = BackendLogic.arrayOfSPInfo[0];
-            Colour1PicBox.Image = BackendLogic.arrayOfSPColour[0];
+            if (numSubParts > 0)
+            {
+                SP1PicBox.Image = BackendLogic.arrayOfSPImage[0];
+                SubPart1Label.Text = BackendLogic.arrayOfSPInfo[0].Split('.')[0];
+                Colour1PicBox.Image = BackendLogic.arrayOfSPColour[0];
 
-            SP2PicBox.Image = BackendLogic.arrayOfSPImage[1];
-            SubPart2Label.Text = BackendLogic.arrayOfSPInfo[1];
-            Colour2PicBox.Image = BackendLogic.arrayOfSPColour[1];
+                ColourPanel.Visible = false;
 
-            SP3PicBox.Image = BackendLogic.arrayOfSPImage[2];
-            SubPart3Label.Text = BackendLogic.arrayOfSPInfo[2];
-            Colour3PicBox.Image = BackendLogic.arrayOfSPColour[2];
+                if (numSubParts > 1)
+                {
+                    SP2PicBox.Image = BackendLogic.arrayOfSPImage[1];
+                    SubPart2Label.Text = BackendLogic.arrayOfSPInfo[1].Split('.')[0];
+                    Colour2PicBox.Image = BackendLogic.arrayOfSPColour[1];
 
+                    if (numSubParts > 2)
+                    {
+                        SP3PicBox.Image = BackendLogic.arrayOfSPImage[2];
+                        SubPart3Label.Text = BackendLogic.arrayOfSPInfo[2].Split('.')[0];
+                        Colour3PicBox.Image = BackendLogic.arrayOfSPColour[2];
+                    }
+                    else
+                    {
+                        SP3PicBox.Visible = false;
+                        SubPart3Label.Visible = false;
+                        Colour3PicBox.Visible = false;
+                        Colour3Label.Visible = false;
+                    }
+                }
+            }
+            else
+            {
+                SubPartsPanel.Visible = false;
+
+                // set up the other colour panel 
+                // this is for when there isn't any subparts!
+            }
 
             SP1PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
             Colour1PicBox.SizeMode = PictureBoxSizeMode.StretchImage;

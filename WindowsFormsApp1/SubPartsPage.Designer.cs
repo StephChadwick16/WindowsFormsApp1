@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.CloseBtn = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.SubPartNameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SubPartPicBox = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -40,8 +42,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.HomeBtn = new System.Windows.Forms.Button();
-            this.CloseBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SubPartPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -58,7 +58,7 @@
             // 
             this.panel1.Controls.Add(this.CloseBtn);
             this.panel1.Controls.Add(this.HomeBtn);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.SubPartNameLabel);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.SubPartPicBox);
             this.panel1.Controls.Add(this.pictureBox8);
@@ -74,15 +74,41 @@
             this.panel1.Size = new System.Drawing.Size(2699, 1654);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // CloseBtn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(138, 289);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(580, 76);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "SUB PART NAME";
+            this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.Black;
+            this.CloseBtn.Location = new System.Drawing.Point(37, 1413);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(300, 180);
+            this.CloseBtn.TabIndex = 28;
+            this.CloseBtn.Text = "Close";
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click_1);
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.ForeColor = System.Drawing.Color.Black;
+            this.HomeBtn.Location = new System.Drawing.Point(418, 1413);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(300, 180);
+            this.HomeBtn.TabIndex = 17;
+            this.HomeBtn.Text = "Home";
+            this.HomeBtn.UseVisualStyleBackColor = false;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click_1);
+            // 
+            // SubPartNameLabel
+            // 
+            this.SubPartNameLabel.AutoSize = true;
+            this.SubPartNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubPartNameLabel.Location = new System.Drawing.Point(138, 289);
+            this.SubPartNameLabel.Name = "SubPartNameLabel";
+            this.SubPartNameLabel.Size = new System.Drawing.Size(580, 76);
+            this.SubPartNameLabel.TabIndex = 27;
+            this.SubPartNameLabel.Text = "SUB PART NAME";
             // 
             // label1
             // 
@@ -183,32 +209,6 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
             // 
-            // HomeBtn
-            // 
-            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(418, 1413);
-            this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(300, 180);
-            this.HomeBtn.TabIndex = 17;
-            this.HomeBtn.Text = "Home";
-            this.HomeBtn.UseVisualStyleBackColor = false;
-            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click_1);
-            // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(37, 1413);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(300, 180);
-            this.CloseBtn.TabIndex = 28;
-            this.CloseBtn.Text = "Close";
-            this.CloseBtn.UseVisualStyleBackColor = false;
-            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click_1);
-            // 
             // SubPartsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -252,7 +252,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox SubPartPicBox;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label SubPartNameLabel;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button CloseBtn;
     }

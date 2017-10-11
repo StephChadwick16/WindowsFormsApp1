@@ -12,7 +12,7 @@ namespace NRSSSNamespace
 {
     public partial class CategoryPage : Form
     {
-        private int start = 0, iteration = -3;
+        private int start = 0, iteration =0;
 
         public CategoryPage()
         {
@@ -27,15 +27,21 @@ namespace NRSSSNamespace
         public void CategoryRefresh()
         {
 
-            iteration += 3;
+            //iteration += 3;
 
             pictureBox1.Image = null;
+            Category1Label.Text = "";
+            pictureBox1.Enabled = false;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             pictureBox2.Image = null;
+            Category2Label.Text = "";
+            pictureBox2.Enabled = false;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
 
             pictureBox3.Image = null;
+            Category3Label.Text = "";
+            pictureBox3.Enabled = false;
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
 
            
@@ -55,6 +61,7 @@ namespace NRSSSNamespace
                 {
                     pictureBox1.Image = fileImage;
                     Category1Label.Text = fileName;
+                    pictureBox1.Enabled = true;
                 }
 
 
@@ -62,6 +69,7 @@ namespace NRSSSNamespace
                 {
                     pictureBox2.Image = fileImage;
                     Category2Label.Text = fileName;
+                    pictureBox2.Enabled = true;
                 }
 
 
@@ -69,6 +77,7 @@ namespace NRSSSNamespace
                 {
                     pictureBox3.Image = fileImage;
                     Category3Label.Text = fileName;
+                    pictureBox3.Enabled = true;
                 }
 
             }
@@ -119,7 +128,8 @@ namespace NRSSSNamespace
         {
 
             start = (start + 3);
-
+            PreviousPgBtn.Visible = true;
+            iteration += 3;
             CategoryRefresh();
 
         }
@@ -128,6 +138,16 @@ namespace NRSSSNamespace
         {
 
             start = (start - 3);
+            int x = iteration;
+            iteration -= 3;
+            if (iteration == 0)
+            {
+                ((Button)sender).Visible = false;
+            }
+            if (iteration<=((BackendLogic.arrayOfCategoriesImages.Length)/3)+1)
+            {
+                NextPageBtn.Visible = true;
+            }
 
             CategoryRefresh();
 
@@ -147,6 +167,7 @@ namespace NRSSSNamespace
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            int x = iteration;
             BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[1 + iteration];
             BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[1 + iteration];
             ModelsPage openForm = new ModelsPage();
@@ -157,6 +178,7 @@ namespace NRSSSNamespace
     
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            int x = iteration;
             BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[2 + iteration];
             BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[2 + iteration];
             ModelsPage openForm = new ModelsPage();

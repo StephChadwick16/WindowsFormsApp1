@@ -172,7 +172,6 @@
             this.butSelectionC.Name = "butSelectionC";
             this.butSelectionC.Size = new System.Drawing.Size(578, 702);
             this.butSelectionC.TabIndex = 3;
-            this.butSelectionC.Text = "button1";
             this.butSelectionC.UseVisualStyleBackColor = false;
             this.butSelectionC.Click += new System.EventHandler(this.Category_Click3);
             this.butSelectionC.Enter += new System.EventHandler(this.butSelection_Enter);

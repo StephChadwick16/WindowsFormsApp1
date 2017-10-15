@@ -48,7 +48,7 @@ namespace NRSSSNamespace
 
         private void Interval10Sec_CheckedChanged(object sender, EventArgs e)
         {
-            BackendLogic.secondsTimer = 2;
+            BackendLogic.secondsTimer = 10;
         }
 
         private void Interval20Sec_CheckedChanged(object sender, EventArgs e)

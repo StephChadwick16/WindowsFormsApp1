@@ -28,203 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.SelectColourLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.CloseBtn = new System.Windows.Forms.Button();
-            this.NextBtn = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.btnColour1 = new System.Windows.Forms.Button();
+            this.btnColour5 = new System.Windows.Forms.Button();
+            this.btnColour2 = new System.Windows.Forms.Button();
+            this.btnColour3 = new System.Windows.Forms.Button();
+            this.btnColour4 = new System.Windows.Forms.Button();
+            this.btnColour6 = new System.Windows.Forms.Button();
+            this.btnColour7 = new System.Windows.Forms.Button();
+            this.btnColour8 = new System.Windows.Forms.Button();
+            this.timerSwitch = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // SelectColourLabel
             // 
             this.SelectColourLabel.AutoSize = true;
             this.SelectColourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectColourLabel.Location = new System.Drawing.Point(845, 30);
+            this.SelectColourLabel.Location = new System.Drawing.Point(634, 24);
+            this.SelectColourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SelectColourLabel.Name = "SelectColourLabel";
-            this.SelectColourLabel.Size = new System.Drawing.Size(1011, 153);
+            this.SelectColourLabel.Size = new System.Drawing.Size(760, 113);
             this.SelectColourLabel.TabIndex = 0;
             this.SelectColourLabel.Text = "Select A Colour";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 285);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(720, 285);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(1409, 285);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Location = new System.Drawing.Point(2091, 285);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(43, 864);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(550, 525);
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(720, 864);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Location = new System.Drawing.Point(1409, 864);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // CloseBtn
             // 
             this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(43, 1449);
+            this.CloseBtn.Location = new System.Drawing.Point(32, 1159);
+            this.CloseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(300, 180);
-            this.CloseBtn.TabIndex = 8;
+            this.CloseBtn.Size = new System.Drawing.Size(225, 144);
+            this.CloseBtn.TabIndex = 10;
+            this.CloseBtn.TabStop = false;
             this.CloseBtn.Text = "Close";
             this.CloseBtn.UseVisualStyleBackColor = false;
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
-            // 
-            // NextBtn
-            // 
-            this.NextBtn.BackColor = System.Drawing.Color.Yellow;
-            this.NextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextBtn.ForeColor = System.Drawing.Color.Black;
-            this.NextBtn.Location = new System.Drawing.Point(2351, 1449);
-            this.NextBtn.Name = "NextBtn";
-            this.NextBtn.Size = new System.Drawing.Size(300, 180);
-            this.NextBtn.TabIndex = 11;
-            this.NextBtn.Text = "Next";
-            this.NextBtn.UseVisualStyleBackColor = false;
-            this.NextBtn.Click += new System.EventHandler(this.NextBtn_Click);
             // 
             // HomeBtn
             // 
             this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(409, 1449);
+            this.HomeBtn.Location = new System.Drawing.Point(307, 1159);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(300, 180);
-            this.HomeBtn.TabIndex = 12;
+            this.HomeBtn.Size = new System.Drawing.Size(225, 144);
+            this.HomeBtn.TabIndex = 9;
+            this.HomeBtn.TabStop = false;
             this.HomeBtn.Text = "Home";
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.btnColour8);
+            this.panel1.Controls.Add(this.btnColour7);
+            this.panel1.Controls.Add(this.btnColour6);
+            this.panel1.Controls.Add(this.btnColour4);
+            this.panel1.Controls.Add(this.btnColour3);
+            this.panel1.Controls.Add(this.btnColour2);
+            this.panel1.Controls.Add(this.btnColour5);
+            this.panel1.Controls.Add(this.btnColour1);
             this.panel1.Controls.Add(this.SelectColourLabel);
             this.panel1.Controls.Add(this.HomeBtn);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.NextBtn);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.CloseBtn);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Location = new System.Drawing.Point(47, 50);
+            this.panel1.Location = new System.Drawing.Point(35, 40);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2673, 1651);
+            this.panel1.Size = new System.Drawing.Size(2005, 1321);
             this.panel1.TabIndex = 13;
             // 
-            // pictureBox8
+            // btnColour1
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Location = new System.Drawing.Point(2091, 864);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(550, 500);
-            this.pictureBox8.TabIndex = 13;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.btnColour1.BackColor = System.Drawing.Color.Gray;
+            this.btnColour1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour1.FlatAppearance.BorderSize = 10;
+            this.btnColour1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour1.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour1.Location = new System.Drawing.Point(32, 228);
+            this.btnColour1.Name = "btnColour1";
+            this.btnColour1.Size = new System.Drawing.Size(415, 415);
+            this.btnColour1.TabIndex = 1;
+            this.btnColour1.UseVisualStyleBackColor = false;
+            this.btnColour1.Click += new System.EventHandler(this.Colour_Click1);
+            this.btnColour1.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour1.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour5
+            // 
+            this.btnColour5.BackColor = System.Drawing.Color.Gray;
+            this.btnColour5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour5.FlatAppearance.BorderSize = 10;
+            this.btnColour5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour5.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour5.Location = new System.Drawing.Point(32, 691);
+            this.btnColour5.Name = "btnColour5";
+            this.btnColour5.Size = new System.Drawing.Size(415, 415);
+            this.btnColour5.TabIndex = 5;
+            this.btnColour5.UseVisualStyleBackColor = false;
+            this.btnColour5.Click += new System.EventHandler(this.Colour_Click5);
+            this.btnColour5.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour5.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour2
+            // 
+            this.btnColour2.BackColor = System.Drawing.Color.Gray;
+            this.btnColour2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour2.FlatAppearance.BorderSize = 10;
+            this.btnColour2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour2.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour2.Location = new System.Drawing.Point(537, 228);
+            this.btnColour2.Name = "btnColour2";
+            this.btnColour2.Size = new System.Drawing.Size(415, 415);
+            this.btnColour2.TabIndex = 2;
+            this.btnColour2.UseVisualStyleBackColor = false;
+            this.btnColour2.Click += new System.EventHandler(this.Colour_Click2);
+            this.btnColour2.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour2.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour3
+            // 
+            this.btnColour3.BackColor = System.Drawing.Color.Gray;
+            this.btnColour3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour3.FlatAppearance.BorderSize = 10;
+            this.btnColour3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour3.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour3.Location = new System.Drawing.Point(1057, 228);
+            this.btnColour3.Name = "btnColour3";
+            this.btnColour3.Size = new System.Drawing.Size(415, 415);
+            this.btnColour3.TabIndex = 3;
+            this.btnColour3.UseVisualStyleBackColor = false;
+            this.btnColour3.Click += new System.EventHandler(this.Colour_Click3);
+            this.btnColour3.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour3.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour4
+            // 
+            this.btnColour4.BackColor = System.Drawing.Color.Gray;
+            this.btnColour4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour4.FlatAppearance.BorderSize = 10;
+            this.btnColour4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour4.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour4.Location = new System.Drawing.Point(1568, 228);
+            this.btnColour4.Name = "btnColour4";
+            this.btnColour4.Size = new System.Drawing.Size(415, 415);
+            this.btnColour4.TabIndex = 4;
+            this.btnColour4.UseVisualStyleBackColor = false;
+            this.btnColour4.Click += new System.EventHandler(this.Colour_Click4);
+            this.btnColour4.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour4.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour6
+            // 
+            this.btnColour6.BackColor = System.Drawing.Color.Gray;
+            this.btnColour6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour6.FlatAppearance.BorderSize = 10;
+            this.btnColour6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour6.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour6.Location = new System.Drawing.Point(537, 691);
+            this.btnColour6.Name = "btnColour6";
+            this.btnColour6.Size = new System.Drawing.Size(415, 415);
+            this.btnColour6.TabIndex = 6;
+            this.btnColour6.UseVisualStyleBackColor = false;
+            this.btnColour6.Click += new System.EventHandler(this.Colour_Click6);
+            this.btnColour6.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour6.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour7
+            // 
+            this.btnColour7.BackColor = System.Drawing.Color.Gray;
+            this.btnColour7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour7.FlatAppearance.BorderSize = 10;
+            this.btnColour7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour7.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour7.Location = new System.Drawing.Point(1057, 691);
+            this.btnColour7.Name = "btnColour7";
+            this.btnColour7.Size = new System.Drawing.Size(415, 415);
+            this.btnColour7.TabIndex = 7;
+            this.btnColour7.UseVisualStyleBackColor = false;
+            this.btnColour7.Click += new System.EventHandler(this.Colour_Click7);
+            this.btnColour7.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour7.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // btnColour8
+            // 
+            this.btnColour8.BackColor = System.Drawing.Color.Gray;
+            this.btnColour8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColour8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnColour8.FlatAppearance.BorderSize = 10;
+            this.btnColour8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColour8.ForeColor = System.Drawing.Color.Transparent;
+            this.btnColour8.Location = new System.Drawing.Point(1568, 691);
+            this.btnColour8.Name = "btnColour8";
+            this.btnColour8.Size = new System.Drawing.Size(415, 415);
+            this.btnColour8.TabIndex = 8;
+            this.btnColour8.UseVisualStyleBackColor = false;
+            this.btnColour8.Click += new System.EventHandler(this.Colour_Click8);
+            this.btnColour8.Enter += new System.EventHandler(this.butSelection_Enter);
+            this.btnColour8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.btnColour8.Leave += new System.EventHandler(this.butSelection_Leave);
+            // 
+            // timerSwitch
+            // 
+            this.timerSwitch.Tick += new System.EventHandler(this.timerSwitch_Tick);
             // 
             // ColourPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(2774, 1729);
+            this.ClientSize = new System.Drawing.Size(2080, 1262);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Yellow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ColourPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select A Colour";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,17 +277,17 @@
         #endregion
 
         private System.Windows.Forms.Label SelectColourLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button CloseBtn;
-        private System.Windows.Forms.Button NextBtn;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button btnColour8;
+        private System.Windows.Forms.Button btnColour7;
+        private System.Windows.Forms.Button btnColour6;
+        private System.Windows.Forms.Button btnColour4;
+        private System.Windows.Forms.Button btnColour3;
+        private System.Windows.Forms.Button btnColour2;
+        private System.Windows.Forms.Button btnColour5;
+        private System.Windows.Forms.Button btnColour1;
+        private System.Windows.Forms.Timer timerSwitch;
     }
 }

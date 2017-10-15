@@ -37,6 +37,7 @@ namespace NRSSSNamespace
         private void button1_Click(object sender, EventArgs e)
         {
             BackendLogic.studentName = ChildNameTextbox.Text;
+            BackendLogic.todInputDone = DateTime.Now;
 
             CategoryPage newCategoryPage = new CategoryPage();
             newCategoryPage.Show();
@@ -47,7 +48,7 @@ namespace NRSSSNamespace
 
         private void Interval10Sec_CheckedChanged(object sender, EventArgs e)
         {
-            BackendLogic.secondsTimer = 10;
+            BackendLogic.secondsTimer = 2;
         }
 
         private void Interval20Sec_CheckedChanged(object sender, EventArgs e)

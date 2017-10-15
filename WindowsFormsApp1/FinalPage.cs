@@ -13,6 +13,12 @@ namespace NRSSSNamespace
 {
     public partial class FinalPage : Form
     {
+        TimeSpan tsCategoriesSelection;
+        TimeSpan tsModelsSelection;
+        TimeSpan tsColoursSelection;
+        TimeSpan tsSizesSelection;
+        TimeSpan tsOverallTime;
+
         public FinalPage()
         {
             InitializeComponent();
@@ -90,9 +96,18 @@ namespace NRSSSNamespace
             SP3PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
             Colour3PicBox.SizeMode = PictureBoxSizeMode.StretchImage;
 
+            // Calculate Times
+            tsCategoriesSelection = BackendLogic.todCategoriesDone - BackendLogic.todInputDone;
+            tsModelsSelection = BackendLogic.todModelsDone - BackendLogic.todCategoriesDone;
+            tsColoursSelection = BackendLogic.todColoursDone - BackendLogic.todModelsDone;
+            tsSizesSelection = BackendLogic.todSizesDone - BackendLogic.todColoursDone;
+            tsOverallTime = BackendLogic.todSizesDone - BackendLogic.todInputDone;
 
-
-
+            ShowsProgramTime.Text = tsOverallTime.ToString(@"hh\:mm\:ss");
+            ShowsCategoryTime.Text = tsCategoriesSelection.ToString(@"hh\:mm\:ss");
+            ShowsModelTime.Text = tsModelsSelection.ToString(@"hh\:mm\:ss");
+            ShowsColourTime.Text = tsColoursSelection.ToString(@"hh\:mm\:ss");
+            ShowsSizeTime.Text = tsSizesSelection.ToString(@"hh\:mm\:ss");
         }
 
         private void FinalPage_Load(object sender, EventArgs e)

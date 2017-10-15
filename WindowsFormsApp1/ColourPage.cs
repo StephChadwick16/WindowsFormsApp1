@@ -15,30 +15,27 @@ namespace NRSSSNamespace
         public ColourPage()
         {
             InitializeComponent();
+            if (BackendLogic.inputOption == 1)
+            {
+                timerSwitch.Interval = BackendLogic.secondsTimer * 1000;
+                timerSwitch.Enabled = true;
+            }
 
-            pictureBox1.Image = BackendLogic.arrayOfColours[0];
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour1.BackgroundImage = BackendLogic.arrayOfColours[0];
 
-            pictureBox2.Image = BackendLogic.arrayOfColours[1];
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour2.BackgroundImage = BackendLogic.arrayOfColours[1];
 
-            pictureBox3.Image = BackendLogic.arrayOfColours[2];
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour3.BackgroundImage = BackendLogic.arrayOfColours[2];
 
-            pictureBox4.Image = BackendLogic.arrayOfColours[3];
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour4.BackgroundImage = BackendLogic.arrayOfColours[3];
 
-            pictureBox5.Image = BackendLogic.arrayOfColours[4];
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour5.BackgroundImage = BackendLogic.arrayOfColours[4];
 
-            pictureBox6.Image = BackendLogic.arrayOfColours[5];
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour6.BackgroundImage = BackendLogic.arrayOfColours[5];
 
-            pictureBox7.Image = BackendLogic.arrayOfColours[6];
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour7.BackgroundImage = BackendLogic.arrayOfColours[6];
 
-            pictureBox8.Image = BackendLogic.arrayOfColours[7];
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnColour8.BackgroundImage = BackendLogic.arrayOfColours[7];
 
 
         }
@@ -57,13 +54,6 @@ namespace NRSSSNamespace
 
         }
 
-        private void NextBtn_Click(object sender, EventArgs e)
-        {
-            FinalPage openForm = new FinalPage();
-            openForm.Show();
-            Visible = false;
-
-        }
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
@@ -73,78 +63,147 @@ namespace NRSSSNamespace
 
         }
 
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Colour_Click1(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox1.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour1.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
+
+
         }
-
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Colour_Click2(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox2.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour2.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
-        }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+
+        }
+        private void Colour_Click3(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox3.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour3.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
-        }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox4.Image;
-            
-            SizingPage newSizingPage = new SizingPage();
-            newSizingPage.Show();
-            Visible = false;
-        }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        }
+        private void Colour_Click4(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox5.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour4.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
-        }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+
+        }
+        private void Colour_Click5(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox6.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour5.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
-        }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+
+        }
+        private void Colour_Click6(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox7.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour6.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
-        }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+
+        }
+        private void Colour_Click7(object sender, EventArgs e)
         {
-            BackendLogic.arrayOfOutputImage[3] = pictureBox8.Image;
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour7.BackgroundImage;
 
             SizingPage newSizingPage = new SizingPage();
             newSizingPage.Show();
             Visible = false;
+
+
         }
+        private void Colour_Click8(object sender, EventArgs e)
+        {
+            Button me = sender as Button;
+
+            BackendLogic.todColoursDone = DateTime.Now;
+            BackendLogic.arrayOfOutputImage[3] = btnColour8.BackgroundImage;
+
+            SizingPage newSizingPage = new SizingPage();
+            newSizingPage.Show();
+            Visible = false;
+
+
+        }
+
+
+        private void butSelection_Enter(object sender, EventArgs e)
+        {
+            ((Button)sender).FlatAppearance.BorderColor = Color.Aqua;
+        }
+        private void butSelection_Leave(object sender, EventArgs e)
+        {
+            ((Button)sender).FlatAppearance.BorderColor = Color.Black;
+        }
+
+        private void timerSwitch_Tick(object sender, EventArgs e)
+        {
+            Control ctlCurr;
+
+            if (BackendLogic.inputOption == 1)
+            {
+                ctlCurr = ActiveControl.Parent;
+                ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                timerSwitch.Start();
+            }
+        }
+
+        private void butSelection_KeyDown(object sender, KeyEventArgs e)
+        {
+            Control ctlCurr;
+
+            if (BackendLogic.inputOption == 2)
+            {
+                if (e.KeyCode == Keys.Space)
+                {
+                    ctlCurr = ((Button)sender).Parent;
+                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
+        }
+
+
     }
 }

@@ -16,15 +16,18 @@ namespace NRSSSNamespace
         {
             InitializeComponent();
 
-            pictureBox1.Image = BackendLogic.arrayOfSizes[0];
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            if (BackendLogic.inputOption == 1)
+            {
+                timerSwitch.Interval = BackendLogic.secondsTimer * 1000;
+                timerSwitch.Enabled = true;
+            }
 
-            pictureBox2.Image = BackendLogic.arrayOfSizes[1];
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            pictureBox3.Image = BackendLogic.arrayOfSizes[2];
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            btnSize1.BackgroundImage = BackendLogic.arrayOfSizes[0];
+           
+            btnSize2.BackgroundImage = BackendLogic.arrayOfSizes[1];
+           
+            btnSize3.BackgroundImage = BackendLogic.arrayOfSizes[2];
+            
 
         }
 
@@ -34,13 +37,7 @@ namespace NRSSSNamespace
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-        private void NextBtn_Click(object sender, EventArgs e)
-        {
-            ColourPage newColourPage = new ColourPage();
-            newColourPage.Show();
-            Visible = false;
-        }
-
+       
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -56,40 +53,85 @@ namespace NRSSSNamespace
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Size_Click1(object sender, EventArgs e)
         {
+            Button me = sender as Button;
+
+            BackendLogic.todSizesDone = DateTime.Now;
             BackendLogic.arrayOfOutputInfo[2] = SmallLabel.Text;
-            BackendLogic.arrayOfOutputImage[2] = pictureBox1.Image;
+            BackendLogic.arrayOfOutputImage[2] = btnSize1.BackgroundImage;
 
             FinalPage newFinalPage = new FinalPage();
             newFinalPage.Show();
             Visible = false;
         }
 
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Size_Click2(object sender, EventArgs e)
         {
+            Button me = sender as Button;
+
+            BackendLogic.todSizesDone = DateTime.Now;
             BackendLogic.arrayOfOutputInfo[2] = MedLabel.Text;
-            BackendLogic.arrayOfOutputImage[2] = pictureBox2.Image;
+            BackendLogic.arrayOfOutputImage[2] = btnSize2.BackgroundImage;
 
             FinalPage newFinalPage = new FinalPage();
             newFinalPage.Show();
             Visible = false;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void Size_Click3(object sender, EventArgs e)
         {
+            Button me = sender as Button;
+
+            BackendLogic.todSizesDone = DateTime.Now;
             BackendLogic.arrayOfOutputInfo[2] = BigLabel.Text;
-            BackendLogic.arrayOfOutputImage[2] = pictureBox3.Image;
+            BackendLogic.arrayOfOutputImage[2] = btnSize3.BackgroundImage;
 
             FinalPage newFinalPage = new FinalPage();
             newFinalPage.Show();
             Visible = false;
         }
+
 
         private void SmallLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void butSelection_Enter(object sender, EventArgs e)
+        {
+            ((Button)sender).FlatAppearance.BorderColor = Color.Aqua;
+        }
+        private void butSelection_Leave(object sender, EventArgs e)
+        {
+            ((Button)sender).FlatAppearance.BorderColor = Color.Black;
+        }
+
+        private void timerSwitch_Tick(object sender, EventArgs e)
+        {
+            Control ctlCurr;
+
+            if (BackendLogic.inputOption == 1)
+            {
+                ctlCurr = ActiveControl.Parent;
+                ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                timerSwitch.Start();
+            }
+        }
+
+        private void butSelection_KeyDown(object sender, KeyEventArgs e)
+        {
+            Control ctlCurr;
+
+            if (BackendLogic.inputOption == 2)
+            {
+                if (e.KeyCode == Keys.Space)
+                {
+                    ctlCurr = ((Button)sender).Parent;
+                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
         }
     }
 }

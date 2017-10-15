@@ -17,7 +17,12 @@ namespace NRSSSNamespace
         public static int secondsTimer;
         public static int inputOption;
 
-
+        public static DateTime todInputDone;
+        public static DateTime todCategoriesDone;
+        public static DateTime todModelsDone;
+        public static DateTime todColoursDone;
+        public static DateTime todSizesDone;
+        
         public static Image[] arrayOfCategoriesImages;
         public static Image[] arrayOfModelsImages;
         

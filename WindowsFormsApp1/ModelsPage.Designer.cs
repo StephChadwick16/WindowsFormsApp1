@@ -49,10 +49,9 @@
             // 
             this.ModelsLabel.AutoSize = true;
             this.ModelsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelsLabel.Location = new System.Drawing.Point(792, 13);
-            this.ModelsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ModelsLabel.Location = new System.Drawing.Point(1056, 16);
             this.ModelsLabel.Name = "ModelsLabel";
-            this.ModelsLabel.Size = new System.Drawing.Size(378, 113);
+            this.ModelsLabel.Size = new System.Drawing.Size(505, 153);
             this.ModelsLabel.TabIndex = 0;
             this.ModelsLabel.Text = "Models";
             // 
@@ -61,10 +60,10 @@
             this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(30, 1148);
-            this.CloseBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.CloseBtn.Location = new System.Drawing.Point(40, 1435);
+            this.CloseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(225, 144);
+            this.CloseBtn.Size = new System.Drawing.Size(300, 180);
             this.CloseBtn.TabIndex = 6;
             this.CloseBtn.TabStop = false;
             this.CloseBtn.Text = "Close";
@@ -75,10 +74,9 @@
             // 
             this.ModelLabel2.AutoSize = true;
             this.ModelLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelLabel2.Location = new System.Drawing.Point(860, 212);
-            this.ModelLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ModelLabel2.Location = new System.Drawing.Point(1147, 265);
             this.ModelLabel2.Name = "ModelLabel2";
-            this.ModelLabel2.Size = new System.Drawing.Size(283, 79);
+            this.ModelLabel2.Size = new System.Drawing.Size(377, 107);
             this.ModelLabel2.TabIndex = 6;
             this.ModelLabel2.Text = "Model 2";
             // 
@@ -86,10 +84,9 @@
             // 
             this.ModelLabel3.AutoSize = true;
             this.ModelLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelLabel3.Location = new System.Drawing.Point(1514, 212);
-            this.ModelLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ModelLabel3.Location = new System.Drawing.Point(2019, 265);
             this.ModelLabel3.Name = "ModelLabel3";
-            this.ModelLabel3.Size = new System.Drawing.Size(283, 79);
+            this.ModelLabel3.Size = new System.Drawing.Size(377, 107);
             this.ModelLabel3.TabIndex = 7;
             this.ModelLabel3.Text = "Model 3";
             // 
@@ -98,10 +95,10 @@
             this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(301, 1148);
-            this.HomeBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.HomeBtn.Location = new System.Drawing.Point(401, 1435);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(225, 144);
+            this.HomeBtn.Size = new System.Drawing.Size(300, 180);
             this.HomeBtn.TabIndex = 7;
             this.HomeBtn.TabStop = false;
             this.HomeBtn.Text = "Home";
@@ -113,10 +110,9 @@
             this.ModelLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ModelLabel1.AutoSize = true;
             this.ModelLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelLabel1.Location = new System.Drawing.Point(155, 212);
-            this.ModelLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ModelLabel1.Location = new System.Drawing.Point(207, 265);
             this.ModelLabel1.Name = "ModelLabel1";
-            this.ModelLabel1.Size = new System.Drawing.Size(283, 79);
+            this.ModelLabel1.Size = new System.Drawing.Size(377, 107);
             this.ModelLabel1.TabIndex = 5;
             this.ModelLabel1.Text = "Model 1";
             // 
@@ -129,16 +125,16 @@
             this.NextPageBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NextPageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextPageBtn.ForeColor = System.Drawing.Color.Black;
-            this.NextPageBtn.Location = new System.Drawing.Point(1654, 1067);
-            this.NextPageBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.NextPageBtn.Location = new System.Drawing.Point(2205, 1334);
+            this.NextPageBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NextPageBtn.Name = "NextPageBtn";
-            this.NextPageBtn.Size = new System.Drawing.Size(308, 191);
+            this.NextPageBtn.Size = new System.Drawing.Size(411, 239);
             this.NextPageBtn.TabIndex = 5;
             this.NextPageBtn.Text = "Next Page";
             this.NextPageBtn.UseVisualStyleBackColor = false;
             this.NextPageBtn.Click += new System.EventHandler(this.NextPageBtn_Click);
             this.NextPageBtn.Enter += new System.EventHandler(this.butSelection_Enter);
-            this.NextPageBtn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.NextPageBtn.KeyUp += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyUp);
             this.NextPageBtn.Leave += new System.EventHandler(this.butSelection_Leave);
             // 
             // PreviousPgBtn
@@ -150,16 +146,16 @@
             this.PreviousPgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PreviousPgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviousPgBtn.ForeColor = System.Drawing.Color.Black;
-            this.PreviousPgBtn.Location = new System.Drawing.Point(1353, 1074);
-            this.PreviousPgBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.PreviousPgBtn.Location = new System.Drawing.Point(1804, 1342);
+            this.PreviousPgBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PreviousPgBtn.Name = "PreviousPgBtn";
-            this.PreviousPgBtn.Size = new System.Drawing.Size(309, 230);
+            this.PreviousPgBtn.Size = new System.Drawing.Size(412, 288);
             this.PreviousPgBtn.TabIndex = 4;
             this.PreviousPgBtn.Text = "Previous Page";
             this.PreviousPgBtn.UseVisualStyleBackColor = false;
             this.PreviousPgBtn.Click += new System.EventHandler(this.PreviousPgBtn_Click);
             this.PreviousPgBtn.Enter += new System.EventHandler(this.butSelection_Enter);
-            this.PreviousPgBtn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.PreviousPgBtn.KeyUp += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyUp);
             this.PreviousPgBtn.Leave += new System.EventHandler(this.butSelection_Leave);
             // 
             // butSelectionA
@@ -171,16 +167,16 @@
             this.butSelectionA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butSelectionA.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butSelectionA.ForeColor = System.Drawing.Color.Black;
-            this.butSelectionA.Location = new System.Drawing.Point(30, 340);
-            this.butSelectionA.Margin = new System.Windows.Forms.Padding(10);
+            this.butSelectionA.Location = new System.Drawing.Point(40, 425);
+            this.butSelectionA.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.butSelectionA.Name = "butSelectionA";
-            this.butSelectionA.Padding = new System.Windows.Forms.Padding(20);
-            this.butSelectionA.Size = new System.Drawing.Size(621, 702);
+            this.butSelectionA.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.butSelectionA.Size = new System.Drawing.Size(828, 878);
             this.butSelectionA.TabIndex = 1;
             this.butSelectionA.UseVisualStyleBackColor = false;
             this.butSelectionA.Click += new System.EventHandler(this.Model_Click);
             this.butSelectionA.Enter += new System.EventHandler(this.butSelection_Enter);
-            this.butSelectionA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.butSelectionA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyUp);
             this.butSelectionA.Leave += new System.EventHandler(this.butSelection_Leave);
             // 
             // butSelectionB
@@ -192,16 +188,16 @@
             this.butSelectionB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butSelectionB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butSelectionB.ForeColor = System.Drawing.Color.Black;
-            this.butSelectionB.Location = new System.Drawing.Point(678, 340);
-            this.butSelectionB.Margin = new System.Windows.Forms.Padding(10);
+            this.butSelectionB.Location = new System.Drawing.Point(904, 425);
+            this.butSelectionB.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.butSelectionB.Name = "butSelectionB";
-            this.butSelectionB.Padding = new System.Windows.Forms.Padding(20);
-            this.butSelectionB.Size = new System.Drawing.Size(621, 702);
+            this.butSelectionB.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.butSelectionB.Size = new System.Drawing.Size(828, 878);
             this.butSelectionB.TabIndex = 2;
             this.butSelectionB.UseVisualStyleBackColor = false;
             this.butSelectionB.Click += new System.EventHandler(this.Model_Click);
             this.butSelectionB.Enter += new System.EventHandler(this.butSelection_Enter);
-            this.butSelectionB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.butSelectionB.KeyUp += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyUp);
             this.butSelectionB.Leave += new System.EventHandler(this.butSelection_Leave);
             // 
             // butSelectionC
@@ -213,16 +209,16 @@
             this.butSelectionC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butSelectionC.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butSelectionC.ForeColor = System.Drawing.Color.Black;
-            this.butSelectionC.Location = new System.Drawing.Point(1335, 340);
-            this.butSelectionC.Margin = new System.Windows.Forms.Padding(10);
+            this.butSelectionC.Location = new System.Drawing.Point(1780, 425);
+            this.butSelectionC.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.butSelectionC.Name = "butSelectionC";
-            this.butSelectionC.Padding = new System.Windows.Forms.Padding(20);
-            this.butSelectionC.Size = new System.Drawing.Size(621, 702);
+            this.butSelectionC.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.butSelectionC.Size = new System.Drawing.Size(828, 878);
             this.butSelectionC.TabIndex = 3;
             this.butSelectionC.UseVisualStyleBackColor = false;
             this.butSelectionC.Click += new System.EventHandler(this.Model_Click);
             this.butSelectionC.Enter += new System.EventHandler(this.butSelection_Enter);
-            this.butSelectionC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyDown);
+            this.butSelectionC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.butSelection_KeyUp);
             this.butSelectionC.Leave += new System.EventHandler(this.butSelection_Leave);
             // 
             // ModelPanel
@@ -240,10 +236,10 @@
             this.ModelPanel.Controls.Add(this.ModelLabel2);
             this.ModelPanel.Controls.Add(this.CloseBtn);
             this.ModelPanel.Controls.Add(this.ModelsLabel);
-            this.ModelPanel.Location = new System.Drawing.Point(66, 40);
-            this.ModelPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ModelPanel.Location = new System.Drawing.Point(88, 50);
+            this.ModelPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ModelPanel.Name = "ModelPanel";
-            this.ModelPanel.Size = new System.Drawing.Size(1962, 1323);
+            this.ModelPanel.Size = new System.Drawing.Size(2616, 1654);
             this.ModelPanel.TabIndex = 8;
             this.ModelPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -253,15 +249,15 @@
             // 
             // ModelsPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(2080, 1262);
+            this.ClientSize = new System.Drawing.Size(2773, 1578);
             this.Controls.Add(this.ModelPanel);
             this.ForeColor = System.Drawing.Color.Yellow;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ModelsPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Models";

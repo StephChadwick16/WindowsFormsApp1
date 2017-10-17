@@ -220,16 +220,17 @@ namespace NRSSSNamespace
         private void Category_Click3(object sender, EventArgs e)
         {
             Button me = sender as Button;
+            
+            
+                BackendLogic.todCategoriesDone = DateTime.Now;
+                BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[start + 2];
+                BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[start + 2];
 
-            BackendLogic.todCategoriesDone = DateTime.Now;
-            BackendLogic.arrayOfOutputImage[0] = BackendLogic.arrayOfCategoriesImages[start + 2];
-            BackendLogic.arrayOfOutputInfo[0] = BackendLogic.arrayOfCategoriesName[start + 2];
+                ModelsPage newModelsPage = new ModelsPage();
+                newModelsPage.Show();
+                Visible = false;
 
-            ModelsPage newModelsPage = new ModelsPage();
-            newModelsPage.Show();
-            Visible = false;
-
-
+            
         }
 
         private void butSelection_Enter(object sender, EventArgs e)
@@ -267,5 +268,20 @@ namespace NRSSSNamespace
             }
         }
 
+        private void butSelection_KeyUp(object sender, KeyEventArgs e)
+        {
+            Control ctlCurr;
+
+
+            if (BackendLogic.inputOption == 2)
+            {
+                if (e.KeyCode == Keys.Space)
+                {
+                    ctlCurr = ((Button)sender).Parent;
+                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
+
+        }
     }
 }

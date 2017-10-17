@@ -203,7 +203,7 @@ namespace NRSSSNamespace
 
         private void butSelection_Enter(object sender, EventArgs e)
         {
-            ((Button)sender).FlatAppearance.BorderColor = Color.Aqua;
+            ((Button)sender).FlatAppearance.BorderColor = Color.Red;
         }
         private void butSelection_Leave(object sender, EventArgs e)
         {

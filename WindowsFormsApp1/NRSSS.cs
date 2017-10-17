@@ -46,14 +46,24 @@ namespace NRSSSNamespace
 
         }
 
+        private void Interval2Sec_CheckedChanged(object sender, EventArgs e)
+        {
+            BackendLogic.secondsTimer = 2;
+        }
+
+        private void Interval5Sec_CheckedChanged(object sender, EventArgs e)
+        {
+            BackendLogic.secondsTimer = 5;
+        }
+
         private void Interval10Sec_CheckedChanged(object sender, EventArgs e)
         {
             BackendLogic.secondsTimer = 10;
         }
 
-        private void Interval20Sec_CheckedChanged(object sender, EventArgs e)
+        private void Interval15Sec_CheckedChanged(object sender, EventArgs e)
         {
-            BackendLogic.secondsTimer = 20;
+            BackendLogic.secondsTimer = 15;
         }
 
         private void Interval30Sec_CheckedChanged(object sender, EventArgs e)
@@ -61,35 +71,25 @@ namespace NRSSSNamespace
             BackendLogic.secondsTimer = 30;
         }
 
-        private void Interval1Min_CheckedChanged(object sender, EventArgs e)
+        private void Interval20Sec_CheckedChanged(object sender, EventArgs e)
         {
-            BackendLogic.secondsTimer = 60;
+            BackendLogic.secondsTimer = 20;
         }
 
-        private void Interval1HalfMin_CheckedChanged(object sender, EventArgs e)
+        private void Interval25Sec_CheckedChanged(object sender, EventArgs e)
         {
-            BackendLogic.secondsTimer = 90;
-        }
-
-        private void Interval2Min_CheckedChanged(object sender, EventArgs e)
-        {
-            BackendLogic.secondsTimer = 120;
-        }
-
-        private void Interval5Min_CheckedChanged(object sender, EventArgs e)
-        {
-            BackendLogic.secondsTimer = 300;
+            BackendLogic.secondsTimer = 25;
         }
 
         private void StuffAndThingsEnablement(bool status)
         {
+            Interval2Sec.Visible = status;
+            Interval5Sec.Visible = status;
             Interval10Sec.Visible = status;
-            Interval20Sec.Visible = status;
+            Interval15Sec.Visible = status;
             Interval30Sec.Visible = status;
-            Interval1Min.Visible = status;
-            Interval1HalfMin.Visible = status;
-            Interval2Min.Visible = status;
-            Interval5Min.Visible = status;
+            Interval20Sec.Visible = status;
+            Interval25Sec.Visible = status;
         }
 
         private void InputOption1_CheckedChanged_1(object sender, EventArgs e)
@@ -108,6 +108,21 @@ namespace NRSSSNamespace
         {
             StuffAndThingsEnablement(false);
             BackendLogic.inputOption = 3;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

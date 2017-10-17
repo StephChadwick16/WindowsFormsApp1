@@ -235,7 +235,7 @@ namespace NRSSSNamespace
 
         private void butSelection_Enter(object sender, EventArgs e)
         {
-            ((Button)sender).FlatAppearance.BorderColor = Color.Aqua;
+            ((Button)sender).FlatAppearance.BorderColor = Color.Red;
         }
         private void butSelection_Leave(object sender, EventArgs e)
         {
@@ -254,13 +254,14 @@ namespace NRSSSNamespace
             }
         }
 
+                 
         private void butSelection_KeyDown(object sender, KeyEventArgs e)
         {
             Control ctlCurr;
 
             if (BackendLogic.inputOption == 2)
             {
-                if (e.KeyCode == Keys.Space)
+                if (e.KeyCode == Keys.Enter)
                 {
                     ctlCurr = ((Button)sender).Parent;
                     ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
@@ -268,6 +269,7 @@ namespace NRSSSNamespace
             }
         }
 
+        
         private void butSelection_KeyUp(object sender, KeyEventArgs e)
         {
             Control ctlCurr;
@@ -281,6 +283,16 @@ namespace NRSSSNamespace
                     ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
                 }
             }
+
+        }
+
+        private void CategoryPage_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Category1Label_Click(object sender, EventArgs e)
+        {
 
         }
     }

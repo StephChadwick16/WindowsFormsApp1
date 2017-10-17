@@ -322,17 +322,17 @@
             // StudentOption
             // 
             this.StudentOption.AutoSize = true;
-            this.StudentOption.Font = new System.Drawing.Font("Arial", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentOption.Font = new System.Drawing.Font("Century Gothic", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StudentOption.ForeColor = System.Drawing.Color.Red;
-            this.StudentOption.Location = new System.Drawing.Point(1701, 15);
+            this.StudentOption.Location = new System.Drawing.Point(1718, 16);
             this.StudentOption.Name = "StudentOption";
-            this.StudentOption.Size = new System.Drawing.Size(202, 69);
+            this.StudentOption.Size = new System.Drawing.Size(201, 68);
             this.StudentOption.TabIndex = 10;
             this.StudentOption.Text = "NAME";
             // 
             // TeacherNotesBox
             // 
-            this.TeacherNotesBox.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherNotesBox.Font = new System.Drawing.Font("Calibri", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TeacherNotesBox.Location = new System.Drawing.Point(41, 121);
             this.TeacherNotesBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TeacherNotesBox.Multiline = true;

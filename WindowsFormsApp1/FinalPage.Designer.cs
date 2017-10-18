@@ -32,6 +32,7 @@
             this.IntervalSelection = new System.Windows.Forms.Label();
             this.OptionSelected = new System.Windows.Forms.Label();
             this.SettingsAndTimesPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.ShowsSizeTime = new System.Windows.Forms.Label();
             this.ShowsColourTime = new System.Windows.Forms.Label();
             this.ShowsModelTime = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@
             this.ColourPanel = new System.Windows.Forms.Panel();
             this.ColourChosenLabel = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.SubPartsPanel = new System.Windows.Forms.Panel();
             this.SubPartsLabel = new System.Windows.Forms.Label();
             this.Colour3Label = new System.Windows.Forms.Label();
@@ -79,9 +81,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.OptionsSelectedLabel = new System.Windows.Forms.Label();
-            this.SaveBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.SettingsAndTimesPanel.SuspendLayout();
             this.TeacherNotesPanel.SuspendLayout();
             this.OptionsSelectedPanel.SuspendLayout();
@@ -158,6 +158,16 @@
             this.SettingsAndTimesPanel.Size = new System.Drawing.Size(748, 695);
             this.SettingsAndTimesPanel.TabIndex = 6;
             this.SettingsAndTimesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.SettingsAndTimesPanel_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(210, 290);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(343, 44);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "TIMES RECORDED:";
             // 
             // ShowsSizeTime
             // 
@@ -415,6 +425,20 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // SaveBtn
+            // 
+            this.SaveBtn.BackColor = System.Drawing.Color.Yellow;
+            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.Black;
+            this.SaveBtn.Location = new System.Drawing.Point(846, 1269);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(250, 140);
+            this.SaveBtn.TabIndex = 21;
+            this.SaveBtn.Text = "Save As";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
+            // 
             // SubPartsPanel
             // 
             this.SubPartsPanel.Controls.Add(this.SubPartsLabel);
@@ -664,20 +688,6 @@
             this.OptionsSelectedLabel.TabIndex = 0;
             this.OptionsSelectedLabel.Text = "OPTIONS SELECTED FOR MODEL CREATION";
             // 
-            // SaveBtn
-            // 
-            this.SaveBtn.BackColor = System.Drawing.Color.Yellow;
-            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn.ForeColor = System.Drawing.Color.Black;
-            this.SaveBtn.Location = new System.Drawing.Point(846, 1269);
-            this.SaveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(250, 140);
-            this.SaveBtn.TabIndex = 21;
-            this.SaveBtn.Text = "Save As";
-            this.SaveBtn.UseVisualStyleBackColor = false;
-            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -695,16 +705,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1963, 1596);
             this.panel1.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(210, 290);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 44);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "TIMES RECORDED:";
             // 
             // FinalPage
             // 

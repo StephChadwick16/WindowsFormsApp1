@@ -79,7 +79,6 @@
             this.Category1Label.Size = new System.Drawing.Size(397, 80);
             this.Category1Label.TabIndex = 8;
             this.Category1Label.Text = "Category 1";
-            this.Category1Label.Click += new System.EventHandler(this.Category1Label_Click);
             // 
             // Category2Label
             // 
@@ -255,7 +254,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CategoryPage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.CategoryPage_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

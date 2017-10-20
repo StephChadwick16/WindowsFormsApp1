@@ -285,14 +285,5 @@ namespace NRSSSNamespace
 
         }
 
-        private void CategoryPage_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Category1Label_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -42,21 +42,21 @@ namespace NRSSSNamespace
 
 
             btnColour1.BackgroundImage = BackendLogic.arrayOfColours[0];
-            
+
             btnColour2.BackgroundImage = BackendLogic.arrayOfColours[1];
-            
+
             btnColour3.BackgroundImage = BackendLogic.arrayOfColours[2];
-            
+
             btnColour4.BackgroundImage = BackendLogic.arrayOfColours[3];
-            
+
             btnColour5.BackgroundImage = BackendLogic.arrayOfColours[4];
-            
+
             btnColour6.BackgroundImage = BackendLogic.arrayOfColours[5];
-            
+
             btnColour7.BackgroundImage = BackendLogic.arrayOfColours[6];
-            
+
             btnColour8.BackgroundImage = BackendLogic.arrayOfColours[7];
-            
+
 
             SubPartsRefresh();
 
@@ -192,5 +192,20 @@ namespace NRSSSNamespace
             }
         }
 
+        private void butSelection_KeyUp(object sender, KeyEventArgs e)
+        {
+            Control ctlCurr;
+
+
+            if (BackendLogic.inputOption == 2)
+            {
+                if (e.KeyCode == Keys.Tab)
+                {
+                    ctlCurr = ((Button)sender).Parent;
+                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
+
+        }
     }
 }

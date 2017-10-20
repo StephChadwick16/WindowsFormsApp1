@@ -46,7 +46,7 @@ namespace NRSSSNamespace
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-        
+
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -204,6 +204,21 @@ namespace NRSSSNamespace
             }
         }
 
+        private void butSelection_KeyUp(object sender, KeyEventArgs e)
+        {
+            Control ctlCurr;
 
+
+            if (BackendLogic.inputOption == 2)
+            {
+                if (e.KeyCode == Keys.Tab)
+                {
+                    ctlCurr = ((Button)sender).Parent;
+                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
+
+
+        }
     }
 }

@@ -23,11 +23,11 @@ namespace NRSSSNamespace
             }
 
             btnSize1.BackgroundImage = BackendLogic.arrayOfSizes[0];
-           
+
             btnSize2.BackgroundImage = BackendLogic.arrayOfSizes[1];
-           
+
             btnSize3.BackgroundImage = BackendLogic.arrayOfSizes[2];
-            
+
 
         }
 
@@ -37,14 +37,14 @@ namespace NRSSSNamespace
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-       
+
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             this.Close();
             Application.Exit();
         }
-        
-        
+
+
         private void HomeBtn_Click(object sender, EventArgs e)
         {
             StartPage openForm = new StartPage();
@@ -132,6 +132,22 @@ namespace NRSSSNamespace
                     ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
                 }
             }
+        }
+
+        private void butSelection_KeyUp(object sender, KeyEventArgs e)
+        {
+            Control ctlCurr;
+
+
+            if (BackendLogic.inputOption == 2)
+            {
+                if (e.KeyCode == Keys.Tab)
+                {
+                    ctlCurr = ((Button)sender).Parent;
+                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
+
         }
     }
 }

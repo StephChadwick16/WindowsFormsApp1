@@ -243,7 +243,7 @@ namespace NRSSSNamespace
 
             if (BackendLogic.inputOption == 2)
             {
-                if (e.KeyCode == Keys.Space)
+                if (e.KeyCode == Keys.Tab)
                 {
                     ctlCurr = ((Button)sender).Parent;
                     ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);

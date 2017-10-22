@@ -62,6 +62,30 @@ namespace NRSSSNamespace
 
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Tab)
+            {
+                // Process keys
+                return true;
+            }
+
+            if (keyData == Keys.Space)
+            {
+                // Process keys
+                return true;
+            }
+
+
+            if (keyData == Keys.Enter)
+            {
+                // Process keys
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         public void SubPartsRefresh()
         {
             SubPartPicBox.Image = BackendLogic.arrayOfSPImage[currentSubPart];
@@ -178,33 +202,29 @@ namespace NRSSSNamespace
             }
         }
 
-        private void butSelection_KeyDown(object sender, KeyEventArgs e)
-        {
-            Control ctlCurr;
-
-            if (BackendLogic.inputOption == 2)
-            {
-                if (e.KeyCode == Keys.Tab)
-                {
-                    ctlCurr = ((Button)sender).Parent;
-                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
-                }
-            }
-        }
-
+        
         private void butSelection_KeyUp(object sender, KeyEventArgs e)
         {
             Control ctlCurr;
 
-
-            if (BackendLogic.inputOption == 2)
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
             {
-                if (e.KeyCode == Keys.Space)
-                {
-                    ctlCurr = ((Button)sender).Parent;
-                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
-                }
+                if (btnColour1 == ActiveControl) Colour_Click1(sender, e);
+                if (btnColour2 == ActiveControl) Colour_Click2(sender, e);
+                if (btnColour3 == ActiveControl) Colour_Click3(sender, e);
+                if (btnColour4 == ActiveControl) Colour_Click4(sender, e);
+                if (btnColour5 == ActiveControl) Colour_Click5(sender, e);
+                if (btnColour6 == ActiveControl) Colour_Click6(sender, e);
+                if (btnColour7 == ActiveControl) Colour_Click7(sender, e);
+                if (btnColour8 == ActiveControl) Colour_Click8(sender, e);
             }
+
+            if (e.KeyCode == Keys.Tab)
+            {
+                ctlCurr = ((Button)sender).Parent;
+                ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+            }
+
 
         }
 

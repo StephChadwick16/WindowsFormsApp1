@@ -110,6 +110,8 @@ namespace NRSSSNamespace
             ShowsSizeTime.Text = tsSizesSelection.ToString(@"hh\:mm\:ss");
         }
 
+
+
         private void FinalPage_Load(object sender, EventArgs e)
         {
             this.AutoSize = true;
@@ -117,16 +119,6 @@ namespace NRSSSNamespace
 
         }
 
-
-        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
@@ -143,12 +135,7 @@ namespace NRSSSNamespace
 
         }
 
-        private void SettingsAndTimesPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BitmapSave(string FileName)
+              private void BitmapSave(string FileName)
         {
             using (Bitmap bmp = new Bitmap(this.Width, this.Height))
             {
@@ -174,65 +161,6 @@ namespace NRSSSNamespace
             
         }
 
-        private void CategoryChosenLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ModelChosenLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SizeChosenLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ColourChosenLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ShowsProgramTime_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Colour_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SP1PicBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Colour1PicBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SP2PicBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Colour2PicBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NotesObsLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TeacherNotesBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

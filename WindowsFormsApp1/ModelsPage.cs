@@ -35,6 +35,30 @@ namespace NRSSSNamespace
             ModelsRefresh();
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Tab)
+            {
+                // Process keys
+                return true;
+            }
+
+            if (keyData == Keys.Space)
+            {
+                // Process keys
+                return true;
+            }
+
+
+            if (keyData == Keys.Enter)
+            {
+                // Process keys
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         public void ModelsRefresh()
         {
             int iModelIndex = 0;
@@ -222,34 +246,24 @@ namespace NRSSSNamespace
             }
         }
 
-        private void butSelection_KeyDown(object sender, KeyEventArgs e)
-        {
-            Control ctlCurr;
-
-            if (BackendLogic.inputOption == 2)
-            {
-                if (e.KeyCode == Keys.Tab)
-                {
-                    ctlCurr = ((Button)sender).Parent;
-                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
-                }
-            }
-        }
-
-
-
+      
         private void butSelection_KeyUp(object sender, KeyEventArgs e)
         {
             Control ctlCurr;
 
-
-            if (BackendLogic.inputOption == 2)
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
             {
-                if (e.KeyCode == Keys.Space)
-                {
-                    ctlCurr = ((Button)sender).Parent;
-                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
-                }
+                if (butSelectionA == ActiveControl) Model_Click(sender, e);
+                if (butSelectionB == ActiveControl) Model_Click(sender, e);
+                if (butSelectionC == ActiveControl) Model_Click(sender, e);
+                if (NextPageBtn == ActiveControl) NextPageBtn_Click(sender, e);
+                if (PreviousPgBtn == ActiveControl) PreviousPgBtn_Click(sender, e);
+            }
+
+            if (e.KeyCode == Keys.Tab)
+            {
+                ctlCurr = ((Button)sender).Parent;
+                ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
             }
 
         }

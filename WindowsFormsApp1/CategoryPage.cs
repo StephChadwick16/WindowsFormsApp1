@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace NRSSSNamespace
 {
@@ -36,6 +37,29 @@ namespace NRSSSNamespace
 
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Tab)
+            {
+                // Process keys
+                return true;
+            }
+
+            if (keyData == Keys.Space)
+            {
+                // Process keys
+                return true;
+            }
+
+
+            if (keyData == Keys.Enter)
+            {
+                // Process keys
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
 
         public void CategoryRefresh()
         {
@@ -237,6 +261,7 @@ namespace NRSSSNamespace
         {
             ((Button)sender).FlatAppearance.BorderColor = Color.Red;
         }
+
         private void butSelection_Leave(object sender, EventArgs e)
         {
             ((Button)sender).FlatAppearance.BorderColor = Color.Black;
@@ -254,37 +279,24 @@ namespace NRSSSNamespace
             }
         }
 
-
-        private void butSelection_KeyDown(object sender, KeyEventArgs e)
-        {
-            Control ctlCurr;
-
-            if (BackendLogic.inputOption == 2)
-            {
-                if (e.KeyCode == Keys.Tab)
-                {
-                    ctlCurr = ((Button)sender).Parent;
-                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
-                }
-            }
-        }
-
-
-
         private void butSelection_KeyUp(object sender, KeyEventArgs e)
         {
             Control ctlCurr;
 
-
-            if (BackendLogic.inputOption == 2)
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
             {
-                if (e.KeyCode == Keys.Space)
-                {
-                    ctlCurr = ((Button)sender).Parent;
-                    ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
-                }
+                if (butSelectionA == ActiveControl) Category_Click1(sender, e);
+                if (butSelectionB == ActiveControl) Category_Click2(sender, e);
+                if (butSelectionC == ActiveControl) Category_Click3(sender, e);
+                if (NextPageBtn == ActiveControl) NextPageBtn_Click(sender, e);
+                if (PreviousPgBtn == ActiveControl) PreviousPgBtn_Click(sender, e);
             }
 
+            if (e.KeyCode == Keys.Tab)
+            {
+                ctlCurr = ((Button)sender).Parent;
+                ctlCurr.SelectNextControl(ActiveControl, true, true, true, true);
+            }
         }
 
     }

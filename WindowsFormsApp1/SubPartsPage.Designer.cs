@@ -65,10 +65,10 @@
             this.panel1.Controls.Add(this.SubPartNameLabel);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.SubPartPicBox);
-            this.panel1.Location = new System.Drawing.Point(11, 14);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Location = new System.Drawing.Point(22, 27);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(960, 769);
+            this.panel1.Size = new System.Drawing.Size(1920, 1295);
             this.panel1.TabIndex = 0;
             // 
             // btnColour7
@@ -79,10 +79,10 @@
             this.btnColour7.FlatAppearance.BorderSize = 10;
             this.btnColour7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour7.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour7.Location = new System.Drawing.Point(453, 538);
-            this.btnColour7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour7.Location = new System.Drawing.Point(902, 922);
+            this.btnColour7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour7.Name = "btnColour7";
-            this.btnColour7.Size = new System.Drawing.Size(175, 156);
+            this.btnColour7.Size = new System.Drawing.Size(350, 300);
             this.btnColour7.TabIndex = 7;
             this.btnColour7.UseVisualStyleBackColor = false;
             this.btnColour7.Click += new System.EventHandler(this.Colour_Click7);
@@ -98,10 +98,10 @@
             this.btnColour8.FlatAppearance.BorderSize = 10;
             this.btnColour8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour8.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour8.Location = new System.Drawing.Point(663, 538);
-            this.btnColour8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour8.Location = new System.Drawing.Point(1322, 922);
+            this.btnColour8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour8.Name = "btnColour8";
-            this.btnColour8.Size = new System.Drawing.Size(175, 156);
+            this.btnColour8.Size = new System.Drawing.Size(350, 300);
             this.btnColour8.TabIndex = 8;
             this.btnColour8.UseVisualStyleBackColor = false;
             this.btnColour8.Click += new System.EventHandler(this.Colour_Click8);
@@ -117,10 +117,10 @@
             this.btnColour6.FlatAppearance.BorderSize = 10;
             this.btnColour6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour6.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour6.Location = new System.Drawing.Point(766, 344);
-            this.btnColour6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour6.Location = new System.Drawing.Point(1527, 571);
+            this.btnColour6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour6.Name = "btnColour6";
-            this.btnColour6.Size = new System.Drawing.Size(175, 156);
+            this.btnColour6.Size = new System.Drawing.Size(350, 300);
             this.btnColour6.TabIndex = 6;
             this.btnColour6.UseVisualStyleBackColor = false;
             this.btnColour6.Click += new System.EventHandler(this.Colour_Click6);
@@ -136,10 +136,10 @@
             this.btnColour5.FlatAppearance.BorderSize = 10;
             this.btnColour5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour5.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour5.Location = new System.Drawing.Point(556, 344);
-            this.btnColour5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour5.Location = new System.Drawing.Point(1107, 571);
+            this.btnColour5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour5.Name = "btnColour5";
-            this.btnColour5.Size = new System.Drawing.Size(175, 156);
+            this.btnColour5.Size = new System.Drawing.Size(350, 300);
             this.btnColour5.TabIndex = 5;
             this.btnColour5.UseVisualStyleBackColor = false;
             this.btnColour5.Click += new System.EventHandler(this.Colour_Click5);
@@ -155,10 +155,10 @@
             this.btnColour4.FlatAppearance.BorderSize = 10;
             this.btnColour4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour4.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour4.Location = new System.Drawing.Point(353, 344);
-            this.btnColour4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour4.Location = new System.Drawing.Point(701, 571);
+            this.btnColour4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour4.Name = "btnColour4";
-            this.btnColour4.Size = new System.Drawing.Size(175, 156);
+            this.btnColour4.Size = new System.Drawing.Size(350, 300);
             this.btnColour4.TabIndex = 4;
             this.btnColour4.UseVisualStyleBackColor = false;
             this.btnColour4.Click += new System.EventHandler(this.Colour_Click4);
@@ -174,10 +174,10 @@
             this.btnColour3.FlatAppearance.BorderSize = 10;
             this.btnColour3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour3.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour3.Location = new System.Drawing.Point(766, 146);
-            this.btnColour3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour3.Location = new System.Drawing.Point(1527, 221);
+            this.btnColour3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour3.Name = "btnColour3";
-            this.btnColour3.Size = new System.Drawing.Size(175, 156);
+            this.btnColour3.Size = new System.Drawing.Size(350, 300);
             this.btnColour3.TabIndex = 3;
             this.btnColour3.UseVisualStyleBackColor = false;
             this.btnColour3.Click += new System.EventHandler(this.Colour_Click3);
@@ -193,10 +193,10 @@
             this.btnColour2.FlatAppearance.BorderSize = 10;
             this.btnColour2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour2.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour2.Location = new System.Drawing.Point(556, 146);
-            this.btnColour2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour2.Location = new System.Drawing.Point(1107, 221);
+            this.btnColour2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour2.Name = "btnColour2";
-            this.btnColour2.Size = new System.Drawing.Size(175, 156);
+            this.btnColour2.Size = new System.Drawing.Size(350, 300);
             this.btnColour2.TabIndex = 2;
             this.btnColour2.UseVisualStyleBackColor = false;
             this.btnColour2.Click += new System.EventHandler(this.Colour_Click2);
@@ -212,10 +212,10 @@
             this.btnColour1.FlatAppearance.BorderSize = 10;
             this.btnColour1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColour1.ForeColor = System.Drawing.Color.Transparent;
-            this.btnColour1.Location = new System.Drawing.Point(353, 146);
-            this.btnColour1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnColour1.Location = new System.Drawing.Point(701, 221);
+            this.btnColour1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnColour1.Name = "btnColour1";
-            this.btnColour1.Size = new System.Drawing.Size(175, 156);
+            this.btnColour1.Size = new System.Drawing.Size(350, 300);
             this.btnColour1.TabIndex = 1;
             this.btnColour1.UseVisualStyleBackColor = false;
             this.btnColour1.Click += new System.EventHandler(this.Colour_Click1);
@@ -228,10 +228,10 @@
             this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(21, 628);
-            this.CloseBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.CloseBtn.Location = new System.Drawing.Point(38, 1159);
+            this.CloseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(125, 78);
+            this.CloseBtn.Size = new System.Drawing.Size(232, 117);
             this.CloseBtn.TabIndex = 9;
             this.CloseBtn.TabStop = false;
             this.CloseBtn.Text = "Close";
@@ -243,10 +243,10 @@
             this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(192, 628);
-            this.HomeBtn.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.HomeBtn.Location = new System.Drawing.Point(380, 1159);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(125, 78);
+            this.HomeBtn.Size = new System.Drawing.Size(232, 117);
             this.HomeBtn.TabIndex = 10;
             this.HomeBtn.TabStop = false;
             this.HomeBtn.Text = "Home";
@@ -257,10 +257,10 @@
             // 
             this.SubPartNameLabel.AutoSize = true;
             this.SubPartNameLabel.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubPartNameLabel.Location = new System.Drawing.Point(57, 146);
-            this.SubPartNameLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.SubPartNameLabel.Location = new System.Drawing.Point(117, 248);
+            this.SubPartNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SubPartNameLabel.Name = "SubPartNameLabel";
-            this.SubPartNameLabel.Size = new System.Drawing.Size(219, 32);
+            this.SubPartNameLabel.Size = new System.Drawing.Size(433, 64);
             this.SubPartNameLabel.TabIndex = 27;
             this.SubPartNameLabel.Text = "SUB PART NAME";
             // 
@@ -268,19 +268,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 27F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Location = new System.Drawing.Point(82, 56);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(887, 43);
+            this.label1.Size = new System.Drawing.Size(1759, 85);
             this.label1.TabIndex = 26;
             this.label1.Text = "Sub-Parts - Select a Colour for this Model Sub-Part";
             // 
             // SubPartPicBox
             // 
-            this.SubPartPicBox.Location = new System.Drawing.Point(17, 206);
-            this.SubPartPicBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.SubPartPicBox.Location = new System.Drawing.Point(38, 344);
+            this.SubPartPicBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SubPartPicBox.Name = "SubPartPicBox";
-            this.SubPartPicBox.Size = new System.Drawing.Size(300, 374);
+            this.SubPartPicBox.Size = new System.Drawing.Size(600, 719);
             this.SubPartPicBox.TabIndex = 25;
             this.SubPartPicBox.TabStop = false;
             // 
@@ -290,15 +290,15 @@
             // 
             // SubPartsPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(981, 686);
+            this.ClientSize = new System.Drawing.Size(1962, 1429);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Yellow;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SubPartsPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sub Parts Page";

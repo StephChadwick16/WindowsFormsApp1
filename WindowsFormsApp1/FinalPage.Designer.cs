@@ -317,12 +317,12 @@
             // HomeBtn
             // 
             this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.HomeBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(588, 1133);
+            this.HomeBtn.Location = new System.Drawing.Point(572, 1167);
             this.HomeBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(212, 113);
+            this.HomeBtn.Size = new System.Drawing.Size(221, 117);
             this.HomeBtn.TabIndex = 16;
             this.HomeBtn.TabStop = false;
             this.HomeBtn.Text = "Home";
@@ -332,12 +332,12 @@
             // CloseBtn
             // 
             this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.CloseBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(36, 1133);
+            this.CloseBtn.Location = new System.Drawing.Point(36, 1167);
             this.CloseBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(210, 113);
+            this.CloseBtn.Size = new System.Drawing.Size(219, 117);
             this.CloseBtn.TabIndex = 17;
             this.CloseBtn.TabStop = false;
             this.CloseBtn.Text = "Close";
@@ -359,11 +359,11 @@
             // TeacherNotesBox
             // 
             this.TeacherNotesBox.Font = new System.Drawing.Font("Calibri", 11F);
-            this.TeacherNotesBox.Location = new System.Drawing.Point(20, 92);
+            this.TeacherNotesBox.Location = new System.Drawing.Point(21, 86);
             this.TeacherNotesBox.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.TeacherNotesBox.Multiline = true;
             this.TeacherNotesBox.Name = "TeacherNotesBox";
-            this.TeacherNotesBox.Size = new System.Drawing.Size(711, 277);
+            this.TeacherNotesBox.Size = new System.Drawing.Size(711, 297);
             this.TeacherNotesBox.TabIndex = 18;
             // 
             // TeacherNotesPanel
@@ -374,7 +374,7 @@
             this.TeacherNotesPanel.Location = new System.Drawing.Point(36, 739);
             this.TeacherNotesPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.TeacherNotesPanel.Name = "TeacherNotesPanel";
-            this.TeacherNotesPanel.Size = new System.Drawing.Size(748, 388);
+            this.TeacherNotesPanel.Size = new System.Drawing.Size(748, 406);
             this.TeacherNotesPanel.TabIndex = 19;
             // 
             // NotesObsLabel
@@ -407,14 +407,14 @@
             this.OptionsSelectedPanel.Location = new System.Drawing.Point(808, 129);
             this.OptionsSelectedPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.OptionsSelectedPanel.Name = "OptionsSelectedPanel";
-            this.OptionsSelectedPanel.Size = new System.Drawing.Size(1024, 1123);
+            this.OptionsSelectedPanel.Size = new System.Drawing.Size(1024, 1164);
             this.OptionsSelectedPanel.TabIndex = 20;
             // 
             // ColourPanel
             // 
             this.ColourPanel.Controls.Add(this.ColourChosenLabel);
             this.ColourPanel.Controls.Add(this.pictureBox4);
-            this.ColourPanel.Location = new System.Drawing.Point(12, 737);
+            this.ColourPanel.Location = new System.Drawing.Point(4, 839);
             this.ColourPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.ColourPanel.Name = "ColourPanel";
             this.ColourPanel.Size = new System.Drawing.Size(508, 242);
@@ -443,12 +443,12 @@
             // SaveBtn
             // 
             this.SaveBtn.BackColor = System.Drawing.Color.Yellow;
-            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.Black;
-            this.SaveBtn.Location = new System.Drawing.Point(766, 1004);
+            this.SaveBtn.Location = new System.Drawing.Point(769, 1026);
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(239, 113);
+            this.SaveBtn.Size = new System.Drawing.Size(239, 129);
             this.SaveBtn.TabIndex = 21;
             this.SaveBtn.TabStop = false;
             this.SaveBtn.Text = "Save As";
@@ -470,7 +470,7 @@
             this.SubPartsPanel.Controls.Add(this.Colour3PicBox);
             this.SubPartsPanel.Controls.Add(this.SubPart1Label);
             this.SubPartsPanel.Controls.Add(this.SP3PicBox);
-            this.SubPartsPanel.Location = new System.Drawing.Point(517, 87);
+            this.SubPartsPanel.Location = new System.Drawing.Point(520, 131);
             this.SubPartsPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.SubPartsPanel.Name = "SubPartsPanel";
             this.SubPartsPanel.Size = new System.Drawing.Size(488, 846);
@@ -611,7 +611,7 @@
             // 
             this.ShowsSizeChosen.AutoSize = true;
             this.ShowsSizeChosen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsSizeChosen.Location = new System.Drawing.Point(44, 659);
+            this.ShowsSizeChosen.Location = new System.Drawing.Point(40, 732);
             this.ShowsSizeChosen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ShowsSizeChosen.Name = "ShowsSizeChosen";
             this.ShowsSizeChosen.Size = new System.Drawing.Size(215, 39);
@@ -622,7 +622,7 @@
             // 
             this.ShowsCategoryChosen.AutoSize = true;
             this.ShowsCategoryChosen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsCategoryChosen.Location = new System.Drawing.Point(44, 238);
+            this.ShowsCategoryChosen.Location = new System.Drawing.Point(44, 259);
             this.ShowsCategoryChosen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ShowsCategoryChosen.Name = "ShowsCategoryChosen";
             this.ShowsCategoryChosen.Size = new System.Drawing.Size(230, 39);
@@ -633,7 +633,7 @@
             // 
             this.ShowsModelChosen.AutoSize = true;
             this.ShowsModelChosen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowsModelChosen.Location = new System.Drawing.Point(42, 453);
+            this.ShowsModelChosen.Location = new System.Drawing.Point(42, 506);
             this.ShowsModelChosen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ShowsModelChosen.Name = "ShowsModelChosen";
             this.ShowsModelChosen.Size = new System.Drawing.Size(240, 39);
@@ -644,7 +644,7 @@
             // 
             this.SizeChosenLabel.AutoSize = true;
             this.SizeChosenLabel.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeChosenLabel.Location = new System.Drawing.Point(42, 586);
+            this.SizeChosenLabel.Location = new System.Drawing.Point(38, 659);
             this.SizeChosenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SizeChosenLabel.Name = "SizeChosenLabel";
             this.SizeChosenLabel.Size = new System.Drawing.Size(92, 41);
@@ -655,7 +655,7 @@
             // 
             this.ModelChosenLabel.AutoSize = true;
             this.ModelChosenLabel.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelChosenLabel.Location = new System.Drawing.Point(40, 384);
+            this.ModelChosenLabel.Location = new System.Drawing.Point(40, 437);
             this.ModelChosenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ModelChosenLabel.Name = "ModelChosenLabel";
             this.ModelChosenLabel.Size = new System.Drawing.Size(134, 41);
@@ -666,7 +666,7 @@
             // 
             this.CategoryChosenLabel.AutoSize = true;
             this.CategoryChosenLabel.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoryChosenLabel.Location = new System.Drawing.Point(40, 174);
+            this.CategoryChosenLabel.Location = new System.Drawing.Point(40, 195);
             this.CategoryChosenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CategoryChosenLabel.Name = "CategoryChosenLabel";
             this.CategoryChosenLabel.Size = new System.Drawing.Size(186, 41);
@@ -675,7 +675,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(296, 558);
+            this.pictureBox3.Location = new System.Drawing.Point(292, 631);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(200, 175);
@@ -684,7 +684,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(292, 349);
+            this.pictureBox2.Location = new System.Drawing.Point(292, 402);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 175);
@@ -693,7 +693,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(292, 144);
+            this.pictureBox1.Location = new System.Drawing.Point(292, 165);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 175);
@@ -726,7 +726,7 @@
             this.panel1.Location = new System.Drawing.Point(22, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1857, 1259);
+            this.panel1.Size = new System.Drawing.Size(1857, 1329);
             this.panel1.TabIndex = 13;
             // 
             // FinalPage
@@ -736,7 +736,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1904, 1281);
+            this.ClientSize = new System.Drawing.Size(1904, 1379);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Yellow;
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);

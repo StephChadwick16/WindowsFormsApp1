@@ -48,10 +48,10 @@
             this.SizeSelectLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.SizeSelectLabel.AutoSize = true;
             this.SizeSelectLabel.Font = new System.Drawing.Font("Century Gothic", 37F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SizeSelectLabel.Location = new System.Drawing.Point(42, 25);
-            this.SizeSelectLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SizeSelectLabel.Location = new System.Drawing.Point(93, 45);
+            this.SizeSelectLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SizeSelectLabel.Name = "SizeSelectLabel";
-            this.SizeSelectLabel.Size = new System.Drawing.Size(832, 59);
+            this.SizeSelectLabel.Size = new System.Drawing.Size(1646, 116);
             this.SizeSelectLabel.TabIndex = 0;
             this.SizeSelectLabel.Text = "Select A Size for the Whole Model";
             // 
@@ -59,10 +59,10 @@
             // 
             this.SmallLabel.AutoSize = true;
             this.SmallLabel.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SmallLabel.Location = new System.Drawing.Point(98, 153);
-            this.SmallLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SmallLabel.Location = new System.Drawing.Point(195, 270);
+            this.SmallLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallLabel.Name = "SmallLabel";
-            this.SmallLabel.Size = new System.Drawing.Size(105, 40);
+            this.SmallLabel.Size = new System.Drawing.Size(208, 80);
             this.SmallLabel.TabIndex = 4;
             this.SmallLabel.Text = "Small";
             this.SmallLabel.Click += new System.EventHandler(this.SmallLabel_Click);
@@ -71,10 +71,10 @@
             // 
             this.MedLabel.AutoSize = true;
             this.MedLabel.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MedLabel.Location = new System.Drawing.Point(392, 153);
-            this.MedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MedLabel.Location = new System.Drawing.Point(783, 270);
+            this.MedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MedLabel.Name = "MedLabel";
-            this.MedLabel.Size = new System.Drawing.Size(152, 40);
+            this.MedLabel.Size = new System.Drawing.Size(300, 80);
             this.MedLabel.TabIndex = 5;
             this.MedLabel.Text = "Medium";
             // 
@@ -82,10 +82,10 @@
             // 
             this.BigLabel.AutoSize = true;
             this.BigLabel.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BigLabel.Location = new System.Drawing.Point(750, 153);
-            this.BigLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BigLabel.Location = new System.Drawing.Point(1499, 270);
+            this.BigLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BigLabel.Name = "BigLabel";
-            this.BigLabel.Size = new System.Drawing.Size(67, 40);
+            this.BigLabel.Size = new System.Drawing.Size(133, 80);
             this.BigLabel.TabIndex = 6;
             this.BigLabel.Text = "Big";
             // 
@@ -94,10 +94,10 @@
             this.CloseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CloseBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.Black;
-            this.CloseBtn.Location = new System.Drawing.Point(14, 642);
-            this.CloseBtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.CloseBtn.Location = new System.Drawing.Point(20, 1174);
+            this.CloseBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(125, 78);
+            this.CloseBtn.Size = new System.Drawing.Size(213, 129);
             this.CloseBtn.TabIndex = 4;
             this.CloseBtn.TabStop = false;
             this.CloseBtn.Text = "Close";
@@ -109,10 +109,10 @@
             this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.HomeBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.ForeColor = System.Drawing.Color.Black;
-            this.HomeBtn.Location = new System.Drawing.Point(198, 642);
-            this.HomeBtn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.HomeBtn.Location = new System.Drawing.Point(317, 1174);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(125, 78);
+            this.HomeBtn.Size = new System.Drawing.Size(213, 129);
             this.HomeBtn.TabIndex = 5;
             this.HomeBtn.TabStop = false;
             this.HomeBtn.Text = "Home";
@@ -131,10 +131,10 @@
             this.panel1.Controls.Add(this.BigLabel);
             this.panel1.Controls.Add(this.SmallLabel);
             this.panel1.Controls.Add(this.MedLabel);
-            this.panel1.Location = new System.Drawing.Point(18, 11);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.panel1.Location = new System.Drawing.Point(36, 21);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(946, 729);
+            this.panel1.Size = new System.Drawing.Size(1865, 1316);
             this.panel1.TabIndex = 14;
             // 
             // btnSize3
@@ -144,10 +144,10 @@
             this.btnSize3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSize3.FlatAppearance.BorderSize = 10;
             this.btnSize3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSize3.Location = new System.Drawing.Point(626, 228);
-            this.btnSize3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSize3.Location = new System.Drawing.Point(1251, 390);
+            this.btnSize3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSize3.Name = "btnSize3";
-            this.btnSize3.Size = new System.Drawing.Size(300, 353);
+            this.btnSize3.Size = new System.Drawing.Size(600, 679);
             this.btnSize3.TabIndex = 3;
             this.btnSize3.UseVisualStyleBackColor = false;
             this.btnSize3.Click += new System.EventHandler(this.Size_Click3);
@@ -162,10 +162,10 @@
             this.btnSize2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSize2.FlatAppearance.BorderSize = 10;
             this.btnSize2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSize2.Location = new System.Drawing.Point(316, 228);
-            this.btnSize2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSize2.Location = new System.Drawing.Point(631, 390);
+            this.btnSize2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSize2.Name = "btnSize2";
-            this.btnSize2.Size = new System.Drawing.Size(300, 353);
+            this.btnSize2.Size = new System.Drawing.Size(600, 679);
             this.btnSize2.TabIndex = 2;
             this.btnSize2.UseVisualStyleBackColor = false;
             this.btnSize2.Click += new System.EventHandler(this.Size_Click2);
@@ -180,10 +180,10 @@
             this.btnSize1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSize1.FlatAppearance.BorderSize = 10;
             this.btnSize1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSize1.Location = new System.Drawing.Point(2, 228);
-            this.btnSize1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSize1.Location = new System.Drawing.Point(3, 390);
+            this.btnSize1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSize1.Name = "btnSize1";
-            this.btnSize1.Size = new System.Drawing.Size(300, 353);
+            this.btnSize1.Size = new System.Drawing.Size(600, 679);
             this.btnSize1.TabIndex = 1;
             this.btnSize1.UseVisualStyleBackColor = false;
             this.btnSize1.Click += new System.EventHandler(this.Size_Click1);
@@ -197,13 +197,13 @@
             // 
             // SizingPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(964, 549);
+            this.ClientSize = new System.Drawing.Size(1928, 1429);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Yellow;
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "SizingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sizes";

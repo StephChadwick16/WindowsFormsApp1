@@ -445,7 +445,7 @@
             this.SaveBtn.BackColor = System.Drawing.Color.Yellow;
             this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.Black;
-            this.SaveBtn.Location = new System.Drawing.Point(749, 1004);
+            this.SaveBtn.Location = new System.Drawing.Point(766, 1004);
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(239, 113);
